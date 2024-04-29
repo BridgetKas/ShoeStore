@@ -1,0 +1,32 @@
+import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import HomePage from "./pages/home/HomePage"
+import Layoutpage from "./layout/layoutpage";
+
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<Layoutpage/>,
+    errorElement:<h1>We are sorry to inform you that your operation was unsucessful.</h1>,
+    children:[
+      {
+        index:true,
+        element:<HomePage/>
+      },
+      {
+        path:"Shop",
+        element:<div>Shop</div>
+      },
+      
+    ]
+  }
+])
+
+
+function App() {
+  return (
+      <RouterProvider router={router}/>
+  )
+}
+
+export default App
