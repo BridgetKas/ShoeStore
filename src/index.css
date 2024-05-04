@@ -11,5 +11,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -yellow-gradient-color:linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
 }
 

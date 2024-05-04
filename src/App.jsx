@@ -1,6 +1,8 @@
-import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import { createBrowserRouter,RouterProvider} from "react-router-dom";
 import HomePage from "./pages/home/HomePage"
 import Layoutpage from "./layout/layoutpage";
+import { ThemeProvider } from  '@mui/material/styles';
+import {theme} from "./utilis/theme"
 
 
 const router = createBrowserRouter([
@@ -25,7 +27,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
       <RouterProvider router={router}/>
+    </ThemeProvider>
   )
 }
 

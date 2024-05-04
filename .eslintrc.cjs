@@ -20,6 +20,8 @@ module.exports = {
     "no-unused-vars": "error",
     'indent': ['error', 2],
     'react/jsx-indent': ['error', 2],
-    'react/jsx-indent-props': ['error', 2]
+    'react/jsx-indent-props': ['error', 2],
+    "react/prop-types": "off",
+    'max-len': ["error", { "code": 120 }]
   },
 }
