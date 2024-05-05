@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from '@mui/material/Button';
 
 function ButtonComp({variant, size, color, startIcon, endIcon, btnTitle, style={}, rounded="none"}) {

@@ -67,6 +67,15 @@ export const theme = createTheme({
       main:"#007bff"
     },
   },
+  components: {
+    MuiTextField:{
+      styleOverrides:{
+        root:{
+          backgroundColor:"white"
+        }
+      }
+    }
+  }
 });
 
 
