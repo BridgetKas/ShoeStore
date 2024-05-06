@@ -1,6 +1,7 @@
 import Button from '@mui/material/Button';
+import { borderRadius } from '../../utilis/theme';
 
-function ButtonComp({variant, size, color, startIcon, endIcon, btnTitle, style={}, rounded="none"}) {
+function ButtonComp({variant, size, color, startIcon, endIcon, btnTitle, style={}, rounded="none",onClick}) {
   return (
     <div>
       <Button 
@@ -11,8 +12,9 @@ function ButtonComp({variant, size, color, startIcon, endIcon, btnTitle, style={
         endIcon={endIcon}
         style={{
           ...style,
-          borderRadius:rounded == "medium" ? "10px" : rounded == "small" ? "5px" : "0"
+          borderRadius:borderRadius[rounded]
         }}
+        onClick={onClick}
       >
         {btnTitle} 
       </Button>

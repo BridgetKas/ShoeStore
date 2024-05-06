@@ -75,7 +75,13 @@ export const theme = createTheme({
         }
       }
     }
-  }
+  },
+  
 });
 
 
+export const borderRadius = {
+  medium:"15px",
+  small:"5px",
+  none:"0px"
+}

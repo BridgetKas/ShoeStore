@@ -1,7 +1,7 @@
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 
-function Input({placeholder,required=false,icon,color}) {
+function Input({placeholder, required=false, icon, color}) {
   return (
     <div>
       <TextField  
@@ -9,12 +9,9 @@ function Input({placeholder,required=false,icon,color}) {
         placeholder={placeholder} 
         required={required}
         color={color}
-        endAdornment={
-          <InputAdornment position="end">
-            {icon}
-          </InputAdornment>
-        }
-        style={{backgroundColor:"secondary"}}
+        InputProps={{
+          endAdornment: <InputAdornment position="end">{icon}</InputAdornment>,
+        }}
       />
 
     </div>
