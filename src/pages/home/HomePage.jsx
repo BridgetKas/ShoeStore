@@ -1,6 +1,7 @@
 import ButtonComp from "../../components/common/Button"
 import ButtonIcon from "../../components/common/buttonIcon"
 import Input from "../../components/common/input"
+import SelectInput from "../../components/common/selectInput";
 import { colors } from "../../utilis/color"
 import AddIcon from '@mui/icons-material/Add';
 
@@ -20,7 +21,9 @@ function HomePage() {
         color="white" 
         icon={<AddIcon/>} 
         backgroundColor="red" 
-        text="Some People"/>
+        text="Some People"
+      />
+      <SelectInput/>
     </div>
   )
 }
