@@ -4,6 +4,8 @@ import Input from "../../components/common/input"
 import SelectInput from "../../components/common/selectInput";
 import { colors } from "../../utilis/color"
 import AddIcon from '@mui/icons-material/Add';
+import LogInPage from "../LogInPage/LogPage";
+import TrackingPage from "../trackingPage/trackingPage";
 
 function HomePage() {
   return (
@@ -24,6 +26,8 @@ function HomePage() {
         text="Some People"
       />
       <SelectInput/>
+      <LogInPage/>
+      <TrackingPage/>
     </div>
   )
 }

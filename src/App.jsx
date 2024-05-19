@@ -3,6 +3,7 @@ import HomePage from "./pages/home/HomePage"
 import Layoutpage from "./layout/layoutpage";
 import { ThemeProvider } from  '@mui/material/styles';
 import {theme} from "./utilis/theme"
+import LogInPage from "./pages/LogInPage/LogPage";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         path:"Shop",
         element:<div>Shop</div>
       },
+      {
+        path:"Pages",
+        element:<LogInPage color="white"/>
+      }
       
     ]
   }
