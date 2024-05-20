@@ -1,0 +1,16 @@
+input {
+    margin-bottom:200px;
+}
+
+.container {
+    width:90%;
+    margin:20px auto;
+}
+
+h3 {
+    font-size:17px;
+}
+
+.inputContainer {
+    width:73%;
+}
