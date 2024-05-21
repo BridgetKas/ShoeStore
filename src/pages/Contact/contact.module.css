@@ -1,0 +1,30 @@
+.mainContainer {
+    display:flex;
+    gap:9px;
+   width:75%;
+   margin:10px auto;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+.iconContainer {
+    display:flex;
+    column-gap:15px;
+    margin-bottom: 15px;
+}
+
+.state {
+    color:white;
+    font-weight:bold;
+}
+
+.address {
+    color:white;
+}
+
+.btnContainer {
+    display:flex;
+    justify-content: end;
+    width:75%;
+    margin:10px auto;
+}

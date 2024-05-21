@@ -1,7 +1,7 @@
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 
-function Input({placeholder, required=false, icon, color,margin,fullWidth}) {
+function Input({placeholder, required=false, icon, color,margin,fullWidth,multiline}) {
   return (
     <div>
       <TextField  
@@ -14,6 +14,7 @@ function Input({placeholder, required=false, icon, color,margin,fullWidth}) {
         }}
         margin={margin}
         fullWidth={fullWidth}
+        multiline={multiline}
       />
 
     </div>

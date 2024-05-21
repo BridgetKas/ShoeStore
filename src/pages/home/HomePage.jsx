@@ -6,6 +6,7 @@ import { colors } from "../../utilis/color"
 import AddIcon from '@mui/icons-material/Add';
 import LogInPage from "../LogInPage/LogPage";
 import TrackingPage from "../trackingPage/trackingPage";
+import Contact from "../Contact/contact";
 
 function HomePage() {
   return (
@@ -28,6 +29,7 @@ function HomePage() {
       <SelectInput/>
       <LogInPage/>
       <TrackingPage/>
+      <Contact/>
     </div>
   )
 }
