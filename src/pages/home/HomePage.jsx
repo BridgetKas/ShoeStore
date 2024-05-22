@@ -7,6 +7,8 @@ import AddIcon from '@mui/icons-material/Add';
 import LogInPage from "../LogInPage/LogPage";
 import TrackingPage from "../trackingPage/trackingPage";
 import Contact from "../Contact/contact";
+import HeaderComp from "../../components/common/header";
+import NavigateNextOutlinedIcon from '@mui/icons-material/NavigateNextOutlined';
 
 function HomePage() {
   return (
@@ -30,6 +32,7 @@ function HomePage() {
       <LogInPage/>
       <TrackingPage/>
       <Contact/>
+      <HeaderComp firstpage="HELLO" nextpage="WHATNOW" separator={<NavigateNextOutlinedIcon />} title="YOO"/>
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.mainContainer {
+    display:flex;
+    flex-direction: column;
+    align-items:last baseline;
+    justify-content:center;
+    padding-right:30px;
+    background:url("../../assets/common-banner.jpg");
+    height:400px;
+}
+
+.pageTitle {
+    margin-bottom:0;
+}
+
+.MuiBreadcrumbs-li {
+    padding:0;
+}
