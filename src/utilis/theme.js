@@ -66,6 +66,7 @@ export const theme = createTheme({
     blue: {
       main:"#007bff"
     },
+    
   },
   components: {
     MuiTextField:{

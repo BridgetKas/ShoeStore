@@ -1,0 +1,36 @@
+.navContainer {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:90%;
+    margin:20px auto;
+    background-color:#fff;
+    padding:15px 30px;
+}
+
+.logoContainer {
+    display:flex;
+    align-items: center;
+}
+
+.menuContainer {
+    display:flex;
+    width:45%;
+    justify-content: space-between;
+}
+
+.menuItem {
+    text-decoration:none;
+    text-transform:uppercase;
+    color:black;
+    font-size:15px;
+    font-weight:400;
+}
+
+.iconContainer {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:13px;
+
+}

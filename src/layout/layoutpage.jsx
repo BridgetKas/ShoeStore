@@ -1,13 +1,13 @@
 import {Outlet} from "react-router-dom"
-
-import React from 'react'
+import NavBar from "../components/Nav/nav"
+import Footer from "./Footer/footer"
 
 function Layoutpage() {
   return (
     <div>
-        <div>Hi</div>
-        <Outlet/>
-        <div>Footer</div>
+      <NavBar/>
+      <Outlet/>
+      <div><Footer/></div>
     </div>
   )
 }

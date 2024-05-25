@@ -1,0 +1,22 @@
+.mainContainer {
+    display:flex;
+    gap:30px;
+    align-items:center;
+    width:90%;
+    margin:10px auto;
+    justify-content: center;
+}
+
+.container {
+    width:25%;
+    background-color: yellow;
+    background:url("../../assets/cat-post-1.jpg");
+}
+
+.blog {
+    background-color: red;
+}
+
+h2,p {
+    text-align:center;
+}

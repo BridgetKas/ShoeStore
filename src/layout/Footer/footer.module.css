@@ -1,0 +1,61 @@
+.mainContainer {
+    display:flex;
+    gap:15px;
+    width:90%;
+    margin:20px auto;
+}
+
+.aboutContainer {
+    width:27%;
+}
+
+h2,p {
+    text-align:left;
+}
+
+p {
+    padding:0;
+    line-height:1.5;
+}
+
+.newsContainer {
+    width:32%;
+    align-items: left;
+}
+
+.imagesContainer {
+    width:25%;
+
+}
+
+.imageContainer {
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:15px;
+}
+
+.socialContainer {
+    width:13%;
+    margin-left:5px;
+}
+
+.logoContainer {
+    display:flex;
+    gap:8px;
+}
+
+/* .copyContainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.copy {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    margin-top:50px;
+}
