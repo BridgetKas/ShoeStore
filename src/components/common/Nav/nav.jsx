@@ -1,8 +1,7 @@
 import styles from './Nav.module.css'
-import logo from '../../assets/logo.png'
-import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import { NavLink } from 'react-router-dom';
+import logo from '../../../assets/logo.png'
+import MobileNav from './mobileNav';
+import DesktopNav from './Desktop';
 
 function NavBar() {
   const menu = [
@@ -39,15 +38,8 @@ function NavBar() {
         <img src={logo} alt="company logo" className={styles.image}/>
       </div>
       <div className={styles.menuContainer}>
-        {menu.map((item,index) =>(
-          <NavLink  to={item.path} key={`${index}-${item.label}`} className={styles.menuItem}>
-            {item.label}
-          </NavLink>
-        ))}
-        <div className={styles.iconContainer}>
-          <ShoppingBagOutlinedIcon color="gray"/>
-          <SearchOutlinedIcon  color="gray"/>
-        </div>
+        <MobileNav menu={menu}/>
+        <DesktopNav menu={menu}/>
       </div>
      
 

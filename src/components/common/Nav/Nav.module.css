@@ -2,8 +2,6 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    width:90%;
-    margin:20px auto;
     background-color:#fff;
     padding:15px 30px;
 }
@@ -13,10 +11,8 @@
     align-items: center;
 }
 
-.menuContainer {
-    display:flex;
-    width:45%;
-    justify-content: space-between;
+.desktopContainer {
+    display:none;
 }
 
 .menuItem {
@@ -27,10 +23,27 @@
     font-weight:400;
 }
 
-.iconContainer {
+/* Mobile Navigation */
+
+.mobileMenu.open {
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    gap:13px;
+    flex-direction:column;
+}
 
+.listContainer {
+    display:none;
+
+}
+
+@media (min-width:991px) {
+    .desktopContainer {
+        display:flex;
+        justify-content: space-between;
+        gap:50px;
+    }
+
+    .iconContainer {
+        display:none
+    }
 }
