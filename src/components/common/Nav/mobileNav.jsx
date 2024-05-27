@@ -3,6 +3,8 @@ import {NavLink as NavLinkBase} from 'react-router-dom'
 import styles from './Nav.module.css'
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
+import logo from '../../../assets/logo.png'
+
 
 
 function MobileNav({menu}) {
@@ -29,12 +31,15 @@ function MobileNav({menu}) {
     </div>
   );
   return (
-    <div>
+    <div className={styles.mainContainer}>
       <div className={styles.mobileiconContainer}>
         <MenuIcon color="gray" fontSize="large" onClick={() => toggleDrawer(true)}/>
       </div>
-      <Drawer open={open} onClose={() => toggleDrawer(false)}>
+      <Drawer open={open} onClose={() => toggleDrawer(false)} sx={{position:"block", width:500,}}>
         {DrawerList}
+        <div className={styles.logoContainerm}>
+          <img src={logo} alt="company logo" className={styles.image}/>
+        </div>
       </Drawer>
     </div>
   );
