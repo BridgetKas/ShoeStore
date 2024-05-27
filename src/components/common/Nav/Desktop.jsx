@@ -15,7 +15,7 @@ function DesktopNav({menu}) {
           {item.label}
         </NavLink>
       ))}
-      <div className={styles.iconContainer}>
+      <div className={styles.iconsContainer}>
         <ShoppingBagOutlinedIcon color="gray"/>
         <SearchOutlinedIcon  color="gray"/>
       </div>

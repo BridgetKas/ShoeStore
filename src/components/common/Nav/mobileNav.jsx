@@ -20,16 +20,17 @@ function MobileNav({menu}) {
   NavLink.displayName = 'NavLink'
 
   const DrawerList = (
-    <div  onClick={() => toggleDrawer(false)} className={styles.listContainer}>
+    <div  onClick={() => toggleDrawer(false)} className={`${styles.listContainer} ${!open ? styles.open : " "}`}>
       {menu.map((item) => (
-        <NavLink to={item.path} key={item.path} className={styles.menuItem}>{item.label}</NavLink>
-
+        <div key={item.path} className={styles.menuitemContainer}>
+          <NavLink to={item.path} key={item.path} className={styles.menuItem}>{item.label}</NavLink>
+        </div>
       ))}
     </div>
   );
   return (
     <div>
-      <div className={styles.iconContainer}>
+      <div className={styles.mobileiconContainer}>
         <MenuIcon color="gray" fontSize="large" onClick={() => toggleDrawer(true)}/>
       </div>
       <Drawer open={open} onClose={() => toggleDrawer(false)}>
