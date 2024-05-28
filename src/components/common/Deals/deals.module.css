@@ -1,0 +1,46 @@
+.mainContainer {
+    padding:30px 10px;
+    background-color:whitesmoke;
+}
+
+h1,h3 {
+    text-align: center;
+}
+
+h1 {
+    color:black;
+}
+
+h3 {
+    font-size:14px;
+    line-height: 1.5;
+    font-weight:300;
+    color:gray;
+    padding:0 10px;
+}
+
+.dealsContainer {
+    padding:30px 10px;
+}
+
+.itemContainer {
+    display:flex;
+    align-items: center;
+    gap:30px;
+}
+
+.name {
+    text-transform:uppercase;
+    color:black;
+}
+
+.priceContainer {
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.finalprice, .firstprice {
+    color:black;
+}
+

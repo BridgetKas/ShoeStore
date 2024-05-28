@@ -8,6 +8,7 @@ import LogInPage from "../LogInPage/LogPage";
 import TrackingPage from "../trackingPage/trackingPage";
 import Contact from "../Contact/contact";
 import Cards from "../Blog/cards";
+import DealsComp from "../../components/common/Deals/deals";
 
 function HomePage() {
   return (
@@ -32,6 +33,7 @@ function HomePage() {
       <TrackingPage/>
       <Contact/>
       <Cards title="bkbkh" tagline="ghgngh"/>
+      <DealsComp/>
       
 
 
