@@ -47,6 +47,7 @@ function Footer() {
 
   ]
   return (
+
     <Fragment>
       <div className={styles.mainContainer}>
         <div className={styles.aboutContainer}>
@@ -58,7 +59,9 @@ function Footer() {
         <div className={styles.newsContainer}>
           <h2>News Letter</h2>
           <p>Stay update with our latest</p>
-          <Input placeholder="Enter email" icon={<NavigateNextIcon/>} />
+          <div className={styles.inputContainer}>
+            <Input placeholder="Enter email" icon={<NavigateNextIcon/>} fullWidth />
+          </div>
         </div>
         <div className={styles.imagesContainer}>
           <h2>Instafeed</h2>
@@ -84,7 +87,10 @@ function Footer() {
 
       </div>
       <div className={styles.copyContainer}>
-        <div className={styles.copy}>Copyright ©2024 All rights reserved | This template is made with {<FavoriteBorderIcon fontSize="small"/>} by Bizzy</div>
+        <div className={styles.copy}>
+          Copyright ©2024 All rights reserved | This template is made with {<FavoriteBorderIcon fontSize="small"/>} 
+          by Bizzy
+        </div>
       </div>
     </Fragment>
   )
