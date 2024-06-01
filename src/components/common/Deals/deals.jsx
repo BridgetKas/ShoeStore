@@ -100,7 +100,7 @@ function DealsComp() {
                 <img src={item.image}/>
               </div>
               <div>
-                <div className={styles.name}>{item.itemname}</div>
+                <div className={styles.name}><a>{item.itemname}</a></div>
                 <div className={styles.priceContainer}>
                   <a className={styles.finalprice}>${item.itemPrice}</a>
                   <a className={styles.firstprice}>${item.originalprice}</a>

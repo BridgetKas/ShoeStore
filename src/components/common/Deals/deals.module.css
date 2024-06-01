@@ -32,6 +32,12 @@ h3 {
 .name {
     text-transform:uppercase;
     color:black;
+    font-weight:300;
+}
+
+.name a:hover {
+    color: orange;
+    cursor:pointer;
 }
 
 .priceContainer {
@@ -40,7 +46,15 @@ h3 {
     gap:10px;
 }
 
-.finalprice, .firstprice {
+ .firstprice {
+    color:gray;
+    text-decoration: line-through;
+    font-weight:200;
+  
+}
+
+.finalprice {
+    font-weight:400;
     color:black;
 }
 
