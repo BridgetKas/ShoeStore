@@ -37,12 +37,7 @@ function DealsComp() {
       itemPrice:189.00,
       originalprice:210.00
     },
-    {
-      image:image3,
-      itemname:"Black Lace Heels",
-      itemPrice:189.00,
-      originalprice:210.00
-    },
+   
     {
       image:image5,
       itemname:"Black Lace Heels",
@@ -61,12 +56,7 @@ function DealsComp() {
       itemPrice:189.00,
       originalprice:210.00
     },
-    {
-      image:image6,
-      itemname:"Black Lace Heels",
-      itemPrice:189.00,
-      originalprice:210.00
-    },
+  
     {
       image:image9,
       itemname:"Black Lace Heels",
@@ -93,21 +83,23 @@ function DealsComp() {
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </h3>
-        <div className={styles.dealsContainer}>
-          {dealsArr.map((item,index) =>(
-            <div key={index} className={styles.itemContainer}>
-              <div >
-                <img src={item.image} />
-              </div>
-              <div>
-                <div className={styles.name}><a>{item.itemname}</a></div>
-                <div className={styles.priceContainer}>
-                  <a className={styles.finalprice}>${item.itemPrice}.00</a>
-                  <a className={styles.firstprice}>${item.originalprice}.00</a>
+        <div className={styles.container}>
+          <div className={styles.dealsContainer}>
+            {dealsArr.map((item,index) =>(
+              <div key={index} className={styles.itemContainer}>
+                <div >
+                  <img src={item.image} />
+                </div>
+                <div>
+                  <div className={styles.name}><a>{item.itemname}</a></div>
+                  <div className={styles.priceContainer}>
+                    <a className={styles.finalprice}>${item.itemPrice}.00</a>
+                    <a className={styles.firstprice}>${item.originalprice}.00</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
           <div className={styles.blackFridayContainer}>
             <img src={friday} alt="Black Friday Banner" className={styles.friday}/>
           </div>

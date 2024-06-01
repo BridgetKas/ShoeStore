@@ -85,7 +85,6 @@ h3 {
         grid-template-columns: repeat(3,1fr);
         width:98%;
         gap: 30px;
-
     }
 
     .priceContainer {
@@ -94,8 +93,39 @@ h3 {
         align-items:flex-start;
     }
 
-
     .firstprice {
         margin-top:-5px;
+    }
+}
+
+
+
+@media (min-width:992px) {
+    .container {
+        display:flex;
+        gap:15px;
+        align-items: center;
+    }
+
+    .priceContainer {
+        flex-direction: row;
+        align-items:center;
+    }
+
+    .firstprice {
+        margin-top:0;
+    }
+
+    .blackFridayContainer {
+        display:block;
+    }
+
+    .mainContainer {
+        padding:20px 60px;
+    }
+
+    .friday{
+        height:300px;
+        width:250px;
     }
 }
