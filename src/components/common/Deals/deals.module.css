@@ -33,6 +33,7 @@ h3 {
     text-transform:uppercase;
     color:black;
     font-weight:300;
+    font-size:17px;
 }
 
 .name a:hover {
@@ -76,4 +77,25 @@ h3 {
         margin:10px auto;
     }
 
+}
+
+
+@media (min-width:768px) {
+    .dealsContainer {
+        grid-template-columns: repeat(3,1fr);
+        width:98%;
+        gap: 30px;
+
+    }
+
+    .priceContainer {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
+
+    .firstprice {
+        margin-top:-5px;
+    }
 }

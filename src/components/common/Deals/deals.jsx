@@ -96,8 +96,8 @@ function DealsComp() {
         <div className={styles.dealsContainer}>
           {dealsArr.map((item,index) =>(
             <div key={index} className={styles.itemContainer}>
-              <div>
-                <img src={item.image}/>
+              <div >
+                <img src={item.image} />
               </div>
               <div>
                 <div className={styles.name}><a>{item.itemname}</a></div>
