@@ -9,6 +9,7 @@ import TrackingPage from "../trackingPage/trackingPage";
 import Contact from "../Contact/contact";
 import Cards from "../Blog/cards";
 import DealsComp from "../../components/common/Deals/deals";
+import ShoeComp from "../../components/common/Shoe/Shoes";
 
 function HomePage() {
   return (
@@ -34,7 +35,7 @@ function HomePage() {
       <Contact/>
       <Cards title="bkbkh" tagline="ghgngh"/>
       <DealsComp/>
-      
+      <ShoeComp/>
 
 
     </div>
