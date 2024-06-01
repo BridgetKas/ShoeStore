@@ -102,8 +102,8 @@ function DealsComp() {
               <div>
                 <div className={styles.name}><a>{item.itemname}</a></div>
                 <div className={styles.priceContainer}>
-                  <a className={styles.finalprice}>${item.itemPrice}</a>
-                  <a className={styles.firstprice}>${item.originalprice}</a>
+                  <a className={styles.finalprice}>${item.itemPrice}.00</a>
+                  <a className={styles.firstprice}>${item.originalprice}.00</a>
                 </div>
               </div>
             </div>
