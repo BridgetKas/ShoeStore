@@ -49,7 +49,7 @@ h3 {
  .firstprice {
     color:gray;
     text-decoration: line-through;
-    font-weight:200;
+    font-weight:250;
   
 }
 
@@ -60,4 +60,20 @@ h3 {
 
 .blackFridayContainer {
     display:none;
+}
+
+@media (min-width:576px) {
+    .itemContainer {
+        flex-direction: row;
+        gap:15px;
+    }
+
+    .dealsContainer {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 15px;
+        width:95%;
+        margin:10px auto;
+    }
+
 }
