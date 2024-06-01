@@ -14,7 +14,7 @@ h1 {
 h3 {
     font-size:14px;
     line-height: 1.5;
-    font-weight:300;
+    font-weight:400;
     color:gray;
     padding:0 10px;
 }
@@ -101,6 +101,12 @@ h3 {
 
 
 @media (min-width:992px) {
+
+    h3 {
+        width:40%;
+        margin:2px auto;
+        line-height:1.8;
+    }
     .container {
         display:flex;
         gap:15px;
