@@ -10,6 +10,7 @@ import image7 from '../../../assets/DealsImages/r7.jpg'
 import image9 from '../../../assets/DealsImages/r9.jpg'
 import image10 from '../../../assets/DealsImages/r10.jpg'
 import image11 from '../../../assets/DealsImages/r11.jpg'
+import friday from '../../../assets/DealsImages/c5.jpg'
 import styles from './deals.module.css'
 
 
@@ -107,6 +108,9 @@ function DealsComp() {
               </div>
             </div>
           ))}
+          <div className={styles.blackFridayContainer}>
+            <img src={friday} alt="Black Friday Banner" className={styles.friday}/>
+          </div>
         </div>
       </div>
     </Fragment>
