@@ -33,13 +33,13 @@ function MobileNav({menu}) {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.mobileiconContainer}>
-        <MenuIcon color="gray" fontSize="large" onClick={() => toggleDrawer(true)}/>
-      </div>
-      <Drawer open={open} onClose={() => toggleDrawer(false)} sx={{position:"block", width:500,}}>
-        {DrawerList}
-        <div className={styles.logoContainerm}>
+        <div className={styles.logoContainer}>
           <img src={logo} alt="company logo" className={styles.image}/>
         </div>
+        <MenuIcon color="gray" fontSize="large" onClick={() => toggleDrawer(true)}/>
+      </div>
+      <Drawer open={open} onClose={() => toggleDrawer(false)} sx={{position:"block",marginTop:'100px'}} anchor='top' >
+        {DrawerList}
       </Drawer>
     </div>
   );

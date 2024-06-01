@@ -1,5 +1,3 @@
-import styles from './Nav.module.css'
-import logo from '../../../assets/logo.png'
 import MobileNav from './mobileNav';
 import DesktopNav from './Desktop';
 
@@ -33,16 +31,9 @@ function NavBar() {
   ]
 
   return (
-    <div className={styles.navContainer}>
-      <div className={styles.logoContainer}>
-        <img src={logo} alt="company logo" className={styles.image}/>
-      </div>
-      <div className={styles.menuContainer}>
-        <MobileNav menu={menu}/>
-        <DesktopNav menu={menu}/>
-      </div>
-     
-
+    <div>
+      <MobileNav menu={menu}/>
+      <DesktopNav menu={menu}/>
     </div>
   )
 }
