@@ -58,10 +58,14 @@ export default function ShoeComp() {
               image={item.image}
             />
             <CardContent className={styles.priceContainer} sx={{padding:0}}>
-              <Typography variant="body2" color="black" className={styles.name} sx={{fontWeight:500,fontSize:"16px"}}>
+              <Typography variant="h3" color="black" className={styles.name} 
+                sx={{fontWeight:500,fontSize:"16px",textAlign:"left"}}>
                 Addias New Hammer Sole for Sports Person.
               </Typography>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography component="a" className={styles.finalPrice}>
+                $150
+              </Typography>
+              <Typography  component="a" className={styles.originalPrice}>
                 $150
               </Typography>
             </CardContent>

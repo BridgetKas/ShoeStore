@@ -8,8 +8,9 @@
     flex-wrap: wrap;
     gap:15px;
     padding:15px 30px;
-    background-color: yellow;
+    background-color: #fff;
     flex-grow: 1;
+    padding-bottom:60px;
 }
 
 .cardContainer {
@@ -23,8 +24,18 @@
     font-size:18px;
     color:black;
     padding:15px 15px 10px 0px;
-  
+    width:100%;
 }
+
+.finalPrice {
+    padding-right:10px;
+}
+
+.originalPrice {
+    color:gray;
+    text-decoration: line-through;
+}
+
 .infoContainer {
     padding: 16px 5px 8px 0;
 }
@@ -44,6 +55,10 @@
 @media (min-width:768px) {
     .cardContainer {
         width:45%;
+    }
+
+    .name {
+        width:95%;
     }
 }
 
