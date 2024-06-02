@@ -1,0 +1,19 @@
+.mainContainer {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:20px 25px;
+    gap:15px;
+    flex-wrap:wrap;
+    background-color: #fff;
+}
+
+.logoContainer {
+    width:45%;
+    opacity:0.2;
+}
+
+.logoContainer:hover {
+    cursor: pointer;
+    opacity:1;
+}

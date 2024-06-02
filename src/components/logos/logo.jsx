@@ -29,7 +29,7 @@ function LogoComp() {
       {
         logoArr.map((item,index) => (
           <div key={index} className={styles.logoContainer}>
-            {item.logo}
+            <img src={item.logo} className={styles.image}/>
           </div>
         ))
       }
