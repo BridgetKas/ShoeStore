@@ -19,8 +19,11 @@
 
 .name {
     text-transform: uppercase;
-    font-weight:bold;
-    padding-left:0;
+    font-weight:600;
+    font-size:18px;
+    color:black;
+    padding:15px 15px 10px 0px;
+  
 }
 .infoContainer {
     padding: 16px 5px 8px 0;
@@ -47,7 +50,11 @@
 
 @media (min-width:992px) {
     .cardContainer {
-        width:23%;
+        width:23.8%;
+    }
+
+    .name {
+        width:80%;
     }
 
 }
