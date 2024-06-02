@@ -9,6 +9,12 @@ import image3 from '../../../assets/ShopImages/p4.jpg';
 import image4 from '../../../assets/ShopImages/p5.jpg';
 import image5 from '../../../assets/ShopImages/p6.jpg';
 import image6 from '../../../assets/ShopImages/p8.jpg';
+import image7 from '../../../assets/ShopImages/p2.jpg';
+import image8 from '../../../assets/ShopImages/p7.jpg';
+
+
+
+
 import styles from './shoe.module.css'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -33,6 +39,12 @@ const menu = [
   },
   {
     image:image6
+  },
+  {
+    image:image7
+  }, 
+  {
+    image:image8
   }
 ]
 export default function ShoeComp() {
@@ -40,13 +52,13 @@ export default function ShoeComp() {
     <div className={styles.container}>
       {
         menu.map((item,index) => (
-          <Card sx={{ maxWidth:"100%", maxHeight:400}} key={index} className={styles.cardContainer}>
+          <Card sx={{ maxWidth:'100%'}} key={index} className={styles.cardContainer}>
             <CardMedia
               sx={{ height: 250 }}
               image={item.image}
             />
-            <CardContent >
-              <Typography variant="body2" color="text.secondary">
+            <CardContent className={styles.priceContainer} >
+              <Typography variant="body2" color="text.secondary" className={styles.name}>
                 Addias New Hammer Sole for Sports Person.
               </Typography>
               <Typography gutterBottom variant="h5" component="div">
@@ -57,13 +69,13 @@ export default function ShoeComp() {
               <div className={styles.iconContainer}>
                 <ShoppingBagIcon/>
               </div>
-              <div>
+              <div className={styles.iconContainer}>
                 <FavoriteBorderIcon/>
               </div>
-              <div>
+              <div className={styles.iconContainer}>
                 <LoopIcon/>
               </div>
-              <div>
+              <div className={styles.iconContainer}>
                 <FullscreenExitIcon/>
               </div>
             </CardActions>
