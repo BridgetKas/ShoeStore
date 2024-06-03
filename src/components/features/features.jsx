@@ -31,7 +31,7 @@ function FeaturesComp() {
     <div className={styles.mainContainer}> 
       {featuresArr.map((item,index) =>(
         <div key={index} className={styles.featuresContainer}>
-          <div>{item.feature}</div>
+          <div className={styles.iconContainer}>{item.feature}</div>
           <div>
             <h6>{item.title}</h6>
             <p>{item.description}</p>
