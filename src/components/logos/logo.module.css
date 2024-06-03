@@ -1,7 +1,6 @@
 .mainContainer {
     display:flex;
     align-items:center;
-    justify-content: center;
     padding:20px 25px;
     gap:15px;
     flex-wrap:wrap;
@@ -11,7 +10,12 @@
 .logoContainer {
     width:45%;
     opacity:0.2;
+    flex-grow:1;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
+
 
 .logoContainer:hover {
     cursor: pointer;
@@ -28,5 +32,12 @@
 
     .logoContainer {
         width:15%;
+    }
+}
+
+
+@media (min-width:992px) {
+    .mainContainer {
+        padding:30px 50px 30px 70px;
     }
 }
