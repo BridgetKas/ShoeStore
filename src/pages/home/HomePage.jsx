@@ -11,6 +11,7 @@ import Cards from "../Blog/cards";
 import DealsComp from "../../components/common/Deals/deals";
 import ShoeComp from "../../components/common/Shoe/Shoes";
 import LogoComp from "../../components/logos/logo";
+import FeaturesComp from "../../components/features/features";
 
 function HomePage() {
   return (
@@ -31,6 +32,7 @@ function HomePage() {
         text="Some People"
       />
       <SelectInput/>
+      <FeaturesComp/>
       <LogInPage/>
       <TrackingPage/>
       <Contact/>
