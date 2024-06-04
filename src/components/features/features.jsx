@@ -34,7 +34,7 @@ function FeaturesComp() {
           <div className={styles.iconContainer}>{item.feature}</div>
           <div>
             <h6>{item.title}</h6>
-            <p>{item.description}</p>
+            <p className={styles.description}>{item.description}</p>
           </div>
         
         </div>
