@@ -12,6 +12,7 @@ import DealsComp from "../../components/common/Deals/deals";
 import ShoeComp from "../../components/common/Shoe/Shoes";
 import LogoComp from "../../components/logos/logo";
 import FeaturesComp from "../../components/features/features";
+import OverlayComp from "../../components/overLayShoes/overlay";
 
 function HomePage() {
   return (
@@ -38,6 +39,7 @@ function HomePage() {
       <Contact/>
       <Cards title="bkbkh" tagline="ghgngh"/>
       <DealsComp/>
+      <OverlayComp/>
       <LogoComp/>
 
       <ShoeComp/>
