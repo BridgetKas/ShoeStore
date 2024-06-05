@@ -3,6 +3,7 @@ import photo2 from '../../assets/ShoeGallery/c2.jpg'
 import photo3 from '../../assets/ShoeGallery/c3.jpg'
 import photo4 from '../../assets/ShoeGallery/c4.jpg'
 import photo5 from '../../assets/DealsImages/c5.jpg'
+import styles from './overlay.module.css'
 
 
 function OverlayComp() {
@@ -24,9 +25,9 @@ function OverlayComp() {
     },
   ]
   return (
-    <div>
+    <div className={styles.mainContainer}>
       {photoArr.map((item,index) =>(
-        <div key={index}><img src={item.photo}/></div>
+        <div key={index} className={styles.imageContainer}><img src={item.photo}/></div>
       ))}
     </div>
   )
