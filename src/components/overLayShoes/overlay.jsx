@@ -7,28 +7,30 @@ import styles from './overlay.module.css'
 
 
 function OverlayComp() {
-  const photoArr = [
-    {
-      photo:photo1
-    },
-    {
-      photo:photo2
-    },
-    {
-      photo:photo3
-    },
-    {
-      photo:photo4
-    },
-    {
-      photo:photo5
-    },
-  ]
+  // const photoArr = [
+  //   {
+  //     photo:photo1
+  //   },
+  //   {
+  //     photo:photo2
+  //   },
+  //   {
+  //     photo:photo3
+  //   },
+  //   {
+  //     photo:photo4
+  //   },
+  //   {
+  //     photo:photo5
+  //   },
+  // ]
   return (
     <div className={styles.mainContainer}>
-      {photoArr.map((item,index) =>(
-        <div key={index} className={styles.imageContainer}><img src={item.photo}/></div>
-      ))}
+      <div  className={styles.imageContainer}><img src={photo1}/></div>
+      <div  className={styles.imageContainer}><img src={photo2}/></div>
+      <div  className={styles.imageContainer}><img src={photo3}/></div>
+      <div  className={styles.imageContainer}><img src={photo4}/></div>
+      <div  className={styles.imageContainer}><img src={photo5}/></div>
     </div>
   )
 }

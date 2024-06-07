@@ -10,8 +10,8 @@
 }
 
 .imageContainer {
-    width:100%;
-}
+    width:95%;
+} 
 
 
 .imageContainer img {
@@ -20,21 +20,3 @@
 }
 
 
-@media (min-width:575px) {
-    .mainContainer {
-        width:98%;
-    }
-
-}
-
-
-@media (min-width:768px) {
-    .mainContainer {
-        flex-direction:row;
-        gap:0px;
-    }
-
-    .imageContainer {
-        width:48%;
-    }
-}
