@@ -26,11 +26,15 @@ function OverlayComp() {
   // ]
   return (
     <div className={styles.mainContainer}>
+      {/* <div className> */}
       <div  className={styles.imageContainer1}><img src={photo1}/></div>
       <div  className={styles.imageContainer}><img src={photo2}/></div>
       <div  className={styles.imageContainer}><img src={photo3}/></div>
       <div  className={styles.imageContainer1}><img src={photo4}/></div>
-      <div  className={styles.imageContainer2}><img src={photo5}/></div>
+      {/* </div> */}
+      <div className={styles.blackContainer}>
+        <div  className={styles.imageContainer2}><img src={photo5}/></div>
+      </div>
     </div>
   )
 }

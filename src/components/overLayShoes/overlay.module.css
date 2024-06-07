@@ -37,9 +37,11 @@
 
     .imageContainer1 {
         width:67%;
+        flex-grow:1;
     }
 
     .imageContainer {
         width:30%;
     }
 }
+
