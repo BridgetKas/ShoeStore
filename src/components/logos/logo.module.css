@@ -1,7 +1,7 @@
 .mainContainer {
     display:flex;
     align-items:center;
-    padding:20px 25px;
+    padding:60px 20px;
     gap:15px;
     flex-wrap:wrap;
     background-color: #fff;
@@ -10,10 +10,10 @@
 .logoContainer {
     width:45%;
     opacity:0.2;
-    flex-grow:1;
     display:flex;
     align-items:center;
     justify-content: center;
+    padding:20px 25px;
 }
 
 
@@ -26,12 +26,13 @@
 @media (min-width:768px) {
     .mainContainer {
         justify-content: space-between;
-        padding:20px;
+        padding:20px ;
         gap:10px;
     }
 
     .logoContainer {
         width:15%;
+
     }
 }
 
