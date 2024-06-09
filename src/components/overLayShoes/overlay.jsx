@@ -4,19 +4,51 @@ import photo3 from '../../assets/ShoeGallery/c3.jpg'
 import photo4 from '../../assets/ShoeGallery/c4.jpg'
 import photo5 from '../../assets/DealsImages/c5.jpg'
 import styles from './overlay.module.css'
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
-
-function OverlayComp() {
+export default function BasicGrid() {
   return (
-    <div className={styles.mainContainer}>
-      <div  className={styles.imageContainerone}><img src={photo1}/></div>
-      <div  className={styles.imageContainer}><img src={photo2}/></div>
-      <div  className={styles.imageContainer}><img src={photo3}/></div>
-      <div  className={styles.imageContainertwo}><img src={photo4}/></div>
-      <div  className={styles.imageContainerthree}><img src={photo5}/></div>
+    <Box sx={{ width:"95%",
+      marginRight:"auto",
+      marginLeft:"auto",
+      marginTop:"36px",
+    }}>
+     
+      <Grid container sx={{width:"100%", margin:"0px", marginBottom:"20px"}}  columnGap={1} rowGap={1}
+        justifyContent="space-between" className={styles.container}
+      > 
+        <Grid item sm={12}  md={7}>
+          <Grid container sx={{width:"100%",height:"100%", margin:"0px", marginBottom:"20px"}} rowGap={2} columnGap={1} 
+            justifyContent="space-between"
+          >
+            <Grid item xs={12} sm={7.5}>
+              <img src={photo1}className={styles.image}/>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <img src={photo2} className={styles.image}/>
+            </Grid>
+            <Grid item  xs={12} sm={4}>
+              <img src={photo3} className={styles.image}/>
+            </Grid>
+            <Grid item xs={12} sm={7.5}>
+              <img src={photo4} className={styles.image}/>
+            </Grid>
+           
+          </Grid>
+        </Grid>
+        <Grid item  sm={12} md={4} sx={{ width:"100%"}}>
+          <div className={styles.imageContainer}>
+            <img src={photo5} className={styles.image2}/>
+          </div>
+        </Grid>
+      </Grid>
       
-    </div>
-  )
+    </Box>
+  );
 }
 
-export default OverlayComp
+
+
+
+
