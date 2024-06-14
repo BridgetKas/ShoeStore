@@ -13,11 +13,12 @@ import ShoeComp from "../../components/common/Shoe/Shoes";
 import LogoComp from "../../components/logos/logo";
 import FeaturesComp from "../../components/features/features";
 import OverlayComp from "../../components/overLayShoes/overlay";
+import BannerComp from "../../components/homeBanner/banner";
 
 function HomePage() {
   return (
     <div>
-      <h1>Home</h1>
+      <BannerComp/>
       <ButtonComp variant="contained" size="medium" btnTitle="Hello" color="secondary" rounded="medium"/>
       <ButtonComp variant="contained" 
         size="small" 
