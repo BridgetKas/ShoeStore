@@ -109,8 +109,9 @@ h3 {
     }
     .container {
         display:flex;
-        gap:15px;
-        align-items: center;
+        gap:20px;
+        width:97%;
+        margin:15px auto;
     }
 
     .priceContainer {
@@ -122,16 +123,27 @@ h3 {
         margin-top:0;
     }
 
+
+    .dealsContainer {
+        width:90%;
+        column-gap:20px;
+        row-gap:15px;
+        padding:0px;
+        margin:0px;
+    }
+
     .blackFridayContainer {
-        display:block;
+        display:flex;
+        align-items:center;
     }
 
     .mainContainer {
         padding:20px 60px;
     }
 
-    .friday{
-        height:300px;
-        width:250px;
+    .friday {
+        height:100%;
+        width:100%;
     }
 }
+

@@ -84,6 +84,7 @@ function DealsComp() {
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </h3>
         <div className={styles.container}>
+          {/* <div className={styles.mainKontainer}> */}
           <div className={styles.dealsContainer}>
             {dealsArr.map((item,index) =>(
               <div key={index} className={styles.itemContainer}>
@@ -100,8 +101,10 @@ function DealsComp() {
               </div>
             ))}
           </div>
+          {/* </div> */}
           <div className={styles.blackFridayContainer}>
             <img src={friday} alt="Black Friday Banner" className={styles.friday}/>
+
           </div>
         </div>
       </div>
