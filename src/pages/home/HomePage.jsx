@@ -14,6 +14,7 @@ import LogoComp from "../../components/logos/logo";
 import FeaturesComp from "../../components/features/features";
 import OverlayComp from "../../components/overLayShoes/overlay";
 import BannerComp from "../../components/homeBanner/banner";
+import ExclusiveComp from "../../components/exclusive/exclusive";
 
 function HomePage() {
   return (
@@ -44,6 +45,8 @@ function HomePage() {
       <LogoComp/>
 
       <ShoeComp/>
+
+      <ExclusiveComp/>
 
 
     </div>
