@@ -1,0 +1,61 @@
+.imageContainer {
+    position:relative;
+    background:url('../../assets/exclusive.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:500px;
+    width:100%;
+    margin-top:90px;
+}
+
+.imageContainer::after {
+    content:" ";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:1;
+}
+
+h1 {
+    color:#fff;
+   padding-top:80px;
+    z-index:2;
+    position:relative;
+    line-height:1.2;
+    text-align:center;
+    margin-bottom:0px;
+}
+
+
+
+.description {
+    color:#fff;
+    z-index:2;
+    position:relative;
+    line-height:1.2;
+    text-align:center; 
+    margin-top:5px;
+}
+.dateContainer {
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:15px;
+    position:relative;
+    z-index:2;
+    height:100px;
+    width:90%;
+    border-radius:10px;
+    margin:30px auto;
+
+}
+
+
+
+@media (min-width:768px) {
+
+}
