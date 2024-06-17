@@ -1,7 +1,10 @@
 import ButtonComp from '../common/Button';
 import styles from './exclusive.module.css'
 import { colors } from "../../utilis/color"
-import { borderRadius } from '../../utilis/theme';
+import next from '../../assets/next.png'
+import prev from '../../assets/prev.png'
+import shoe from '../../assets/e-p1.png'
+
 
 
 function ExclusiveComp() {
@@ -16,12 +19,34 @@ function ExclusiveComp() {
           <div><span id="minutes"></span> Minutes</div>
           <div><span id="seconds"></span> Seconds</div>
         </div>
-        <ButtonComp variant="contained" 
-          size="medium" 
-          btnTitle="Shop"  
-          style={{ background: colors.yellowGrad, position:"relative", zIndex:"2"}} 
-          onClick={() => alert('Clicked')}
-        />
+        <div className={styles.btnContainer}>
+          <ButtonComp variant="contained" 
+            size="medium" 
+            btnTitle="Shop"  
+            style={{ background: colors.yellowGrad, position:"relative", zIndex:"2"}} 
+            onClick={() => alert('Clicked')}
+            rounded='medium'
+          />
+        </div>
+        
+      </div>
+      <div className={styles.imagesContainer}>
+        <div className={styles.imgContainer}>
+          <img src={prev} className={styles.image}/>
+        </div>
+        <div >
+          <img src={shoe}/>
+          <div className={styles.priceContainer}>
+            <p className={styles.price}>$150.00</p>
+            <p className={styles.firstPrice}>$210.00</p>
+          </div>
+          <div>
+            <h2 className={styles.description}>Addidas New Hammer Sole for Sports Person</h2>
+          </div>
+        </div>
+        <div className={styles.imgContainer}>
+          <img src={next} className={styles.image}/>
+        </div>
       </div>
 
     </div>

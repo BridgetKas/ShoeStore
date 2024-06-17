@@ -4,7 +4,7 @@
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-    height:500px;
+    height:550px;
     width:100%;
     margin-top:90px;
 }
@@ -51,10 +51,51 @@ h1 {
     width:90%;
     border-radius:10px;
     margin:30px auto;
+    border:1px solid #fff;
+    background-color:#fff;
+    color:black;
+    padding:0 10px;
 
 }
 
+.btnContainer {
+    text-align:center;
+}
 
+.imagesContainer {
+    background-color:#fff;
+    padding-top:42px;
+}
+
+.imgContainer {
+    display:none;
+}
+
+.priceContainer {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:25px;
+    margin-top:-10px;
+}
+
+.price {
+    color:black;
+    font-weight:450;
+}
+
+.firstPrice {
+    text-decoration:line-through;
+    font-weight:350;
+}
+
+.description {
+    text-transform:uppercase;
+    color:black;
+    font-weight:400;
+    text-align:center;
+    width:60%;
+}
 
 @media (min-width:768px) {
 
