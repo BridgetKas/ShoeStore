@@ -89,7 +89,7 @@ h1 {
     font-weight:350;
 }
 
-.description {
+.feature {
     text-transform:uppercase;
     color:black;
     font-weight:400;
@@ -97,6 +97,3 @@ h1 {
     width:60%;
 }
 
-@media (min-width:768px) {
-
-}

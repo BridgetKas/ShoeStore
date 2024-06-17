@@ -41,7 +41,7 @@ function ExclusiveComp() {
             <p className={styles.firstPrice}>$210.00</p>
           </div>
           <div>
-            <h2 className={styles.description}>Addidas New Hammer Sole for Sports Person</h2>
+            <h2 className={styles.feature}>Addidas New Hammer Sole for Sports Person</h2>
           </div>
         </div>
         <div className={styles.imgContainer}>
