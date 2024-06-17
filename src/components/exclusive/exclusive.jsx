@@ -4,6 +4,8 @@ import { colors } from "../../utilis/color"
 import next from '../../assets/next.png'
 import prev from '../../assets/prev.png'
 import shoe from '../../assets/e-p1.png'
+import ButtonIcon from '../common/buttonIcon';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 
 
@@ -47,6 +49,12 @@ function ExclusiveComp() {
         <div className={styles.imgContainer}>
           <img src={next} className={styles.image}/>
         </div>
+        <ButtonIcon size="small" 
+          color="white" 
+          icon={<ShoppingBagIcon/>} 
+          backgroundColor="orange" 
+          text=" Add to Bag"
+        />
       </div>
 
     </div>
