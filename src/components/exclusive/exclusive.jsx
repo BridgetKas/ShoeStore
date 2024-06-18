@@ -11,7 +11,7 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 function ExclusiveComp() {
   return (
-    <div>
+    <div className={styles.mainContainer}>
       <div className={styles.imageContainer}>
         <h1>Exclusive Hot Deal Ends Soon</h1>
         <p className={styles.description}>Who are in extremely love with eco friendly system</p>
@@ -36,7 +36,7 @@ function ExclusiveComp() {
         <div className={styles.imgContainer}>
           <img src={prev} className={styles.image}/>
         </div>
-        <div >
+        <div className={styles.shoeContainer} >
           <img src={shoe}/>
           <div className={styles.priceContainer}>
             <p className={styles.price}>$150.00</p>
@@ -49,6 +49,8 @@ function ExclusiveComp() {
         <div className={styles.imgContainer}>
           <img src={next} className={styles.image}/>
         </div>
+      </div>
+      <div>
         <ButtonIcon size="small" 
           color="white" 
           icon={<ShoppingBagIcon/>} 
@@ -56,7 +58,6 @@ function ExclusiveComp() {
           text=" Add to Bag"
         />
       </div>
-
     </div>
   )
 }

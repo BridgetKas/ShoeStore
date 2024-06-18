@@ -1,3 +1,7 @@
+.mainContainer {
+    background-color:#fff;
+}
+
 .imageContainer {
     position:relative;
     background:url('../../assets/exclusive.jpg');
@@ -30,8 +34,6 @@ h1 {
     margin-bottom:0px;
 }
 
-
-
 .description {
     color:#fff;
     z-index:2;
@@ -40,6 +42,7 @@ h1 {
     text-align:center; 
     margin-top:5px;
 }
+
 .dateContainer {
     display:flex;
     align-items:center;
@@ -63,12 +66,23 @@ h1 {
 }
 
 .imagesContainer {
-    background-color:#fff;
     padding-top:42px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .imgContainer {
     display:none;
+}
+
+.image {
+    max-width:100%;
+    height:auto;
+}
+
+.shoeContainer {
+    text-align: center;
 }
 
 .priceContainer {
@@ -98,3 +112,13 @@ h1 {
     margin:0 auto;
 }
 
+
+@media (min-width:768px) {
+    .imgContainer {
+        display:block;
+    }
+
+    .feature {
+        width:100%;
+    }
+}
