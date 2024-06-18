@@ -122,3 +122,15 @@ h1 {
         width:100%;
     }
 }
+
+
+@media (min-width:992px) {
+    .mainContainer {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        gap:10px;
+    }
+
+   
+}

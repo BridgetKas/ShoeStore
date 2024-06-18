@@ -49,15 +49,16 @@ function ExclusiveComp() {
         <div className={styles.imgContainer}>
           <img src={next} className={styles.image}/>
         </div>
+        <div>
+          <ButtonIcon size="small" 
+            color="white" 
+            icon={<ShoppingBagIcon/>} 
+            backgroundColor="orange" 
+            text=" Add to Bag"
+          />
+        </div>
       </div>
-      <div>
-        <ButtonIcon size="small" 
-          color="white" 
-          icon={<ShoppingBagIcon/>} 
-          backgroundColor="orange" 
-          text=" Add to Bag"
-        />
-      </div>
+      
     </div>
   )
 }
