@@ -76,7 +76,7 @@ h1 {
     display:none;
 }
 
-.image {
+.image,.shoe {
     max-width:100%;
     height:auto;
 }
