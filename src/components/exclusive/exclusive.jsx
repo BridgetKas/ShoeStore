@@ -37,26 +37,27 @@ function ExclusiveComp() {
           <img src={prev} className={styles.image}/>
         </div>
         <div className={styles.shoeContainer} >
-          <img src={shoe}/>
+          <img src={shoe} className={styles.shoe}/>
           <div className={styles.priceContainer}>
             <p className={styles.price}>$150.00</p>
             <p className={styles.firstPrice}>$210.00</p>
           </div>
           <div>
             <h2 className={styles.feature}>Addidas New Hammer Sole for Sports Person</h2>
+            <div className={styles.iconContainer}>
+              <ButtonIcon size="small" 
+                color="white" 
+                icon={<ShoppingBagIcon/>} 
+                backgroundColor="orange" 
+                text=" Add to Bag"
+              />
+            </div>
           </div>
         </div>
         <div className={styles.imgContainer}>
           <img src={next} className={styles.image}/>
         </div>
-        <div>
-          <ButtonIcon size="small" 
-            color="white" 
-            icon={<ShoppingBagIcon/>} 
-            backgroundColor="orange" 
-            text=" Add to Bag"
-          />
-        </div>
+       
       </div>
       
     </div>

@@ -112,6 +112,11 @@ h1 {
     margin:0 auto;
 }
 
+.iconContainer {
+    text-align:center;
+    background-color: red;
+}
+
 
 @media (min-width:768px) {
     .imgContainer {
@@ -132,5 +137,11 @@ h1 {
         gap:10px;
     }
 
+    .imageContainer {
+        width:50%;
+    }
    
+    .shoe {
+        height:250px;
+    }
 }
