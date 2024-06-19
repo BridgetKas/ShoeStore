@@ -114,6 +114,8 @@ h1 {
 
 .iconContainer {
     text-align:center;
+    justify-content: center;
+    display: flex;
     background-color: red;
 }
 
@@ -139,6 +141,10 @@ h1 {
 
     .imageContainer {
         width:50%;
+    }
+
+    .imagesContainer {
+        padding:100px 40px 0px 40px;
     }
    
     .shoe {
