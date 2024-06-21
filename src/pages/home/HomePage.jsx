@@ -15,6 +15,7 @@ import FeaturesComp from "../../components/features/features";
 import OverlayComp from "../../components/overLayShoes/overlay";
 import BannerComp from "../../components/homeBanner/banner";
 import ExclusiveComp from "../../components/exclusive/exclusive";
+import PaginationComp from "../Shop/page";
 
 function HomePage() {
   return (
@@ -47,6 +48,7 @@ function HomePage() {
       <ShoeComp/>
 
       <ExclusiveComp/>
+      <PaginationComp/>
 
 
     </div>
