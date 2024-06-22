@@ -21,6 +21,7 @@ function BannerComp() {
               icon={<AddIcon/>} 
               backgroundColor="orange" 
               text="ADD TO BAG"
+              textColor='black'
             />
           </div>
         </div>

@@ -4,29 +4,31 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import PaymentsIcon from '@mui/icons-material/Payments';
 import styles from './features.module.css'
 
+const featuresArr = [
+  {
+    feature:<LocalShippingIcon/>,
+    title:"Free Delivery",
+    description:"Free shipping on all orders"
+  },
+  {
+    feature:< RecyclingIcon/>,
+    title:"Return Policy",
+    description:"Free shipping on all orders"
+  },
+  {
+    feature:<SupportAgentIcon/>,
+    title:"24/7 Support",
+    description:"Free shipping on all orders"
+  },
+  {
+    feature:<PaymentsIcon />,
+    title:"Secure Payments",
+    description:"Free shipping on all orders      "
+  },
+]
+
 function FeaturesComp() {
-  const featuresArr = [
-    {
-      feature:<LocalShippingIcon/>,
-      title:"Free Delivery",
-      description:"Free shipping on all orders"
-    },
-    {
-      feature:< RecyclingIcon/>,
-      title:"Return Policy",
-      description:"Free shipping on all orders"
-    },
-    {
-      feature:<SupportAgentIcon/>,
-      title:"24/7 Support",
-      description:"Free shipping on all orders"
-    },
-    {
-      feature:<PaymentsIcon />,
-      title:"Secure Payments",
-      description:"Free shipping on all orders      "
-    },
-  ]
+  
   return (
     <div className={styles.mainContainer}> 
       {featuresArr.map((item,index) =>(

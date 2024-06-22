@@ -11,6 +11,9 @@ import image5 from '../../../assets/ShopImages/p6.jpg';
 import image6 from '../../../assets/ShopImages/p8.jpg';
 import image7 from '../../../assets/ShopImages/p2.jpg';
 import image8 from '../../../assets/ShopImages/p7.jpg';
+import prev from '../../../assets/prev.png'
+import next from '../../../assets/next.png'
+
 
 
 
@@ -49,44 +52,51 @@ const menu = [
 ]
 export default function ShoeComp() {
   return (
-    <div className={styles.container}>
-      {
-        menu.map((item,index) => (
-          <Card sx={{ maxWidth:'100%'}} key={index} className={styles.cardContainer}>
-            <CardMedia
-              sx={{ height: 250 }}
-              image={item.image}
-            />
-            <CardContent className={styles.priceContainer} sx={{padding:0}}>
-              <Typography variant="h3" color="black" className={styles.name} 
-                sx={{fontWeight:500,fontSize:"16px",textAlign:"left"}}>
-                Addias New Hammer Sole for Sports Person.
-              </Typography>
-              <Typography component="a" className={styles.finalPrice}>
-                $150
-              </Typography>
-              <Typography  component="a" className={styles.originalPrice}>
-                $150
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <div className={styles.iconContainer}>
-                <ShoppingBagIcon/>
-              </div>
-              <div className={styles.iconContainer}>
-                <FavoriteBorderIcon/>
-              </div>
-              <div className={styles.iconContainer}>
-                <LoopIcon/>
-              </div>
-              <div className={styles.iconContainer}>
-                <FullscreenExitIcon/>
-              </div>
-            </CardActions>
-          </Card>
-        )
-        )
-      }
+    <div className={styles.mainContainer}>
+      <div className={styles.directionContainer}>
+        <img src={prev}/>
+        <img src={next}/>
+
+      </div>
+      <div className={styles.container}>
+        {
+          menu.map((item,index) => (
+            <Card sx={{ maxWidth:'100%'}} key={index} className={styles.cardContainer}>
+              <CardMedia
+                sx={{ height: 250 }}
+                image={item.image}
+              />
+              <CardContent className={styles.priceContainer} sx={{padding:0}}>
+                <Typography variant="h3" color="black" className={styles.name} 
+                  sx={{fontWeight:500,fontSize:"16px",textAlign:"left"}}>
+                  Addias New Hammer Sole for Sports Person.
+                </Typography>
+                <Typography component="a" className={styles.finalPrice}>
+                  $150
+                </Typography>
+                <Typography  component="a" className={styles.originalPrice}>
+                  $150
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <div className={styles.iconContainer}>
+                  <ShoppingBagIcon/>
+                </div>
+                <div className={styles.iconContainer}>
+                  <FavoriteBorderIcon/>
+                </div>
+                <div className={styles.iconContainer}>
+                  <LoopIcon/>
+                </div>
+                <div className={styles.iconContainer}>
+                  <FullscreenExitIcon/>
+                </div>
+              </CardActions>
+            </Card>
+          )
+          )
+        }
+      </div>
     </div>
   );
 }
