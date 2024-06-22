@@ -49,7 +49,8 @@ function ExclusiveComp() {
                 color="white" 
                 icon={<ShoppingBagIcon/>} 
                 backgroundColor="orange" 
-                text=" Add to Bag"
+                text="ADD TO BAG"
+                textColor="black"
               />
             </div>
           </div>
