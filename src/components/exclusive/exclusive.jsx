@@ -13,7 +13,7 @@ function ExclusiveComp() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.imageContainer}>
-        <h1>Exclusive Hot Deal Ends Soon</h1>
+        <h1 className={styles.exclusive}>Exclusive Hot Deal Ends Soon</h1>
         <p className={styles.description}>Who are in extremely love with eco friendly system</p>
         <div className={styles.dateContainer}>
           <div><span id="days"></span> Days</div>

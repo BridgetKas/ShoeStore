@@ -14,9 +14,9 @@ function HomePage() {
       <FeaturesComp/>
       <OverlayComp/>
       <ShoeComp/>
-      <DealsComp/>
-      <LogoComp/>
       <ExclusiveComp/>
+      <LogoComp/>
+      <DealsComp/>
       <PaginationComp/>
     </div>
   )

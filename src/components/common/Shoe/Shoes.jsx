@@ -13,11 +13,6 @@ import image7 from '../../../assets/ShopImages/p2.jpg';
 import image8 from '../../../assets/ShopImages/p7.jpg';
 import prev from '../../../assets/prev.png'
 import next from '../../../assets/next.png'
-
-
-
-
-
 import styles from './shoe.module.css'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
