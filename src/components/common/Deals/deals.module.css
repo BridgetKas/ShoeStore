@@ -3,11 +3,11 @@
     background-color:whitesmoke;
 }
 
-h1,h3 {
+.deals,h3 {
     text-align: center;
 }
 
-h1 {
+.deals {
     color:black;
 }
 

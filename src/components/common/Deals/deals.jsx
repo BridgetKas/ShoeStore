@@ -79,7 +79,7 @@ function DealsComp() {
   return (
     <Fragment>
       <div className={styles.mainContainer}>
-        <h1>Deals of the week</h1>
+        <h1 className={styles.deals}>Deals of the week</h1>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </h3>
