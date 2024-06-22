@@ -144,11 +144,12 @@ h1 {
     }
 
     .imageContainer {
-        width:50%;
+        width:49%;
     }
 
     .imagesContainer {
         padding:100px 40px 0px 40px;
+        width:49%;
     }
    
     .shoe {

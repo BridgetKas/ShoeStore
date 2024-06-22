@@ -5,7 +5,6 @@ import FeaturesComp from "../../components/features/features";
 import OverlayComp from "../../components/overLayShoes/overlay";
 import BannerComp from "../../components/Banner/banner";
 import ExclusiveComp from "../../components/exclusive/exclusive";
-import PaginationComp from "../Shop/page";
 
 function HomePage() {
   return (
@@ -17,7 +16,6 @@ function HomePage() {
       <ExclusiveComp/>
       <LogoComp/>
       <DealsComp/>
-      <PaginationComp/>
     </div>
   )
 }
