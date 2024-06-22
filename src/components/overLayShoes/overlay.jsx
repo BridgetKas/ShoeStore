@@ -15,7 +15,7 @@ export default function BasicGrid() {
         marginLeft:"auto",
       }}>
      
-        <Grid container sx={{width:"100%", margin:"0px", marginBottom:"20px"}}  columnGap={1} rowGap={1}
+        <Grid container sx={{width:"100%", margin:"0px"}}  columnGap={1} rowGap={1}
           justifyContent="space-between" className={styles.container}
         > 
           <Grid item sm={12}  md={7}>

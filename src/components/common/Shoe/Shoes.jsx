@@ -56,7 +56,12 @@ export default function ShoeComp() {
       <div className={styles.directionContainer}>
         <img src={prev}/>
         <img src={next}/>
-
+      </div>
+      <div className={styles.productsContainer}>
+        <p className={styles.product}>Latest Products</p>
+        <p className={styles.productdescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Dolorum possimus,non recusandae veniam tempore quisquam mollitia.
+        </p>
       </div>
       <div className={styles.container}>
         {
