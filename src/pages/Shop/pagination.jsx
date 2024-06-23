@@ -9,7 +9,9 @@ export default function PaginationComp() {
   return (
     <Stack spacing={1}>
       <Pagination
-        count={6}
+        color='secondary'
+        variant="outlined" shape="rounded"
+        count={10}
         renderItem={(item) => (
           <PaginationItem
             slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
