@@ -36,6 +36,10 @@ export default function SelectComp({textcolor,background}) {
             value={age}
             onChange={handleChange}
             displayEmpty
+            style={{
+              color:textcolor,
+              backgroundColor:background
+            }}
           >
             <MenuItem value=""> <em>Show 12</em> </MenuItem>
             <MenuItem value={20}>Show 12</MenuItem>

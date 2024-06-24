@@ -8,7 +8,7 @@ function ShopPage() {
   return (
     <div>
       <HeaderComp title='Shop' firstpage='first' nextpage='next'/>
-      <SelectComp textcolor='red' background='white'/>
+      <SelectComp textcolor='gray' background='white'/>
     </div>
   )
 }
