@@ -1,3 +1,35 @@
+/* Category CSS */
+.mainCategory {
+    background-color:#fff;
+    color:black;
+    padding-top:40px;
+
+}
+
+.categoryContainer {
+    margin:0 auto;
+    width:90%;
+}
+
+.browse {
+    text-align:left;
+    color:#fff;
+    background-color: aquamarine;
+    width:90%;
+    margin:0 auto;
+    padding:20px 40px;
+    font-size:20px;
+}
+
+.categoryContainer li {
+    list-style: none;
+    padding: 13px 0;
+    border-bottom:1px solid rgb(161, 158, 158);
+    font-size:15px;
+}
+
+
+
 .mainContainer {
     background-color: lightblue;
     display:flex;

@@ -1,9 +1,10 @@
+import styles from './page.module.css'
 
 function CategoryComp() {
   return (
-    <div>
-      <div>Browse Categories</div>
-      <ul>
+    <div className={styles.mainCategory}>
+      <div className={styles.browse}>Browse Categories</div>
+      <ul className={styles.categoryContainer}>
         <li><a>Fruits and Vegeatables</a> (53)</li>
         <li><a>Meat and Fish</a> (53)</li>
         <li><a>Cooking</a> (53)</li>
