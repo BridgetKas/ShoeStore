@@ -18,7 +18,31 @@ function CategoryComp() {
         <li><a>Home Appliances</a> (53)</li>
         <li><a>Baby care</a> (53)</li>
       </ul>
-
+      <div>
+        <div>Product Filters</div>
+        <div>Brands</div>
+        <div>
+          <input type="radio" id="apple"  value="apple" />
+          <label htmlFor="apple">Apple(29)</label>
+        </div>
+        <div>
+          <input type="radio" id="asus"  value="asus" />
+          <label htmlFor="asus">Asus(29)</label>
+        </div>
+        <div>
+          <input type="radio" id="gionee"  value="gionee"  />
+          <label htmlFor="gionee">Gionee(19)</label>
+        </div>
+        <div>
+          <input type="radio" id="micromax"  value="micromax" />
+          <label htmlFor="micromax">Micromax(19)</label>
+        </div>
+        <div>
+          <input type="radio" id="samusung"  value="samusung" />
+          <label htmlFor="samusung">Samusung(19)</label>
+        </div>
+      </div>
+      
     </div>
   )
 }
