@@ -9,6 +9,7 @@
 .categoryContainer {
     margin:0 auto;
     width:90%;
+    box-shadow:0px 0px 15px 0px #777777;
 }
 
 .browse {
@@ -24,11 +25,15 @@
 .categoryContainer li {
     list-style: none;
     padding: 13px 0;
+    padding-right:5px;
     border-bottom:1px solid rgb(161, 158, 158);
     font-size:15px;
 }
 
-
+.categoryContainer li:hover {
+    color:orange;
+    cursor:pointer;
+}
 
 .mainContainer {
     background-color: lightblue;
