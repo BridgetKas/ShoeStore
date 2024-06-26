@@ -12,12 +12,14 @@
     width:90%;
     box-shadow:0px 0px 15px 0px #777777;
     padding-bottom:10px;
+    margin-bottom:20px;
+    
 }
 
 .browse {
     text-align:left;
     color:#fff;
-    background-color: aquamarine;
+    background-color:#828bb3;
     width:90%;
     margin:0 auto;
     padding:20px 40px;
@@ -35,6 +37,24 @@
 .categoryContainer li:hover {
     color:orange;
     cursor:pointer;
+}
+
+.brand {
+    text-align:left;
+    color:black;
+    width:90%;
+    margin:0 auto;
+    padding:20px 20px 10px 20px;
+    font-size:20px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.labelContainer {
+    padding: 3px 0;
+    font-size:15px;
+    width:80%;
+    margin:0 auto;
 }
 
 .mainContainer {
