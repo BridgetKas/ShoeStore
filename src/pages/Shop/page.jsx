@@ -1,6 +1,5 @@
 import HeaderComp from '../../layout/Header/header';
 import CategoryComp from './category';
-import PaginationComp from './pagination';
 import PriceRangeComp from './pricerange';
 import SelectComp from './selectcomp';
 
@@ -14,7 +13,8 @@ function ShopPage() {
       <SelectComp textcolor='gray' background='white'/>
       <CategoryComp/>
       <PriceRangeComp/>
-      <PaginationComp/>
+      <SelectComp textcolor='gray' background='white'/>
+
     </div>
   )
 }

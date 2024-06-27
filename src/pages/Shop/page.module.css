@@ -88,19 +88,26 @@
 
 .price {
     width:79%;
-    margin:5px auto;
+    margin:5px auto 0 auto;
     color:gray;
 }
 
 .cash {
     color:"light"
 }
+
+
+/* Select and Pagination css */
 .mainContainer {
-    background-color: lightblue;
+    background-color: white;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
     margin:0 auto;
     padding:5px 10px;
+}
+
+.select {
+    width:90%;
 }
