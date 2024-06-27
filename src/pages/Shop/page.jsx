@@ -1,3 +1,4 @@
+import DealsComp from '../../components/common/Deals/deals';
 import ShoeO from '../../components/common/Shoe/shoe';
 import HeaderComp from '../../layout/Header/header';
 import CategoryComp from './category';
@@ -16,6 +17,8 @@ function ShopPage() {
       <PriceRangeComp/>
       <SelectComp textcolor='gray' background='white'/>
       <ShoeO/>
+      <SelectComp textcolor='gray' background='white'/>
+      <DealsComp/>
 
     </div>
   )
