@@ -18,7 +18,7 @@ function CategoryComp() {
         <li><a>Home Appliances</a> (53)</li>
         <li><a>Baby care</a> (53)</li>
       </ul>
-      <div>
+      <div className={styles.container}>
         <div className={styles.browse}>Product Filters</div>
         <div className={styles.brand}>Brands</div>
         <div className={styles.labelContainer}>
@@ -41,8 +41,9 @@ function CategoryComp() {
           <input type="radio" id="samusung"  value="samusung" />
           <label htmlFor="samusung">Samusung(19)</label>
         </div>
+        <div className={styles.line}></div>
       </div>
-      <div>
+      <div className={styles.container}>
         <div className={styles.brand}>Color</div>
         <div className={styles.labelContainer}>
           <input type="radio" id="black"  value="black" />
@@ -64,6 +65,8 @@ function CategoryComp() {
           <input type="radio" id="samusung"  value="samusung" />
           <label htmlFor="samusung">Spacegrey(19)</label>
         </div>
+        <div className={styles.line}></div>
+
       </div>
     </div>
   )
