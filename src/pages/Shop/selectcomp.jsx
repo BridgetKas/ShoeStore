@@ -68,7 +68,9 @@ export default function SelectComp({textcolor,background,showDefaultSort=true}) 
               <PaginationItem
                 slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
                 {...item}
-                sx={{margin:"0px"}}
+                sx={{margin:"0px",
+                  backgroundColor:"#fff"
+                }}
 
               />
             )}
