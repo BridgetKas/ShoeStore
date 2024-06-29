@@ -2,10 +2,14 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import {useState} from 'react'
-import PaginationComp from './pagination';
 import styles from './page.module.css'
+import Pagination from '@mui/material/Pagination';
+import PaginationItem from '@mui/material/PaginationItem';
+import Stack from '@mui/material/Stack';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-export default function SelectComp({textcolor,background}) {
+export default function SelectComp({textcolor,background,showDefaultSort=true}) {
   const [age, setAge] = useState('');
 
   const handleChange = (event) => {
@@ -16,21 +20,25 @@ export default function SelectComp({textcolor,background}) {
     <div className={styles.mainContainer}>
       <div className={styles.select}>
         <div className={styles.formContainer}>
-          <FormControl sx={{ m: 1, minWidth: 120 }}>
-            <Select
-              value={age}
-              onChange={handleChange}
-              displayEmpty
-              style={{
-                color:textcolor,
-                backgroundColor:background
-              }}
-            >
-              <MenuItem value=""> <em>Default sorting</em> </MenuItem>
-              <MenuItem value={20}>Default sorting</MenuItem>
-              <MenuItem value={30}>Default sorting</MenuItem>
-            </Select>
-          </FormControl>
+          {
+            showDefaultSort &&
+            (<FormControl sx={{ m: 1, minWidth: 120 }}>
+              <Select
+                value={age}
+                onChange={handleChange}
+                displayEmpty
+                style={{
+                  color:textcolor,
+                  backgroundColor:background
+                }}
+
+              >
+                <MenuItem value=""> <em>Default sorting</em> </MenuItem>
+                <MenuItem value={20}>Default sorting</MenuItem>
+                <MenuItem value={30}>Default sorting</MenuItem>
+              </Select>
+            </FormControl>) 
+          } 
           <FormControl sx={{ m: 1, minWidth: 100 }}>
             <Select
               value={age}
@@ -47,7 +55,25 @@ export default function SelectComp({textcolor,background}) {
             </Select>
           </FormControl>
         </div>
-        <PaginationComp/>
+        {/* <PaginationComp/> */}
+        <Stack spacing={1}>
+          <Pagination
+            color='secondary'
+            variant="outlined" shape="rounded"
+            count={6}
+            boundaryCount={1}
+            defaultPage={3}
+            siblingCount={0}
+            renderItem={(item) => (
+              <PaginationItem
+                slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
+                {...item}
+                sx={{margin:"0px"}}
+
+              />
+            )}
+          />
+        </Stack>
       </div>
     </div>
   );

@@ -111,3 +111,34 @@
 .select {
     width:90%;
 }
+
+
+/* Shop container CSS */
+
+.shopContainer {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+
+
+@media (min-width:768px) {
+    .shopContainer {
+        flex-direction:row;
+        width:100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: red;
+    }
+
+    .sideContainer {
+        background-color: yellow;
+        width: 40%;
+    }
+
+    .container {
+        width:60%;
+    }
+}
