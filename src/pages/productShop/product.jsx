@@ -1,7 +1,11 @@
 import bannerImage from '../../assets/banner-img.png'
-import styles from './page.module.css'
+import styles from './product.module.css'
 import ButtonIcon from '../../components/common/buttonIcon'
 import ButtonComp from '../../components/common/Button'
+import { colors } from "../../utilis/color"
+import DiamondIcon from '@mui/icons-material/Diamond';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+
 
 function Product() {
   return (
@@ -27,9 +31,23 @@ function Product() {
               <input type='number' value='1'/>
             </div>
           </div>
-          <div>
-            <ButtonIcon text='heteh' color="red"/>
-            <ButtonComp/>
+          <div className={styles.iconContainer}>
+            <ButtonComp variant="contained" 
+              size="large" 
+              btnTitle="ADD TO CART"  
+              style={{ background: colors.yellowGrad}} 
+              onClick={() => alert('Clicked')}
+            />
+            <ButtonIcon size="small" 
+              color="white" 
+              icon={<DiamondIcon />} 
+              backgroundColor="orange" 
+            />
+            <ButtonIcon size="small" 
+              color="white" 
+              icon={<FavoriteBorderIcon />} 
+              backgroundColor="orange" 
+            />
           </div>
         </div>
       </div>

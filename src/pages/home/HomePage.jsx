@@ -177,7 +177,7 @@ function HomePage() {
           {
             menu.map((item,index) => (
               <div key={index} className={styles.shoeCompContainer}>
-                <DefaultShoeComp shoeImage={item.image} key={index}/>
+                <DefaultShoeComp shoeImage={item.image} key={index} style={styles.heightContainer}/>
               </div>
             )
             )
