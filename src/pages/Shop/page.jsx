@@ -11,9 +11,8 @@ import image3 from '../../assets/ShopImages/p4.jpg';
 import image4 from '../../assets/ShopImages/p5.jpg';
 import image5 from '../../assets/ShopImages/p6.jpg';
 import image6 from '../../assets/ShopImages/p8.jpg';
-import image7 from '../../assets/ShopImages/p2.jpg';
-import image8 from '../../assets/ShopImages/p7.jpg';
 import ShoeComp from '../../components/common/Shoe/shoeComp';
+import Product from './product';
 
 function valuetext(value) {
   return `$${value}`;
@@ -38,12 +37,7 @@ const menu = [
   {
     image:image6
   },
-  {
-    image:image7
-  }, 
-  {
-    image:image8
-  }
+ 
 ]
 
 function ShopPage() {
@@ -154,7 +148,7 @@ function ShopPage() {
               {
                 menu.map((item,index) => (
                   <div key={index} className={styles.shoeCompContainer}>
-                    <ShoeComp shoeImage={item.image} key={index}/>
+                    <ShoeComp shoeImage={item.image} key={index} style={styles.heightContainer}/>
                   </div>
                 )
                 )
@@ -167,6 +161,7 @@ function ShopPage() {
         </div>
       </div>
       <DealsComp/>
+      <Product/>
 
     </div>
   )

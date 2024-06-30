@@ -115,6 +115,9 @@
 
 .select {
     width:90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Shop container CSS */
@@ -122,6 +125,7 @@
 .maincategoryContainer {
     background-color: #fff;
     width:100%;
+    padding: 5px 50px;
 }
 
 .shopContainer {
@@ -149,10 +153,18 @@
     width: 90%;
 }
 
+.formContainer {
+    display:flex;
+    gap:15px;
+}
+
+.heightContainer {
+    height:360px;
+}
 @media (min-width:768px) {
     .shopContainer {
         flex-direction:row;
-        width:95%;
+        width:91%;
         align-items: flex-start;
         justify-content: space-between;
         margin:0 auto;
@@ -160,25 +172,36 @@
     }
 
     .sideContainer {
-        background-color: yellow;
-        width: 40%;
+        /* width: 30%; */
+        width:41%;
     }
 
     .container {
-        width:60%;
+        /* width:68%; */
+        width:58%;
+        display:flex;
+        flex-direction:column;
     }
 
     .mainContainer {
         width:100%;
     }
 
+    .maincategoryContainer {
+        padding:0px;
+    }
+
     .shoeContainer {
         flex-direction: row;
-        gap:10px;
+        justify-content: space-between;
     }
 
     .shoeCompContainer {
         width:48%;
+    }
+
+    .heightContainer {
+        height:250px;
     }
 }
 
@@ -186,4 +209,85 @@
     .shoeCompContainer {
         width:30%;
     } 
+
+    .shopContainer {
+        width:90%;
+    }
+
+    .sideContainer {
+        width:30%;
+    }
+
+    .container {
+        width:68%;
+    }
 }
+
+
+/* product section css */
+
+.productContainer {
+    background-color:#fff;
+}
+
+.mainproductContainer {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    margin:0 auto;
+}
+
+.productImageContainer {
+    width:95%;
+    background-color:#777777;
+    padding:100px 40px;
+}
+
+.productImage {
+    max-width:100%;
+    vertical-align:middle;
+    height:auto;
+}
+
+.productdescriptionContainer {
+    width:95%;
+}
+
+.jeans {
+    color:black;
+    font-weight:400;
+    padding:0px;
+    text-align:left;
+}
+
+.productPrice {
+    color:orange;
+    padding:0;
+    text-align:left;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.household {
+    color:orange;
+    padding-left:10px;
+}
+
+.stock {
+    padding-left:10px;
+}
+
+hr {
+    border:1px dotted gray;
+}
+
+.qualityContainer {
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+/* input {
+    width:30%;
+} */

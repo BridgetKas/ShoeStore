@@ -9,11 +9,12 @@ import LoopIcon from '@mui/icons-material/Loop';
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import styles from './shoe.module.css'
 
-function  DefaultShoeComp({shoeImage}) {
+function  DefaultShoeComp({shoeImage,style={height:250}}) {
   return (
     <Card sx={{ maxWidth:'100%'}} className={styles.cardContainer}>
       <CardMedia
-        sx={{ height: 250 }}
+        // sx={style}
+        className={style}
         image={shoeImage}
       />
       <CardContent className={styles.priceContainer} sx={{padding:0}}>

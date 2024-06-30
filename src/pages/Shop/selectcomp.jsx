@@ -22,7 +22,7 @@ export default function SelectComp({textcolor,background,showDefaultSort=true}) 
         <div className={styles.formContainer}>
           {
             showDefaultSort &&
-            (<FormControl sx={{ m: 1, minWidth: 120 }}>
+            (<FormControl sx={{ m: 1, minWidth: 120,margin:0}}>
               <Select
                 value={age}
                 onChange={handleChange}
@@ -39,7 +39,7 @@ export default function SelectComp({textcolor,background,showDefaultSort=true}) 
               </Select>
             </FormControl>) 
           } 
-          <FormControl sx={{ m: 1, minWidth: 100 }}>
+          <FormControl sx={{ m: 1, minWidth: 100,margin:0 }}>
             <Select
               value={age}
               onChange={handleChange}
