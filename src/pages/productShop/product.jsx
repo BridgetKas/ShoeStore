@@ -11,8 +11,32 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { useState } from 'react'
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 
+
+function createData(name, length) {
+  return { name, length };
+}
+
+const rows = [
+  createData('Width', `${128}mm`),
+  createData('Height', `${508}mm`),
+  createData('Depth', `${85}mm`),
+  createData('Weight', `${52}gm`),
+  createData('Quality checking', 'yes'),
+  createData('Freshness Duration', `${3}days`),
+  createData('When packeting', 'Without touch of hand'),
+  createData('Each Box contains', `${60}pcs`),
+
+
+
+];
 function Product() {
   const [value, setValue] = useState('1');
 
@@ -64,39 +88,61 @@ function Product() {
           </div>
         </div>
       </div>
-      <Box sx={{ width: '100%', typography: 'body1' }}>
-        <TabContext value={value}>
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="Description" value="1" />
-              <Tab label="Specification" value="2" />
-              <Tab label="Comments" value="3" />
-              <Tab label="Reviews" value="4" />
+      <div className={styles.boxContainer}>
+        <Box sx={{ width: '90%', typography: 'body1' }}>
+          <TabContext value={value} sx={{border:"1px"}}>
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+              <TabList onChange={handleChange} aria-label="lab API tabs example">
+                <Tab label="Description" value="1" />
+                <Tab label="Specification" value="2" />
+                <Tab label="Comments" value="3" />
+                <Tab label="Reviews" value="4" />
 
-            </TabList>
-          </Box>
-          <TabPanel value="1">Beryl Cook is one of Britain’s most talented and amusing artists .
-            Beryl’s pictures feature women of all shapes and sizes enjoying themselves .
-            Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15,
-            where she went to secretarial school and then into an insurance office. 
-            After moving to London and then Hampton, she eventually married her next door neighbour from Reading, 
-            John Cook. 
-            He was an officer in the Merchant Navy and after he left the sea in 1956, 
-            they bought a pub for a year before
-            John took a job in Southern Rhodesia with a motor company. 
-            Beryl bought their young son a box of watercolours, and when showing him how to use it, 
-            she decided that she herself quite enjoyed painting. 
-            John subsequently bought her a child’s painting set for her birthday and 
-            it was with this that she produced her first significant work, 
-            a half-length portrait of a dark-skinned lady with a vacant expression and large drooping breasts. 
-            It was aptly named ‘Hangover’ by Beryl’s husband and
-          </TabPanel>
-          <TabPanel value="2">Item Two</TabPanel>
-          <TabPanel value="3">Item Three</TabPanel>
-          <TabPanel value="4">Item four</TabPanel>
+              </TabList>
+            </Box>
+            <TabPanel value="1">
+              <p className={styles.description}>Beryl Cook is one of Britain’s most talented and amusing artists .
+                Beryl’s pictures feature women of all shapes and sizes enjoying themselves .
+                Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15,
+                where she went to secretarial school and then into an insurance office. 
+                After moving to London and then Hampton, she eventually married her next door neighbour from Reading, 
+                John Cook. 
+                He was an officer in the Merchant Navy and after he left the sea in 1956, 
+                they bought a pub for a year before
+                John took a job in Southern Rhodesia with a motor company. 
+                Beryl bought their young son a box of watercolours, and when showing him how to use it, 
+                she decided that she herself quite enjoyed painting. 
+                John subsequently bought her a child’s painting set for her birthday and 
+                it was with this that she produced her first significant work, 
+                a half-length portrait of a dark-skinned lady with a vacant expression and large drooping breasts. 
+                It was aptly named ‘Hangover’ by Beryl’s husband and</p>
+            </TabPanel>
+            <TabPanel value="2">
+              <div>
+                <TableContainer component={Paper}>
+                  <Table sx={{ minWidth: 550 }} size="small" aria-label="a dense table">
+       
+                    <TableBody>
+                      {rows.map((row) => (
+                        <TableRow
+                          key={row.name}
+                          sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                        >
+                          <TableCell align="left">{row.name}</TableCell>
+                          <TableCell align="center">{row.length}</TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+              </div>
+            </TabPanel>
+            <TabPanel value="3">Item Three</TabPanel>
+            <TabPanel value="4">Item four</TabPanel>
 
-        </TabContext>
-      </Box>
+          </TabContext>
+        </Box>
+      </div>
     </div>
   )
 }

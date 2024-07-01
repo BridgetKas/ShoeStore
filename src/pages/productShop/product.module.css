@@ -75,6 +75,14 @@ input {
     gap:10px;
 }
 
+.description {
+    color:gray;
+}
+
+.boxContainer {
+    background-color:#fff;
+}
+
 
 @media (min-width:992px) {
     .mainproductContainer {
