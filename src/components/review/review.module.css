@@ -1,0 +1,33 @@
+.reviewContainer {
+    display:flex;
+    flex-direction:column;
+}
+
+.imageContainer {
+    display:flex;
+    justify-content: space-between;
+}
+
+.nameContainer {
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.name {
+    color:black;
+    margin-bottom:5px;
+}
+
+.date {
+    color:gray;
+    margin-top:5px;
+}
+.review {
+    color:gray;
+}
+
+.btnContainer {
+    display:flex;
+    align-items:center;
+}

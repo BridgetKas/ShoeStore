@@ -17,6 +17,16 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import ReviewComp from '../../components/review/review'
+import reviewImage1 from '../../assets/review-1.png'
+import reviewImage2 from '../../assets/review-2.png'
+import reviewImage3 from '../../assets/review-3.png'
+import Input from '../../components/common/input'
+
+
+
+
+
 
 
 
@@ -89,10 +99,12 @@ function Product() {
         </div>
       </div>
       <div className={styles.boxContainer}>
-        <Box sx={{ width: '90%', typography: 'body1' }}>
+        <Box sx={{ width: '85%', typography: 'body1' , margin:"auto" }}>
           <TabContext value={value} sx={{border:"1px"}}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-              <TabList onChange={handleChange} aria-label="lab API tabs example">
+            <Box sx={{ borderBottom: 1, borderColor: 'divider',backgroundColor:"light-blue" , 
+              display:"flex" , justifyContent:"space-around", padding:"10px 20px"
+            }}>
+              <TabList onChange={handleChange} aria-label="lab API tabs example" >
                 <Tab label="Description" value="1" />
                 <Tab label="Specification" value="2" />
                 <Tab label="Comments" value="3" />
@@ -100,7 +112,7 @@ function Product() {
 
               </TabList>
             </Box>
-            <TabPanel value="1">
+            <TabPanel value="1" >
               <p className={styles.description}>Beryl Cook is one of Britain’s most talented and amusing artists .
                 Beryl’s pictures feature women of all shapes and sizes enjoying themselves .
                 Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15,
@@ -137,7 +149,40 @@ function Product() {
                 </TableContainer>
               </div>
             </TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
+            <TabPanel value="3">
+              <ReviewComp image={reviewImage1}/>
+              <ReviewComp image={reviewImage2} sx={{paddingLeft:"20px"}}/>
+              <ReviewComp image={reviewImage3}/>
+
+              <div>
+                <h1 className={styles.comment}>Post a comment</h1>
+                <div className={styles.inputContainer}>
+                  <Input placeholder="Your Full name" fullWidth/>
+                </div>
+                <div className={styles.inputContainer}>
+                  <Input placeholder="Enter email" fullWidth/>
+                </div>
+                <div className={styles.inputContainer}>
+                  <Input placeholder="Phone number" fullWidth/>
+                </div>
+                <div className={styles.inputContainer}>
+                  <Input placeholder="Message" multiline fullwidth/>
+                </div>
+                <div className={styles.btnContainer}>
+                  <ButtonComp variant="contained" 
+                    size="large" 
+                    btnTitle="SUBMIT NOW"  
+                    style={{ backgroundColor:colors.yellowGrad}} 
+                    onClick={() => alert('Clicked')}
+                    sx={{marginTop:"15px"
+                    }}
+                  />
+                </div>
+                
+
+              </div>
+
+            </TabPanel>
             <TabPanel value="4">Item four</TabPanel>
 
           </TabContext>
