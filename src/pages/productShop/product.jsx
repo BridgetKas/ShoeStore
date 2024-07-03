@@ -21,9 +21,9 @@ import ReviewComp from '../../components/review/review'
 import reviewImage1 from '../../assets/review-1.png'
 import reviewImage2 from '../../assets/review-2.png'
 import reviewImage3 from '../../assets/review-3.png'
-import Input from '../../components/common/input'
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
+import InputComponent from '../../components/common/inputComponent'
 
 
 function createData(name, length) {
@@ -151,31 +151,7 @@ function Product() {
               <ReviewComp image={reviewImage3}/>
 
               <div>
-                <h1 className={styles.comment}>Post a comment</h1>
-                <div className={styles.inputContainer}>
-                  <Input placeholder="Your Full name" fullWidth/>
-                </div>
-                <div className={styles.inputContainer}>
-                  <Input placeholder="Enter email" fullWidth/>
-                </div>
-                <div className={styles.inputContainer}>
-                  <Input placeholder="Phone number" fullWidth/>
-                </div>
-                <div className={styles.inputContainer}>
-                  <Input placeholder="Message" multiline fullwidth/>
-                </div>
-                <div className={styles.btnContainer}>
-                  <ButtonComp variant="contained" 
-                    size="large" 
-                    btnTitle="SUBMIT NOW"  
-                    style={{ backgroundColor:colors.yellowGrad}} 
-                    onClick={() => alert('Clicked')}
-                    sx={{marginTop:"15px"
-                    }}
-                  />
-                </div>
-                
-
+                <InputComponent title="Post a comment"/>
               </div>
 
             </TabPanel>
@@ -189,6 +165,7 @@ function Product() {
                   </div>
                   <Box
                     sx={{
+                      // Didn't understand 
                       '& > legend': { mt: 2 },
                     }}
                   >
@@ -233,6 +210,22 @@ function Product() {
                   <ReviewComp image={reviewImage2} sx={{paddingLeft:"20px"}}/>
                   <ReviewComp image={reviewImage3}/>
                 </div>
+                <div>
+                  <p>
+                    Add a Review
+                  </p>
+                  <Rating
+                    name="simple-controlled"
+                    value={value}
+                    onChange={(event, newValue) => {
+                      setValue(newValue);
+                    }}
+                  />
+                  <div>
+                    <InputComponent/>
+                  </div>
+                </div>
+              
               </div>
             </TabPanel>
 

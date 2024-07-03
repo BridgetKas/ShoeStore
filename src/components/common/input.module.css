@@ -1,0 +1,17 @@
+.comment {
+    color:black;
+    margin-top:0;
+    text-align:left;
+    margin-bottom:10px;
+    font-weight:400;
+    padding-top:0;
+}
+
+.inputContainer {
+    margin-bottom:15px;
+}
+
+.btnContainer {
+    text-align:right;
+    margin-top:15px;
+}
