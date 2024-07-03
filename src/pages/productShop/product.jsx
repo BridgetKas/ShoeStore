@@ -22,12 +22,8 @@ import reviewImage1 from '../../assets/review-1.png'
 import reviewImage2 from '../../assets/review-2.png'
 import reviewImage3 from '../../assets/review-3.png'
 import Input from '../../components/common/input'
-
-
-
-
-
-
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
 
 
 function createData(name, length) {
@@ -183,7 +179,62 @@ function Product() {
               </div>
 
             </TabPanel>
-            <TabPanel value="4">Item four</TabPanel>
+            <TabPanel value="4">
+              <div>
+                <div className={styles.tableContainer}>
+                  <div className={styles.rating}>
+                    <h1 className={styles.overall}>Overall </h1>
+                    <h1 className={styles.number}>4.0</h1>
+                    <p>(03 Review)</p>
+                  </div>
+                  <Box
+                    sx={{
+                      '& > legend': { mt: 2 },
+                    }}
+                  >
+                    <p>Based on 3 reviews</p>
+                    <Typography component="legend">Read only</Typography>
+                    <Rating
+                      name="simple-controlled"
+                      value={value}
+                      onChange={(event, newValue) => {
+                        setValue(newValue);
+                      }}
+                    />
+                    <Typography component="legend">Read only</Typography>
+                    <Rating
+                      name="simple-controlled"
+                      value={value}
+                      onChange={(event, newValue) => {
+                        setValue(newValue);
+                      }}
+                    />
+                    <Typography component="legend">Read only</Typography>
+                    <Rating
+                      name="simple-controlled"
+                      value={value}
+                      onChange={(event, newValue) => {
+                        setValue(newValue);
+                      }}
+                    />
+                    <Typography component="legend">Read only</Typography>
+                    <Rating
+                      name="simple-controlled"
+                      value={value}
+                      onChange={(event, newValue) => {
+                        setValue(newValue);
+                      }}
+                    />
+                  
+                  </Box>
+                </div>
+                <div>
+                  <ReviewComp image={reviewImage1}/>
+                  <ReviewComp image={reviewImage2} sx={{paddingLeft:"20px"}}/>
+                  <ReviewComp image={reviewImage3}/>
+                </div>
+              </div>
+            </TabPanel>
 
           </TabContext>
         </Box>
