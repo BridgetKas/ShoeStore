@@ -109,6 +109,21 @@ input {
     gap:15px;
 }
 
+.reviewContainer {
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    align-items:center;
+}
+
+.mainreviewContainer {
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-direction:column;
+    width:90%;
+}
+
 @media (min-width:992px) {
     .mainproductContainer {
         flex-direction:row;
@@ -122,5 +137,18 @@ input {
 
     .productdescriptionContainer {
         width:40%;
+    }
+
+    .reviewContainer {
+        flex-direction:row;
+    }
+
+    .mainreviewContainer {
+        width:49%;
+    }
+
+    .inputContainer {
+        width:49%;
+        align-self:flex-start;
     }
 }

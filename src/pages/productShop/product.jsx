@@ -145,12 +145,14 @@ function Product() {
                 </TableContainer>
               </div>
             </TabPanel>
-            <TabPanel value="3">
-              <ReviewComp image={reviewImage1}/>
-              <ReviewComp image={reviewImage2} sx={{paddingLeft:"20px"}}/>
-              <ReviewComp image={reviewImage3}/>
+            <TabPanel value="3" className={styles.reviewContainer}>
+              <div className={styles.mainreviewContainer}>
+                <ReviewComp image={reviewImage1}/>
+                <ReviewComp image={reviewImage2} sx={{paddingLeft:"20px"}}/>
+                <ReviewComp image={reviewImage3}/>
+              </div>
 
-              <div>
+              <div className={styles.inputContainer}>
                 <InputComponent title="Post a comment"/>
               </div>
 
