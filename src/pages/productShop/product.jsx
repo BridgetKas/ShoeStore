@@ -24,6 +24,7 @@ import reviewImage3 from '../../assets/review-3.png'
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import InputComponent from '../../components/common/inputComponent'
+import CheckoutComp from '../checkout/checkout'
 
 
 function createData(name, length) {
@@ -236,6 +237,7 @@ function Product() {
           </TabContext>
         </Box>
       </div>
+      <CheckoutComp/>
     </div>
   )
 }
