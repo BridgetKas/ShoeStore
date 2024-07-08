@@ -105,7 +105,6 @@ input {
 }
 .tableContainer {
     display:flex;
-    align-items:center;
     gap:15px;
 }
 
@@ -123,6 +122,15 @@ input {
     flex-direction:column;
     width:90%;
 }
+
+.tableContainerR {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:50%;
+    margin:0 auto;
+}
+
 
 @media (min-width:992px) {
     .mainproductContainer {
@@ -150,5 +158,25 @@ input {
     .inputContainer {
         width:49%;
         align-self:flex-start;
+    }
+ 
+    .ratingContainer {
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        width:45%;
+    }
+
+    .containerFour {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .tableContainer{
+        width:49%;
+    }
+    
+    .inputreviewContainer {
+        width:49%;
     }
 }

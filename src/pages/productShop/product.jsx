@@ -100,11 +100,11 @@ function Product() {
             <Box sx={{ borderBottom: 1, borderColor: 'divider',backgroundColor:"light-blue" , 
               display:"flex" , justifyContent:"space-around", padding:"10px 20px"
             }}>
-              <TabList onChange={handleChange} aria-label="lab API tabs example" >
-                <Tab label="Description" value="1" />
-                <Tab label="Specification" value="2" />
-                <Tab label="Comments" value="3" />
-                <Tab label="Reviews" value="4" />
+              <TabList onChange={handleChange} aria-label="lab API tabs example" className={styles.labelContainer}>
+                <Tab label="Description" value="1" sx={{textTransform:"none"}}/>
+                <Tab label="Specification" value="2" sx={{textTransform:"none"}}/>
+                <Tab label="Comments" value="3" sx={{textTransform:"none"}}/>
+                <Tab label="Reviews" value="4" sx={{textTransform:"none"}}/>
 
               </TabList>
             </Box>
@@ -158,61 +158,63 @@ function Product() {
 
             </TabPanel>
             <TabPanel value="4">
-              <div>
-                <div className={styles.tableContainer}>
-                  <div className={styles.rating}>
-                    <h1 className={styles.overall}>Overall </h1>
-                    <h1 className={styles.number}>4.0</h1>
-                    <p>(03 Review)</p>
-                  </div>
-                  <Box
-                    sx={{
+              <div className={styles.containerFour}>
+                <div className={styles.tableContainerR}>
+                  <div className={styles.ratingContainer}>
+                    <div className={styles.rating}>
+                      <h1 className={styles.overall}>Overall </h1>
+                      <h1 className={styles.number}>4.0</h1>
+                      <p>(03 Review)</p>
+                    </div>
+                    <Box
+                      sx={{
                       // Didn't understand 
-                      '& > legend': { mt: 2 },
-                    }}
-                  >
-                    <p>Based on 3 reviews</p>
-                    <Typography component="legend">Read only</Typography>
-                    <Rating
-                      name="simple-controlled"
-                      value={value}
-                      onChange={(event, newValue) => {
-                        setValue(newValue);
+                        '& > legend': { mt: 2 },
                       }}
-                    />
-                    <Typography component="legend">Read only</Typography>
-                    <Rating
-                      name="simple-controlled"
-                      value={value}
-                      onChange={(event, newValue) => {
-                        setValue(newValue);
-                      }}
-                    />
-                    <Typography component="legend">Read only</Typography>
-                    <Rating
-                      name="simple-controlled"
-                      value={value}
-                      onChange={(event, newValue) => {
-                        setValue(newValue);
-                      }}
-                    />
-                    <Typography component="legend">Read only</Typography>
-                    <Rating
-                      name="simple-controlled"
-                      value={value}
-                      onChange={(event, newValue) => {
-                        setValue(newValue);
-                      }}
-                    />
+                    >
+                      <p>Based on 3 reviews</p>
+                      <Typography component="legend">Read only</Typography>
+                      <Rating
+                        name="simple-controlled"
+                        value={value}
+                        onChange={(event, newValue) => {
+                          setValue(newValue);
+                        }}
+                      />
+                      <Typography component="legend">Read only</Typography>
+                      <Rating
+                        name="simple-controlled"
+                        value={value}
+                        onChange={(event, newValue) => {
+                          setValue(newValue);
+                        }}
+                      />
+                      <Typography component="legend">Read only</Typography>
+                      <Rating
+                        name="simple-controlled"
+                        value={value}
+                        onChange={(event, newValue) => {
+                          setValue(newValue);
+                        }}
+                      />
+                      <Typography component="legend">Read only</Typography>
+                      <Rating
+                        name="simple-controlled"
+                        value={value}
+                        onChange={(event, newValue) => {
+                          setValue(newValue);
+                        }}
+                      />
                   
-                  </Box>
+                    </Box>
+                  </div>
+                  <div className={styles.reviewContainerComp}>
+                    <ReviewComp image={reviewImage1}/>
+                    <ReviewComp image={reviewImage2} sx={{paddingLeft:"20px"}}/>
+                    <ReviewComp image={reviewImage3}/>
+                  </div>
                 </div>
-                <div>
-                  <ReviewComp image={reviewImage1}/>
-                  <ReviewComp image={reviewImage2} sx={{paddingLeft:"20px"}}/>
-                  <ReviewComp image={reviewImage3}/>
-                </div>
-                <div>
+                <div className={styles.inputreviewContainer}>
                   <p>
                     Add a Review
                   </p>
