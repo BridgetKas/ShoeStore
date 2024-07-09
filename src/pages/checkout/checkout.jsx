@@ -1,29 +1,34 @@
 import ButtonComp from "../../components/common/Button"
 import Input from "../../components/common/input"
 import card from '../../assets/card.jpg'
+import styles from './checkout.module.css'
 
 function CheckoutComp() {
   return (
-    <div>
-      <div>
-        <p>Returning Customer? <a> Click here to login</a></p>
+    <div className={styles.checkoutContainer}>
+      <div className={styles.return}>
+        <p>Returning Customer? <a className={styles.click}> Click here to login ?</a></p>
       </div>
-      <p>
+      <p className={styles.customer}>
         If you have shopped with us before , please enter your details in the boxes below. 
         If you are a new customer,please proceed to the Billing and Shipping section.
       </p>
-      <Input placeholder="Username or Email" required ={true} fullWidth/>
-      <Input placeholder="Password" required ={true} fullWidth/>
-      <div>
+      <div className={styles.inputContainer}>
+        <Input placeholder="Username or Email" required ={true} fullWidth/>
+      </div>
+      <div className={styles.inputContainer}>
+        <Input placeholder="Password" required ={true} fullWidth/>
+      </div>
+      <div className={styles.checkContainer}>
         <ButtonComp btnTitle="LOGIN" size="large"/>
-        <div>
-          <input type="radio" value="remember"/>
+        <div className={styles.meContainer}>
+          <input type="checkbox" value="remember" className={styles.checkbox}/>
           <label>Remember me </label>
         </div>
       </div>
-      <p>Lost your password?</p>
-      <div>
-        <p>Have a coupon? <a>Click here to enter your code</a></p>
+      <p className={styles.customer}>Lost your password?</p>
+      <div className={styles.return}>
+        <p>Have a coupon? <a className={styles.click}>Click here to enter your code</a></p>
       </div>
       <Input placeholder="Enter coupon code"/>
       <ButtonComp btnTitle="APPLY COUPON"/>

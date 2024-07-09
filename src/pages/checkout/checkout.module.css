@@ -1,0 +1,46 @@
+.checkoutContainer {
+    background-color:#fff;
+    padding-top:30px;
+}
+.return {
+    background-color:#e8f0f2;
+    width:85%;
+    margin:0 auto;
+    padding-left:30px;
+    padding-top:0.5px;
+    padding-bottom:0.5px;
+}
+
+.click {
+    color:red;
+    text-decoration:underline;
+}
+
+.customer {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+.inputContainer {
+    width:80%;
+    margin:10px auto;
+}
+
+.checkContainer {
+    display:flex;
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+}
+
+.meContainer {
+    display:flex;
+    align-items: center;
+    width:90%;
+    color:gray;
+}
+
+.checkbox {
+    width:10%;
+}
