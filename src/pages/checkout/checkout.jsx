@@ -1,5 +1,6 @@
 import ButtonComp from "../../components/common/Button"
 import Input from "../../components/common/input"
+import card from '../../assets/card.jpg'
 
 function CheckoutComp() {
   return (
@@ -47,7 +48,81 @@ function CheckoutComp() {
       </div>
       <Input placeholder="Order Notes" multiline/>
 
+      <div>
+        <p>Your Order</p>
+        <div>
+          <div>
+            <p>Product</p>
+            <div>
+              <p>Fresh Berry</p>
+              <p>*02 </p>
+            </div>
+            <div>
+              <p>Fresh Tomatoes</p>
+              <p>*02 </p>
+            </div>
+            <div>
+              <p>Fresh Brocolli</p>
+              <p>*02 </p>
+            </div>
+            <div>
+              <p>SubTotal</p>
+              <p>Shipping </p>
+              <p>Total </p>
 
+            </div>
+          </div>
+          <div>
+            <p>Total</p>
+            <div>
+              <p>$720.00</p>
+            </div>
+            <div>
+              <p>$720.00</p>
+            </div>
+            <div>
+              <p>$720.00</p>
+            </div>
+            <div>
+              <p>$2160.00</p>
+            </div>
+            <div>
+              <p>Flat rate:$50.00</p>
+            </div>
+            <div>
+              <p>$2210.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="radio"/>
+        <label>CHECK PAYMENTS</label>
+      </div>
+      <div>
+        <p>Please send a check to store Name, Store Street, Store Town, Store State/County, Store Postcode.</p>
+      </div>
+      <div>
+        <div>
+          <input type="radio"/>
+          <label>PAYPAL</label>
+        </div>
+        <div>
+          <img src={card}/>
+        </div>
+      </div>
+      <div>
+        <p>Pay via PayPal; you can pay with your credit card if you don`&apos;t have a PayPal account</p>
+      </div>
+      <div>
+        <div>
+          <input type="radio"/>
+          <label>
+            I have read and accept the terms and conditions.
+          </label>
+        </div>
+      </div>
+      <ButtonComp btnTitle="PROCCCED TO PAYPAL"/>
     </div>
   )
 }
