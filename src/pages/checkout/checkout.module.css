@@ -115,3 +115,18 @@
     align-items: center;
     justify-content:space-between;
 }
+
+
+@media (min-width:768px) {
+    .maininputContainer {
+        display:flex;
+        align-items: center;
+        width:80%;
+        margin:0 auto;
+        gap:15px;
+    }
+
+    .inputContainer {
+        width:48%;
+    }
+}

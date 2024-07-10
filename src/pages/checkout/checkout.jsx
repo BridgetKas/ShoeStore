@@ -13,11 +13,13 @@ function CheckoutComp() {
         If you have shopped with us before , please enter your details in the boxes below. 
         If you are a new customer,please proceed to the Billing and Shipping section.
       </p>
-      <div className={styles.inputContainer}>
-        <Input placeholder="Username or Email" required ={true} fullWidth/>
-      </div>
-      <div className={styles.inputContainer}>
-        <Input placeholder="Password" required ={true} fullWidth/>
+      <div className={styles.maininputContainer}>
+        <div className={styles.inputContainer}>
+          <Input placeholder="Username or Email" required ={true} fullWidth/>
+        </div>
+        <div className={styles.inputContainer}>
+          <Input placeholder="Password" required ={true} fullWidth/>
+        </div>
       </div>
       <div className={styles.checkContainer}>
         <ButtonComp btnTitle="LOGIN" size="large"/>
