@@ -34,103 +34,94 @@ function CheckoutComp() {
         <Input placeholder="Enter coupon code" fullWidth />
         <ButtonComp btnTitle="APPLY COUPON" />
       </div>
-      
-      <p>Billing Details</p>
-
-      <div>
-        <Input placeholder="First name" required ={true} fullWidth/>
-        <Input placeholder="Last name" required ={true} fullWidth/>
-        <Input placeholder="Company name" required ={true} fullWidth/>
-        <Input placeholder="Phone number" required ={true} fullWidth/>
-        <Input placeholder="Email Address" required ={true} fullWidth/>
-        <Input placeholder="Country" required ={true} fullWidth/>
-        <Input placeholder="Address line1" required ={true} fullWidth/>
-        <Input placeholder="Address line2" required ={true} fullWidth/>
-        <Input placeholder="Town/City" required ={true} fullWidth/>
-        <Input placeholder="District" required ={true} fullWidth/>
-        <Input placeholder="Postcode/ZIP" required ={true} fullWidth/>
+      <div className={styles.billContainer}>
+        <p>Billing Details</p>
+        <ul className={styles.list}>
+          <li><Input placeholder="First name" required ={true} fullWidth/></li>
+          <li><Input placeholder="Last name" required ={true} fullWidth/></li>
+          <li><Input placeholder="Company name" required ={true} fullWidth/></li>
+          <li><Input placeholder="Phone number" required ={true} fullWidth/></li>
+          <li><Input placeholder="Email Address" required ={true} fullWidth/></li>
+          <li><Input placeholder="Country" required ={true} fullWidth/></li>
+          <li><Input placeholder="Address line1" required ={true} fullWidth/></li>
+          <li><Input placeholder="Address line2" required ={true} fullWidth/></li>
+          <li><Input placeholder="Town/City" required ={true} fullWidth/></li>
+          <li><Input placeholder="District" required ={true} fullWidth/></li>
+          <li><Input placeholder="Postcode/ZIP" required ={true} fullWidth/></li>
+        </ul>
+        <div className={`${styles.inputContainer} ${styles.Address}`}>
+          <input type="checkbox" className={styles.checkbox}/>
+          <label>Ship to a different address</label>
+        </div>
+        <Input placeholder="Order Notes" multiline/>
       </div>
-      <div>
-        <input type="radio"/>
-        <label>Ship to a different address</label>
-      </div>
-      <Input placeholder="Order Notes" multiline/>
-
-      <div>
-        <p>Your Order</p>
+      <div className={styles.orderContainer}>
         <div>
-          <div>
-            <p>Product</p>
+          <p className={styles.order}>Your Order</p>
+          <div className={styles.payContainer}>
             <div>
-              <p>Fresh Berry</p>
-              <p>*02 </p>
-            </div>
-            <div>
-              <p>Fresh Tomatoes</p>
-              <p>*02 </p>
-            </div>
-            <div>
-              <p>Fresh Brocolli</p>
-              <p>*02 </p>
-            </div>
-            <div>
-              <p>SubTotal</p>
-              <p>Shipping </p>
-              <p>Total </p>
+              <p className={styles.product}>Product</p>
+              <div className={styles.freshContainer}>
+                <p>Fresh Berry</p>
+                <p>*02 </p>
+              </div>
+              <div className={styles.freshContainer}>
+                <p>Fresh Tomatoes</p>
+                <p>*02 </p>
+              </div>
+              <div className={styles.freshContainer}>
+                <p>Fresh Brocolli</p>
+                <p>*02 </p>
+              </div>
+              <div>
+                <p>SubTotal</p>
+                <p>Shipping </p>
+                <p>Total </p>
 
-            </div>
-          </div>
-          <div>
-            <p>Total</p>
-            <div>
-              <p>$720.00</p>
+              </div>
             </div>
             <div>
-              <p>$720.00</p>
-            </div>
-            <div>
-              <p>$720.00</p>
-            </div>
-            <div>
-              <p>$2160.00</p>
-            </div>
-            <div>
-              <p>Flat rate:$50.00</p>
-            </div>
-            <div>
-              <p>$2210.00</p>
+              <p className={styles.product}>Total</p>
+              <ul className={styles.price}>
+                <li>$720.00</li>
+                <li>$720.00</li>
+                <li>$720.00</li>
+                <li>$2160.00</li>
+                <li>Flat rate:$50.00</li>
+                <li>$2210.00</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <input type="radio"/>
-        <label>CHECK PAYMENTS</label>
-      </div>
-      <div>
-        <p>Please send a check to store Name, Store Street, Store Town, Store State/County, Store Postcode.</p>
-      </div>
-      <div>
-        <div>
-          <input type="radio"/>
-          <label>PAYPAL</label>
+        <div className={styles.inputContainer} >
+          <input type="checkbox" className={styles.checkbox}/>
+          <label>CHECK PAYMENTS</label>
         </div>
         <div>
-          <img src={card}/>
+          <p>Please send a check to store Name, Store Street, Store Town, Store State/County, Store Postcode.</p>
         </div>
-      </div>
-      <div>
-        <p>Pay via PayPal; you can pay with your credit card if you don`&apos;t have a PayPal account</p>
-      </div>
-      <div>
+        <div className={styles.payPal}>
+          <div className={styles.inputContainer} >
+            <input type="checkbox" className={styles.checkbox}/>
+            <label>PAYPAL</label>
+          </div>
+          <div>
+            <img src={card}/>
+          </div>
+        </div>
         <div>
-          <input type="radio"/>
-          <label>
-            I have read and accept the terms and conditions.
-          </label>
+          <p>Pay via PayPal; you can pay with your credit card if you don`&apos;t have a PayPal account</p>
         </div>
+        <div>
+          <div >
+            <input type="checkbox" className={styles.checkbox}/>
+            <label>
+              I have read and accept the terms and conditions.
+            </label>
+          </div>
+        </div>
+        <ButtonComp btnTitle="PROCCCED TO PAYPAL"/>
       </div>
-      <ButtonComp btnTitle="PROCCCED TO PAYPAL"/>
     </div>
   )
 }
