@@ -30,8 +30,11 @@ function CheckoutComp() {
       <div className={styles.return}>
         <p>Have a coupon? <a className={styles.click}>Click here to enter your code</a></p>
       </div>
-      <Input placeholder="Enter coupon code"/>
-      <ButtonComp btnTitle="APPLY COUPON"/>
+      <div className={styles.couponContainer}>
+        <Input placeholder="Enter coupon code" fullWidth />
+        <ButtonComp btnTitle="APPLY COUPON" />
+      </div>
+      
       <p>Billing Details</p>
 
       <div>

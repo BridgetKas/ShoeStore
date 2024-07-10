@@ -5,7 +5,7 @@
 .return {
     background-color:#e8f0f2;
     width:85%;
-    margin:0 auto;
+    margin:15px auto;
     padding-left:30px;
     padding-top:0.5px;
     padding-bottom:0.5px;
@@ -44,3 +44,9 @@
 .checkbox {
     width:10%;
 }
+
+.couponContainer {
+    width:80%;
+    margin:0 auto;
+}
+
