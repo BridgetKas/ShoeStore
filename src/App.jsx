@@ -4,6 +4,7 @@ import Layoutpage from "./layout/layoutpage";
 import { ThemeProvider } from  '@mui/material/styles';
 import {theme} from "./utilis/theme"
 import ShopPage from "./pages/Shop/page";
+import Product from "./pages/productDetails/product";
 
 
 const router = createBrowserRouter([
@@ -18,7 +19,14 @@ const router = createBrowserRouter([
       },
       {
         path:"shop",
-        element:<ShopPage/>
+        element:<ShopPage/>,
+        children:[
+          {
+            path:"single-product",
+            element:<Product/>
+          }
+         
+        ]
       },
       {
         path:"blog",

@@ -9,19 +9,73 @@ function NavBar() {
       id:0
     },
     {
-      path:"/shop",
       label:"Shop",
-      id:1
+      id:1,
+      sectionItems:[
+        {
+          path:"/shop",
+          label:"Shop Category",
+          id:0,
+        },
+        {
+          path:"/shop",
+          label:"Product Details",
+          id:1,
+        },
+        {
+          path:"/shop",
+          label:"Product CheckOut",
+          id:2,
+        },
+        {
+          path:"/shop",
+          label:"Shopping Cart",
+          id:3,
+        },
+        {
+          path:"/shop",
+          label:"Confimation",
+          id:4,
+        }
+      ]
     },
     {
-      path:"/blog",
+    
       label:"Blog",
-      id:2
+      id:2,
+      sectionItems:[
+        {
+          path:"/blog",
+          label:"BLOG",
+          id:5,
+        },
+        {
+          path:"/blog",
+          label:"BLOG DETAILS",
+          id:6,
+        }
+      ]
     },
     {
-      path:"/page",
       label:"Page",
       id:3,
+      sectionItems:[
+        {
+          path:"/page",
+          label:"LOGIN",
+          id:7,
+        },
+        {
+          path:"/page",
+          label:"TRACKING",
+          id:8,
+        },
+        {
+          path:"/page",
+          label:"ELEMENTS",
+          id:9,
+        }
+      ]
     },
     {
       path:"/contact",

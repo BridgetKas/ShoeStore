@@ -12,7 +12,7 @@ import image4 from '../../assets/ShopImages/p5.jpg';
 import image5 from '../../assets/ShopImages/p6.jpg';
 import image6 from '../../assets/ShopImages/p8.jpg';
 import ShoeComp from '../../components/common/Shoe/shoeComp';
-import Product from '../productShop/product';
+import Product from '../productDetails/product';
 
 function valuetext(value) {
   return `$${value}`;

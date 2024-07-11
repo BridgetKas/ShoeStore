@@ -23,9 +23,9 @@ function MobileNav({menu}) {
 
   const DrawerList = (
     <div  onClick={() => toggleDrawer(false)} className={`${styles.listContainer} ${!open ? styles.open : " "}`}>
-      {menu.map((item) => (
-        <div key={item.path} className={styles.menuitemContainer}>
-          <NavLink to={item.path} key={item.path} className={styles.menuItem}>{item.label}</NavLink>
+      {menu.map((item,id) => (
+        <div key={id} className={styles.menuitemContainer}>
+          <NavLink to={item.path} key={id} className={styles.menuItem}>{item.label}</NavLink>
         </div>
       ))}
     </div>
