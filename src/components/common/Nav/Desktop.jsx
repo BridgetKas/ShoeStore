@@ -22,11 +22,11 @@ function DesktopNav({menu}) {
               {item.label}
             </NavLink>
           ) : (
-            <Dropdown key={item.index}>
-              <MenuButton >{item.label}</MenuButton>
-              <Menu>
+            <Dropdown key={item.index} className={styles.listContainer}>
+              <MenuButton className={`${styles.menuItem} ${styles.btnItem}`}>{item.label}</MenuButton>
+              <Menu className={styles.listItem} sx={{paddingLeft:"0px"}}>
                 {item.sectionItems.map((it,id)=>(
-                  <MenuItem key={id}>{it.label}</MenuItem>
+                  <MenuItem key={id} className={styles.list}>{it.label}</MenuItem>
                 ))}
                 
               </Menu>
