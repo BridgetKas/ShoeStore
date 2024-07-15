@@ -4,14 +4,20 @@ import styles from './Nav.module.css'
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../../../assets/logo.png'
-
+import { List, ListItemButton, ListItemText, Collapse} from '@mui/material';
 
 
 function MobileNav({menu}) {
-
   const [open, setOpen] = useState(false);
+  const [activeIndex, setactiveIndex] = useState(-1);
 
   const toggleDrawer = (newOpen)  => (setOpen(newOpen));
+
+  const handleClick = (e,index) => {
+    e.stopPropagation()
+    console.log(index)
+    setactiveIndex(index)
+  }
 
   const NavLink = React.forwardRef((props, ref) => (
     <NavLinkBase
@@ -23,10 +29,30 @@ function MobileNav({menu}) {
 
   const DrawerList = (
     <div  onClick={() => toggleDrawer(false)} className={`${styles.listContainer} ${!open ? styles.open : " "}`}>
-      {menu.map((item,id) => (
-        <div key={id} className={styles.menuitemContainer}>
-          <NavLink to={item.path} key={id} className={styles.menuItem}>{item.label}</NavLink>
-        </div>
+   
+      {menu.map((item,index) =>(
+        (item.label=== "Home"|| item.label === "Contact") ? ( 
+          <NavLink  to={item.path} key={`${index}-${item.label}`} className={styles.menuItem}>
+            {item.label}
+          </NavLink>
+        ) : (
+          <div style={{ display: 'flex' }} key={index}>
+            <List>
+              <ListItemButton sx={{ pl: 4 }} onClick={(e) => handleClick(e,index)} className={styles.menuItem}>
+                <ListItemText primary={item.label} />
+              </ListItemButton>
+              <Collapse in={activeIndex ===  index} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                  {
+                    item.sectionItems.map((it)=>(
+                      <NavLink  to={it.path} key={it.id} className={styles.list}>{it.label}</NavLink>
+                    ))
+                  }
+                </List>
+              </Collapse>
+            </List>
+          </div>
+        )
       ))}
     </div>
   );

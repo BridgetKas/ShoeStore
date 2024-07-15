@@ -24,7 +24,7 @@ function DesktopNav({menu}) {
           ) : (
             <Dropdown key={item.index} className={styles.listContainer}>
               <MenuButton className={`${styles.menuItem} ${styles.btnItem}`}>{item.label}</MenuButton>
-              <Menu className={styles.listItem} sx={{paddingLeft:"0px"}}>
+              <Menu slot='div' className={styles.listItem} sx={{paddingLeft:"0px"}}>
                 {item.sectionItems.map((it,id)=>(
                   <MenuItem key={id} className={styles.list}>{it.label}</MenuItem>
                 ))}

@@ -14,3 +14,19 @@
   -yellow-gradient-color:linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
 }
 
+.base-Menu-listbox {
+  padding-left:0px;
+  margin-top:32px;
+}
+
+.MuiListItemButton-root {
+  padding:0px !important;
+}
+
+.MuiList-root {
+  padding:0px !important;
+}
+
+.MuiListItemText-root {
+  margin:0 !important;
+}

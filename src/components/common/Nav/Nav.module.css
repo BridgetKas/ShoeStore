@@ -41,34 +41,27 @@
     color:black;
     font-size:15px;
     font-weight:400;
-
 }
 
 .menuItem.btnItem {
     border:none;
-    background-color:white;
-}
-
-.listContainer {
-    position:relative;
-
-}
-
-.listItem {
-    list-style:none;
-    color:orange;
-    border:1px solid  #fff;
-    background-color:#fff;
-    text-transform:uppercase;
-    padding-left:0;
+    background-color:transparent;
 }
 
 .list {
-    list-style:none;
     padding:10px 15px;
     border-bottom:1px solid gray;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:black;
+    font-size:15px;
+    font-weight:400;
+    color:orange;
+    display:flex;
+    flex-direction:column;
 
 }
+
 
 /* Mobile Navigation */
 

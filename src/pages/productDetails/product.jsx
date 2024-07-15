@@ -238,6 +238,7 @@ function Product() {
         </Box>
       </div>
       <CheckoutComp/>
+      
     </div>
   )
 }
