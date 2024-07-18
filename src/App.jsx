@@ -7,6 +7,7 @@ import ShopPage from "./pages/Shop/page";
 import Product from "./pages/productDetails/product";
 import CartPageComp from "./pages/Cart/cartPage";
 import CheckoutComp from "./pages/checkout/checkout";
+import ConfirmComp from "./pages/Confirm/confirmComp";
 
 
 const router = createBrowserRouter([
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
           },
           {
             path:"confimation",
-            element:<HomePage/>
+            element:<ConfirmComp/>
           }
          
         ]
