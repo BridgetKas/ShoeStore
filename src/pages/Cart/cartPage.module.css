@@ -1,0 +1,24 @@
+.maincashContainer {
+    background-color:#fff;
+}
+
+.cashContainer {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:90%;
+    margin:0 auto;
+    padding:20px 10px;
+}
+
+.btnContainer {
+    display:flex;
+    align-items:center;
+}
+
+.priceContainer {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:yellow;
+}

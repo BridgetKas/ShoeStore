@@ -6,7 +6,7 @@ import logo from '../../../assets/logo.png'
 import { Dropdown } from '@mui/base/Dropdown';
 import { Menu } from '@mui/base/Menu';
 import { MenuButton} from '@mui/base/MenuButton';
-import { MenuItem } from '@mui/base/MenuItem';
+// import { MenuItem } from '@mui/base/MenuItem';
 
 
 function DesktopNav({menu}) {
@@ -26,7 +26,7 @@ function DesktopNav({menu}) {
               <MenuButton className={`${styles.menuItem} ${styles.btnItem}`}>{item.label}</MenuButton>
               <Menu slot='div' className={styles.listItem} sx={{paddingLeft:"0px"}}>
                 {item.sectionItems.map((it,id)=>(
-                  <MenuItem key={id} className={styles.list}>{it.label}</MenuItem>
+                  <NavLink to={it.path} key={id} className={styles.list}>{it.label}</NavLink>
                 ))}
                 
               </Menu>

@@ -33,7 +33,6 @@ import image6 from '../../assets/ShopImages/p8.jpg';
 import image7 from '../../assets/ShopImages/p2.jpg';
 import image8 from '../../assets/ShopImages/p7.jpg';
 import DefaultShoeComp from "../../components/common/Shoe/shoeComp";
-import CartComp from "../../components/cart/cart";
 
 const featuresArr = [
   {
@@ -251,7 +250,7 @@ function HomePage() {
 
       {/* DEALS SECTION */}
       <DealsComp/>
-      <CartComp/>
+    
     </div>
   )
 }

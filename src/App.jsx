@@ -5,6 +5,8 @@ import { ThemeProvider } from  '@mui/material/styles';
 import {theme} from "./utilis/theme"
 import ShopPage from "./pages/Shop/page";
 import Product from "./pages/productDetails/product";
+import CartPageComp from "./pages/Cart/cartPage";
+import CheckoutComp from "./pages/checkout/checkout";
 
 
 const router = createBrowserRouter([
@@ -18,12 +20,27 @@ const router = createBrowserRouter([
         element:<HomePage/>
       },
       {
-        path:"shop",
-        element:<ShopPage/>,
+        path:"shop/",
         children:[
+          {
+            index:true,
+            element:<ShopPage/>
+          },
           {
             path:"single-product",
             element:<Product/>
+          },
+          {
+            path:"product-checkout",
+            element:<CheckoutComp/>
+          },
+          {
+            path:"cart",
+            element:<CartPageComp/>
+          },
+          {
+            path:"confimation",
+            element:<HomePage/>
           }
          
         ]

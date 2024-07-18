@@ -25,6 +25,7 @@ import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import InputComponent from '../../components/common/inputComponent'
 import CheckoutComp from '../checkout/checkout'
+import HeaderComp from '../../layout/Header/header'
 
 
 function createData(name, length) {
@@ -52,6 +53,8 @@ function Product() {
   };
   return (
     <div>
+      <HeaderComp title='Product' firstpage='first' nextpage='next'/>
+
       <div className={styles.productContainer}>
         <div className={styles.mainproductContainer}>
           <div className={styles.productImageContainer}>

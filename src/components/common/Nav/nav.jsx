@@ -18,22 +18,22 @@ function NavBar() {
           id:0,
         },
         {
-          path:"/shop",
+          path:"/shop/single-product",
           label:"Product Details",
           id:1,
         },
         {
-          path:"/shop",
+          path:"/shop/product-checkout",
           label:"Product CheckOut",
           id:2,
         },
         {
-          path:"/shop",
+          path:"/shop/cart",
           label:"Shopping Cart",
           id:3,
         },
         {
-          path:"/shop",
+          path:"/shop/confimation",
           label:"Confimation",
           id:4,
         }
