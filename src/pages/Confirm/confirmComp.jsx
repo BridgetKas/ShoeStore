@@ -8,7 +8,7 @@ function ConfirmComp() {
       <div>
         <h3 className={styles.order}>Thank you. Your order has been received</h3>
         <div className={styles.orderContainer}>
-          <p>Order Info</p>
+          <p className={styles.mainTitle}>Order Info</p>
           <div className={styles.container}>
             <p className={styles.title}>Order number</p>
             <p className={styles.description}>:60235</p>
@@ -27,7 +27,7 @@ function ConfirmComp() {
           </div>
         </div>
         <div className={styles.orderContainer}>
-          <p>Billing Address</p>
+          <p className={styles.mainTitle}>Billing Address</p>
           <div className={styles.container}>
             <p className={styles.title}>Street</p>
             <p className={styles.description}>:58/6</p>
@@ -46,7 +46,7 @@ function ConfirmComp() {
           </div>
         </div>
         <div className={styles.orderContainer}>
-          <p>Shipping Address</p>
+          <p className={styles.mainTitle}>Shipping Address</p>
           <div className={styles.container}>
             <p className={styles.title}>Street</p>
             <p className={styles.description}>:58/6</p>
@@ -65,7 +65,49 @@ function ConfirmComp() {
           </div>
         </div>
       </div>
-
+      <div className={styles.tableContainer}>
+        
+        <table>
+          <caption>Order Details</caption>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quality</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pixelstore fresh Blackberry</td>
+              <th>X 02</th>
+              <td>$720.00</td>
+            </tr>
+            <tr>
+              <td>Pixelstore fresh Blackberry</td>
+              <th>X 02</th>
+              <td>$720.00</td>
+            </tr>
+            <tr>
+              <td>Pixelstore fresh Blackberry</td>
+              <th>X 02</th>
+              <td>$720.00</td>
+            </tr>
+            
+            <tr>
+              <td colSpan='2'>SUBTOTAL</td>
+              <td>$2160.00</td>
+            </tr>
+            <tr>
+              <td colSpan='2'>SHIPPING</td>
+              <td>Flat rate:$50.00</td>
+            </tr>
+            <tr>
+              <td colSpan='2'>TOTAL</td>
+              <td>$2210.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
         
 
     </div>

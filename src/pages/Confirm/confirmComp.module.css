@@ -12,8 +12,16 @@
 .orderContainer {
     width:90%;
     margin:0 auto;
-    background-color:yellow;
     padding:10px;
+}
+
+.mainTitle {
+    color:black;
+    font-weight:400;
+    font-size:17px;
+    margin:0;
+    padding-bottom:10px;
+    border-bottom:1px solid #eee;
 }
 
 .container {
@@ -23,15 +31,51 @@
 
 .title {
     width:30%;
-    background-color:red;
     margin:8px 0;
     color:gray;
 }
 
 .description {
     width:30%;
-    background-color: blue;
     margin: 8px 0;
     color:black;
+}
+
+table {
+    border-collapse:collapse;
+    padding:30px;
+    margin:0 auto;
+    color:black;
+    width:100%;
+    overflow-x: hidden;
+}
+
+caption {
+    font-size:18px;
+    color:black;
+    font-weight:500;
+    padding:10px;
+    caption-side:left;
+}
+
+th,
+td {
+  border-bottom: 1px solid gray;
+  padding: 10px 0px;
+  font-size:15px;
+  position:relative;
+}
+
+
+td:last-of-type {
+    text-align:center;
+}
+
+.tableContainer {
+    padding:20px;
+    background-color:#e5ecee;
+    width:90%;
+    margin:20px auto;
+
 }
 
