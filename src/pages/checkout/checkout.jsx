@@ -8,8 +8,6 @@ function CheckoutComp() {
   return (
     <div>
       <HeaderComp title='Checkout' firstpage='first' nextpage='next'/>
-
-  
       <div className={styles.checkoutContainer}>
         <div className={styles.return}>
           <p>Returning Customer? <a className={styles.click}> Click here to login ?</a></p>

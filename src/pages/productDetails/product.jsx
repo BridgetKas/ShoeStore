@@ -24,9 +24,13 @@ import reviewImage3 from '../../assets/review-3.png'
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import InputComponent from '../../components/common/inputComponent'
-import CheckoutComp from '../checkout/checkout'
 import HeaderComp from '../../layout/Header/header'
 
+
+const tabStyles = {
+  textTransform:"none",
+  backgroundColor:"#fff",
+}
 
 function createData(name, length) {
   return { name, length };
@@ -95,6 +99,7 @@ function Product() {
                 backgroundColor="orange" 
               />
             </div>
+
           </div>
         </div>
       </div>
@@ -105,10 +110,10 @@ function Product() {
               display:"flex" , justifyContent:"space-around", padding:"10px 20px"
             }}>
               <TabList onChange={handleChange} aria-label="lab API tabs example" className={styles.labelContainer}>
-                <Tab label="Description" value="1" sx={{textTransform:"none"}}/>
-                <Tab label="Specification" value="2" sx={{textTransform:"none"}}/>
-                <Tab label="Comments" value="3" sx={{textTransform:"none"}}/>
-                <Tab label="Reviews" value="4" sx={{textTransform:"none"}}/>
+                <Tab label="Description" value="1" sx={tabStyles} />
+                <Tab label="Specification" value="2" sx={tabStyles}/>
+                <Tab label="Comments" value="3" sx={tabStyles}/>
+                <Tab label="Reviews" value="4" sx={tabStyles}/>
 
               </TabList>
             </Box>
@@ -240,7 +245,6 @@ function Product() {
           </TabContext>
         </Box>
       </div>
-      <CheckoutComp/>
       
     </div>
   )

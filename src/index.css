@@ -14,6 +14,11 @@
   -yellow-gradient-color:linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
 }
 
+html, body {
+  overflow-x:hidden;
+} 
+
+
 .base-Menu-listbox {
   padding-left:0px;
   margin-top:32px;
@@ -35,3 +40,9 @@
   padding-left:40px !important;
  
 }
+
+
+.MuiTabs-flexContainer {
+  gap:10px;
+}
+

@@ -8,6 +8,7 @@ import Product from "./pages/productDetails/product";
 import CartPageComp from "./pages/Cart/cartPage";
 import CheckoutComp from "./pages/checkout/checkout";
 import ConfirmComp from "./pages/Confirm/confirmComp";
+import Cards from "./pages/Blog/cards";
 
 
 const router = createBrowserRouter([
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path:"blog",
-        element:"Hello"
+        element:<Cards/>
       },
       {
         path:"page",
