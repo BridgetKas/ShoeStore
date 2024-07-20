@@ -12,6 +12,10 @@ import image4 from '../../assets/ShopImages/p5.jpg';
 import image5 from '../../assets/ShopImages/p6.jpg';
 import image6 from '../../assets/ShopImages/p8.jpg';
 import ShoeComp from '../../components/common/Shoe/shoeComp';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
 
 function valuetext(value) {
   return `$${value}`;
@@ -37,6 +41,17 @@ const menu = [
     image:image6
   },
  
+]
+
+const productFilterArr = [
+  {
+    title:"Brands",
+    listItems : ['Apple(29)', 'Asus(29)', 'Gionee(19)','Micromax(19)', 'Samsung(19)']
+  },
+  {
+    title:"Colors",
+    listItems : ['Black(29)','Black Leather(29)','Black with red(19)','Gold(19)','Spacegrey(19)']
+  }
 ]
 
 function ShopPage() {
@@ -69,57 +84,15 @@ function ShopPage() {
                 <li><a>Home Appliances</a> (53)</li>
                 <li><a>Baby care</a> (53)</li>
               </ul>
+              <div>
+                <div className={styles.browse}>Product Filters</div>
+                {productFilterArr.map((item,index) => (
+                  <FilterComp key={index} title={item.title} listItems={item.listItems}/>
 
-              <div className={styles.browse}>Product Filters</div>
-              <div className={styles.container}>
-                <div className={styles.brand}>Brands</div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="apple"  value="apple" />
-                  <label htmlFor="apple">Apple(29)</label>
-                </div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="asus"  value="asus" />
-                  <label htmlFor="asus">Asus(29)</label>
-                </div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="gionee"  value="gionee"  />
-                  <label htmlFor="gionee">Gionee(19)</label>
-                </div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="micromax"  value="micromax" />
-                  <label htmlFor="micromax">Micromax(19)</label>
-                </div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="samusung"  value="samusung" />
-                  <label htmlFor="samusung">Samusung(19)</label>
-                </div>
+                ))}
               </div>
-              <div className={styles.line}></div>
-              <div className={styles.container}>
-                <div className={styles.brand}>Color</div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="black"  value="black" />
-                  <label htmlFor="black">Black(29)</label>
-                </div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="blackleather"  value="BL" />
-                  <label htmlFor="BL">Black Leather(29)</label>
-                </div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="Black with red"  value="BWR"  />
-                  <label htmlFor="BWR">Black with Red(19)</label>
-                </div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="micromax"  value="micromax" />
-                  <label htmlFor="micromax">Gold(19)</label>
-                </div>
-                <div className={styles.labelContainer}>
-                  <input type="radio" id="samusung"  value="samusung" />
-                  <label htmlFor="samusung">Spacegrey(19)</label>
-                </div>
-              </div>
-              <div className={styles.line}></div>
             </div>
+            <div className={styles.line}></div>
 
             {/* PRICE RANGE SECTION */}
             <div className={styles.priceContainer}>
@@ -165,4 +138,21 @@ function ShopPage() {
   )
 }
 
+
+function FilterComp({title,listItems}) {
+  return (
+    <div className={styles.filterContainer}>
+      <div className={styles.brand}>{title}</div>
+      <FormControl className={styles.radioContainer}>
+        <RadioGroup
+          aria-labelledby="demo-radio-buttons-group-label"
+        >
+          {listItems.map((listItem,index) => (
+            <FormControlLabel value={listItem} control={<Radio />} label={listItem}  key={index}/>
+          ))}
+        </RadioGroup>
+      </FormControl>
+    </div>
+  )
+}
 export default ShopPage

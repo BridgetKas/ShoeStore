@@ -34,10 +34,6 @@
     font-size:15px;
 }
 
- .container .labelContainer:last-child {
-    padding-bottom:20px;
-}
-
 .categoryContainer li:hover {
     color:orange;
     cursor:pointer;
@@ -52,13 +48,6 @@
     font-size:20px;
     font-weight:bold;
     text-transform:uppercase;
-}
-
-.labelContainer {
-    padding: 3px 0;
-    font-size:15px;
-    width:76%;
-    margin:0 auto;
 }
 
 .line {
@@ -96,7 +85,7 @@
     color:"light"
 }
 
-.container {
+.filterContainer {
     width:100%;
 }
 
@@ -172,21 +161,23 @@
     }
 
     .sideContainer {
-        /* width: 30%; */
         width:41%;
     }
 
     .container {
-        /* width:68%; */
         width:58%;
         display:flex;
         flex-direction:column;
     }
 
+
     .mainContainer {
         width:100%;
     }
 
+    .labelContainer {
+        width:94%;
+    }
     .maincategoryContainer {
         padding:0px;
     }
@@ -204,6 +195,7 @@
         height:250px;
     }
 }
+
 
 @media (min-width:992px) {
     .shoeCompContainer {

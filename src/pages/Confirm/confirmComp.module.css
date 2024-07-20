@@ -74,6 +74,10 @@ td {
   position:relative;
 }
 
+th:first-of-type {
+    text-align:left;
+}
+
 
 td:last-of-type {
     text-align:center;

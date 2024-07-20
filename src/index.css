@@ -30,3 +30,8 @@
 .MuiListItemText-root {
   margin:0 !important;
 }
+
+.MuiRadioGroup-root {
+  padding-left:40px !important;
+ 
+}
