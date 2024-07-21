@@ -97,12 +97,32 @@ input[type="number"] {
     background-color:#fff;
 }
 
+.ratingContainer {
+    display: flex;
+    gap: 15px;
+}
+
 .rating {
     background-color:lightblue;
     display:flex;
     align-items:center;
     flex-direction:column;
     padding:15px 30px;
+}
+
+.review {
+    margin:0;
+}
+
+.basedReview {
+    margin:0;
+}
+
+.showratingContainer {
+    color:gray;
+    display:flex;
+    align-items:center;
+    gap :5px;
 }
 
 .overall {
@@ -127,6 +147,14 @@ input[type="number"] {
     flex-direction: column;
     gap:15px;
     /* align-items:center; */
+}
+
+.addReview {
+    text-align:left;
+    font-size:30px;
+    color:#000;
+    margin-top:0;
+    margin-bottom:10px;
 }
 
 .mainreviewContainer {
@@ -163,7 +191,8 @@ input[type="number"] {
 
     .reviewContainer {
         flex-direction:row;
-        justify-content:space-between
+        /* gap:15px; */
+        justify-content:space-between;
     }
 
     .mainreviewContainer {
@@ -177,14 +206,17 @@ input[type="number"] {
  
     .ratingContainer {
         display:flex;
-        flex-direction: column;
         gap:10px;
-        width:45%;
+    }
+
+    .mainContainer {
+        width:49%;
     }
 
     .containerFour {
         display:flex;
         flex-direction:row;
+        justify-content: space-between;
     }
 
     .tableContainer{

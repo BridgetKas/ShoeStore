@@ -20,6 +20,7 @@ function ReviewComp({image}) {
             style={{ backgroundColor:"gray"}} 
             onClick={() => alert('Clicked')}
           />
+          
         </div>
       </div>
       <div >

@@ -22,7 +22,6 @@ import reviewImage1 from '../../assets/review-1.png'
 import reviewImage2 from '../../assets/review-2.png'
 import reviewImage3 from '../../assets/review-3.png'
 import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
 import InputComponent from '../../components/common/inputComponent'
 import HeaderComp from '../../layout/Header/header'
 
@@ -188,53 +187,84 @@ function Product() {
             </TabPanel>
             <TabPanel value="4">
               <div className={styles.containerFour}>
-                <div className={styles.tableContainerR}>
+                <div className={styles.mainContainer}>
+
+               
                   <div className={styles.ratingContainer}>
                     <div className={styles.rating}>
                       <h1 className={styles.overall}>Overall </h1>
                       <h1 className={styles.number}>4.0</h1>
-                      <p>(03 Review)</p>
+                      <p className={styles.review}>(03 Review)</p>
                     </div>
                     <Box
                       sx={{
                       // Didn't understand 
                         '& > legend': { mt: 2 },
+                        display:"flex",
+                        flexDirection:"column",
                       }}
                     >
-                      <p>Based on 3 reviews</p>
-                      <Typography component="legend">Read only</Typography>
-                      <Rating
-                        name="simple-controlled"
-                        value={value}
-                        onChange={(event, newValue) => {
-                          setValue(newValue);
-                        }}
-                      />
-                      <Typography component="legend">Read only</Typography>
-                      <Rating
-                        name="simple-controlled"
-                        value={value}
-                        onChange={(event, newValue) => {
-                          setValue(newValue);
-                        }}
-                      />
-                      <Typography component="legend">Read only</Typography>
-                      <Rating
-                        name="simple-controlled"
-                        value={value}
-                        onChange={(event, newValue) => {
-                          setValue(newValue);
-                        }}
-                      />
-                      <Typography component="legend">Read only</Typography>
-                      <Rating
-                        name="simple-controlled"
-                        value={value}
-                        onChange={(event, newValue) => {
-                          setValue(newValue);
-                        }}
-                      />
-                  
+                      <p className={styles.basedReview}>Based on 3 reviews</p>
+                      <div className={styles.showratingContainer}>
+                        <span>
+                          5 star
+                        </span>
+                        <Rating
+                          name="simple-controlled"
+                          value={"5"}
+                          onChange={(event, newValue) => {
+                            setValue(newValue);
+                          }}
+                        />
+                        <span>
+                          01
+                        </span>
+                      </div>
+                      <div className={styles.showratingContainer}>
+                        <span>
+                          4 star
+                        </span>
+                        <Rating
+                          name="simple-controlled"
+                          value={"4"}
+                          onChange={(event, newValue) => {
+                            setValue(newValue);
+                          }}
+                        />
+                        <span>
+                          01
+                        </span>
+                      </div>
+                      <div className={styles.showratingContainer}>
+                        <span>
+                          3 star
+                        </span>
+                        <Rating
+                          name="simple-controlled"
+                          value={"3"}
+                          onChange={(event, newValue) => {
+                            setValue(newValue);
+                          }}
+                        />
+                        <span>
+                          01
+                        </span>
+                      </div>
+                      <div className={styles.showratingContainer}>
+                        <span>
+                          2 star
+                        </span>
+                        <Rating
+                          name="simple-controlled"
+                          value={"2"}
+                          onChange={(event, newValue) => {
+                            setValue(newValue);
+                          }}
+                        />
+                        <span>
+                          01
+                        </span>
+                      </div>
                     </Box>
                   </div>
                   <div className={styles.reviewContainerComp}>
@@ -244,16 +274,25 @@ function Product() {
                   </div>
                 </div>
                 <div className={styles.inputreviewContainer}>
-                  <p>
+                  <p className={styles.addReview}>
                     Add a Review
                   </p>
-                  <Rating
-                    name="simple-controlled"
-                    value={value}
-                    onChange={(event, newValue) => {
-                      setValue(newValue);
-                    }}
-                  />
+                  <div className={styles.showratingContainer}>
+                    <span>
+                      Your Rating
+                    </span>
+                    <Rating
+                      name="simple-controlled"
+                      value={"5"}
+                      onChange={(event, newValue) => {
+                        setValue(newValue);
+                      }}
+                    />
+                    <span>
+                      Outstanding
+                    </span>
+                  </div>
+               
                   <div>
                     <InputComponent/>
                   </div>

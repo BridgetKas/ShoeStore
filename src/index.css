@@ -46,10 +46,12 @@ html, body {
   gap:10px;
 }
 
-/* .MuiTabPanel-root {
-  padding:0px !important;
-} */
 
 .MuiBox-root {
-  border:1px solid gray;
+  border:1px solid #fbfbfb;
+}
+
+.MuiTypography-root {
+  margin:0 !important;
+  color:#000;
 }
