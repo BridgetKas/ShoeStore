@@ -83,14 +83,14 @@ input[type="number"] {
     margin-top:15px;
 }
 .labelContainer {
-    background-color: red;
-    padding:20px;
     gap:10px;
+    overflow-x:auto;
   
 }
 
 .description {
     color:gray;
+    text-align:left;
 }
 
 .boxContainer {
@@ -163,14 +163,15 @@ input[type="number"] {
 
     .reviewContainer {
         flex-direction:row;
+        justify-content:space-between
     }
 
     .mainreviewContainer {
-        width:49%;
+        width:45%;
     }
 
     .inputContainer {
-        width:49%;
+        width:45%;
         align-self:flex-start;
     }
  

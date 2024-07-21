@@ -106,10 +106,21 @@ function Product() {
       <div className={styles.boxContainer}>
         <Box sx={{ width: '85%', typography: 'body1' , margin:"auto" }}>
           <TabContext value={value} sx={{border:"1px"}}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider',backgroundColor:"light-blue" , 
-              display:"flex" , justifyContent:"space-around", padding:"10px 20px"
+            <Box sx={{ 
+              borderBottom: 1, 
+              borderColor: 'divider',
+              backgroundColor:"#eee" , 
+              display:"flex" , 
+              justifyContent:"space-around", 
+              padding:"10px 20px"
             }}>
-              <TabList onChange={handleChange} aria-label="lab API tabs example" className={styles.labelContainer}>
+              <TabList 
+                onChange={handleChange} 
+                aria-label="lab API tabs example"
+                className={styles.labelContainer} 
+                variant="scrollable" orientation="horizontal"
+                visibleScrollbar={true}
+              >
                 <Tab label="Description" value="1" sx={tabStyles} />
                 <Tab label="Specification" value="2" sx={tabStyles}/>
                 <Tab label="Comments" value="3" sx={tabStyles}/>
@@ -133,26 +144,35 @@ function Product() {
                 it was with this that she produced her first significant work, 
                 a half-length portrait of a dark-skinned lady with a vacant expression and large drooping breasts. 
                 It was aptly named ‘Hangover’ by Beryl’s husband and</p>
+              <p className={styles.description}>
+                It is often frustrating to attempt to plan meals that are designed for one. 
+                Despite this fact, we are seeing more and more recipe books and Internet websites 
+                that are dedicated to the act of cooking for one. 
+                Divorce and the death of spouses or grown children leaving for college 
+                are all reasons that someone accustomed to cooking for more than one would 
+                suddenly need to learn how to adjust all the cooking practices utilized 
+                before into a streamlined plan of cooking that is more efficient for one person creating less
+              </p>
             </TabPanel>
             <TabPanel value="2">
-              <div>
-                <TableContainer component={Paper}>
-                  <Table sx={{ minWidth: 550 }} size="small" aria-label="a dense table">
+              
+              <TableContainer component={Paper}>
+                <Table sx={{ minWidth: 550, border:"none"}} size="small" aria-label="a dense table">
        
-                    <TableBody>
-                      {rows.map((row) => (
-                        <TableRow
-                          key={row.name}
-                          sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                        >
-                          <TableCell align="left">{row.name}</TableCell>
-                          <TableCell align="center">{row.length}</TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </div>
+                  <TableBody>
+                    {rows.map((row) => (
+                      <TableRow
+                        key={row.name}
+                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                      >
+                        <TableCell align="left">{row.name}</TableCell>
+                        <TableCell align="left">{row.length}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+              
             </TabPanel>
             <TabPanel value="3" className={styles.reviewContainer}>
               <div className={styles.mainreviewContainer}>
