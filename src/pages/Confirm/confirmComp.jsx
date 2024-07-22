@@ -5,6 +5,7 @@ function ConfirmComp() {
   return (
     <div className={styles.mainContainer}>
       <HeaderComp title='Checkout' firstpage='first' nextpage='next'/>
+
       <div>
         <h3 className={styles.order}>Thank you. Your order has been received</h3>
         <div className={styles.mainorderContainer}>
@@ -74,7 +75,7 @@ function ConfirmComp() {
           <thead>
             <tr>
               <th>Product</th>
-              <th>Quality</th>
+              <th className={styles.quality}>Quality</th>
               <th>Total</th>
             </tr>
           </thead>
