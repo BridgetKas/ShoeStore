@@ -1,6 +1,7 @@
 .checkoutContainer {
     background-color:#fff;
-    padding-top:30px;
+    padding:30px 40px;
+   
 }
 .return {
     background-color:#e8f0f2;
@@ -20,11 +21,25 @@
     width: 80%;
     margin: 10px auto;
     font-size: 14px;
+    text-align: left;
+}
+
+.informationContainer {
+    width:80%;
+    margin:10px auto;
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
 }
 
 .inputContainer {
     width:80%;
-    margin:10px auto;
+}
+
+.inputContainer.check {
+    margin-top:15px;
 }
 
 .checkContainer {
@@ -41,19 +56,46 @@
     color:gray;
 }
 
-.checkbox {
+.checkbox ,.radio {
     width:5%;
     margin:0 5px 0 0;
 }
 
-.couponContainer {
-    width:80%;
-    margin:0 auto;
+
+
+.check {
+    color:black;
+    font-size: 15px;
+}
+
+.payPalContainer {
+    background-color: #fff;
+    margin-top:10px;
+    padding: 10px;
+}
+
+.confirmInformation {
+    margin:5px 0;
+    text-align:left;
+}
+
+
+.outercouponContainer {
+    width:70%;
+    padding-left: 7.5%;
 }
 
 .billContainer {
     width:80%;
     margin:0 auto;
+}
+
+.bill {
+    text-align:left;
+    font-size:18px;
+    color:black;
+    font-weight: 390;
+    margin-bottom: 10px;
 }
 
 .list {
@@ -78,44 +120,47 @@
     padding:20px 30px;
 }
 
-.order {
-    color:black;
-    font-size:18px;
-    margin:0;
-    padding-bottom:10px;
-    border-bottom: 1px solid gray;
+.caption {
+    padding-left:0;
 }
 
-.payContainer {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background-color:red;
+.quality {
+    text-align: left;
 }
+
+
+
 
 .product {
     margin:0;
 }
 
-.freshContainer {
-    display:flex;
-    align-items: center;
-    gap:60px;
-    justify-content:space-between;
-    background-color: blue;
-}
-
-.price li {
-    list-style: none;
-    padding:0;
-}
 
 .payPal {
     display:flex;
     align-items: center;
     justify-content:space-between;
+    margin-top:15px;
 }
 
+.termsContainer {
+    margin:10px 0;
+}
+
+.termsContainer  label{
+    color:black;
+    font-size:12px;
+
+}
+
+.termsContainer span {
+    color:red;
+}
+
+.paymentContainer {
+    text-align: center;
+    background-color:orange;
+}
 
 @media (min-width:768px) {
     .maininputContainer {
@@ -128,5 +173,39 @@
 
     .inputContainer {
         width:48%;
+    }
+}
+
+@media (min-width:992px) {
+    .contactInformation {
+        display:flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .inputContainer {
+        width:100%;
+    }
+
+    .couponCode {
+        width:50%;
+    }
+
+    .checkbox.last {
+        width: 13%;
+    }
+
+    .billContainer {
+        width: 60%;
+    }
+
+    .orderContainer {
+        width:30%;
+    }
+
+    .radio {
+        width:15px;
     }
 }
