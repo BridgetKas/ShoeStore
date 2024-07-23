@@ -29,8 +29,41 @@
     font-weight:500;
 }
 
-.inputCart {
-    width:20%;
+.mainNumberContainer {
+    position:relative;
+
 }
+
+.inputCart {
+     padding: 10px;
+     font-size: 16px;
+     width: 50px;
+     padding-right: 30px; 
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+-moz-appearance: textfield;
+font-size: 20px;
+height: 49px;
+padding: 10px;
+box-sizing: border-box;
+}
+
+.numberContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 
