@@ -69,7 +69,6 @@ function CartPageComp() {
         <div className={styles.checkoutContainer}>
           <ButtonComp btnTitle="CONTINUE SHOPPING" />
           <ButtonComp btnTitle="PROCEED TO CHECKOUT" />
-
         </div>
 
       </div>
