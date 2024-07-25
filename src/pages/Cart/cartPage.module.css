@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .rate {
@@ -39,23 +40,10 @@
     align-items: center;
     padding: 5px 0;
     color: gray;
+    width: fit-content;
 }
 
-.radio {
-    width:10%;
-}
 
-.rate.one {
-    width: 142px;
-}
-
-.rate.two {
-    width:119px;
-}
-
-.rate.three {
-    width: 122px;
-}
 
 .shipping {
     margin: 0;
@@ -74,5 +62,5 @@
 
 .checkoutContainer {
     display:flex;
-    align-items: flex-end;
+    justify-content: flex-end;
 }

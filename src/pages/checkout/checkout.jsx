@@ -47,6 +47,7 @@ function CheckoutComp() {
           <div className={styles.billContainer}>
             <p className={styles.bill}>Billing Details</p>
             <ul className={styles.list}>
+              
               <li><Input placeholder="First name" required ={true} fullWidth/></li>
               <li><Input placeholder="Last name" required ={true} fullWidth/></li>
               <li><Input placeholder="Company name" required ={true} fullWidth/></li>

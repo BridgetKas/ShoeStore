@@ -38,19 +38,19 @@ function CartPageComp() {
             <p>$2160.00</p>
           </div>
           <div className={styles.rateContainer}>
-            <div className={`${styles.rate} ${styles.one}`}>
-              <label >Flat rate: $50.00</label>
+            <div className={styles.rate} >
+              <label>Flat rate:$50.00</label>
               <input type="radio"  value="rate" />
             </div>
-            <div className={`${styles.rate} ${styles.two}`}>
+            <div className={styles.rate}>
               <label >Free shipping </label>
               <input type="radio"  value="rate" className={styles.radio}/>
             </div>
-            <div className={`${styles.rate} ${styles.one}`}>
+            <div className={styles.rate} >
               <label >Flat rate: $10.00 </label>
               <input type="radio"  value="rate" className={styles.radio}/>
             </div>
-            <div className={`${styles.rate} ${styles.three}`}>
+            <div className={styles.rate}>
               <label >Local Delivery </label>
               <input type="radio"  value="rate"className={styles.radio}/>
             </div>
@@ -62,7 +62,7 @@ function CartPageComp() {
         </div>
         <div className={styles.selectContainer}>
           <SelectConfirmationPage textcolor="primary" background="#fff" showCountry={true}/>
-          <SelectConfirmationPage textcolor="primary" background="#fff" showCountry={false}/>
+          <SelectConfirmationPage textcolor="primary" background="#fff"/>
           <Input placeholder="Postal code/Zip code" required ={true} />
           <ButtonComp btnTitle="UPDATE DETAILS"/>
         </div>
@@ -79,7 +79,7 @@ function CartPageComp() {
 
 
 
-function SelectConfirmationPage({textcolor,background,showCountry=true}) {
+function SelectConfirmationPage({textcolor,background,showCountry=false}) {
 
   const [valuez, setValue] = useState('');
   const handleChange = (event) => {
@@ -88,7 +88,7 @@ function SelectConfirmationPage({textcolor,background,showCountry=true}) {
   return (
     <div>
       {
-        showCountry ?
+        showCountry &&
           (<FormControl sx={{ m: 1, minWidth: 120,margin:0}}>
             <Select
               value={valuez}
@@ -105,23 +105,24 @@ function SelectConfirmationPage({textcolor,background,showCountry=true}) {
               <MenuItem value={30}>Pakistian</MenuItem>
             </Select>
           </FormControl>) 
-          :
-          ( <FormControl sx={{ m: 1, minWidth: 120,margin:0}}>
-            <Select
-              value={valuez}
-              onChange={handleChange}
-              displayEmpty
-              style={{
-                color:textcolor,
-                backgroundColor:background
-              }}
-            >
-              <MenuItem value=""> <em>Select a state</em> </MenuItem>
-              <MenuItem value={20}>Select a state</MenuItem>
-              <MenuItem value={30}>Select a state</MenuItem>
-            </Select>
-          </FormControl>
-          )
+      }
+      {
+        !showCountry &&
+        <FormControl sx={{ m: 1, minWidth: 120,margin:0}}>
+          <Select
+            value={valuez}
+            onChange={handleChange}
+            displayEmpty
+            style={{
+              color:textcolor,
+              backgroundColor:background
+            }}
+          >
+            <MenuItem value=""> <em>Select a state</em> </MenuItem>
+            <MenuItem value={20}>Select a state</MenuItem>
+            <MenuItem value={30}>Select a state</MenuItem>
+          </Select>
+        </FormControl>
       }
     </div>
   )

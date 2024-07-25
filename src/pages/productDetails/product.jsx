@@ -77,7 +77,7 @@ function Product() {
             <div className={styles.qualityContainer}>
               <p>Quality:</p>
               <div >
-                <input type='number' value='1'/>
+                <input type='number' value='1' className={styles.inputNumber}/>
               </div>
             </div>
             <div className={styles.iconContainer}>
@@ -216,6 +216,7 @@ function Product() {
                             setValue(newValue);
                           }}
                         />
+
                         <span>
                           01
                         </span>
