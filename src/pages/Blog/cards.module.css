@@ -9,14 +9,8 @@
 
 .container {
     width:25%;
-    background-color: yellow;
-    background:url("../../assets/cat-post-1.jpg");
 }
 
 .blog {
-    background-color: red;
 }
 
-h2,p {
-    text-align:center;
-}

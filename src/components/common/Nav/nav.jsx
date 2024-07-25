@@ -50,7 +50,7 @@ function NavBar() {
           id:5,
         },
         {
-          path:"/blog",
+          path:"/blog/single-blog",
           label:"BLOG DETAILS",
           id:6,
         }

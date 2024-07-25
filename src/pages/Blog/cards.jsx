@@ -1,33 +1,41 @@
 import styles from './cards.module.css'
+import image1 from '../../assets/cat-post-1.jpg'
+import image2 from '../../assets/cat-post-2.jpg'
+import image3 from '../../assets/cat-post-3.jpg'
+
+
 
 
 const miniBlog = [
   {
-    title:"blbobl",
-    tagline:"mnmnkh",
-    image:"../../assets/cat-post-1.jpg"
+    title:"POLITICS",
+    tagline:"Be part of politics",
+    image:image1
   },
   {
-    title:"blbobl",
-    tagline:"mnmnkh"
+    title:"FOOD",
+    tagline:"Let the food be finished",
+    image:image2
   },
   {
-    title:"blbobl",
-    tagline:"mnmnkh"
+    title:"SOCIAL LIFE",
+    tagline:"Enjoy your social life together",
+    image:image3
   },
 
 ]
 
-function Cards({title,tagline}) {
+function Cards() {
   return (
     <div className={styles.mainContainer}>
 
       {miniBlog.map((item,index) =>(
-        <div key={index} className={styles.container} style={{background:"url(item.image)"}}>
+        <div key={index} className={styles.container}>
           <div className={styles.blog}>
-            <h2>{title}</h2>
-            <hr/>
-            <p>{tagline}</p>
+            <h2>{item.title}</h2>
+            {/* <hr/> */}
+            <p>{ item.tagline}</p>
+            <img src={item.image}/>
           </div>
         </div>
       ))}
@@ -36,5 +44,6 @@ function Cards({title,tagline}) {
 
   )
 }
+
 
 export default Cards
