@@ -108,6 +108,7 @@
     margin-top:10px;
 }
 
+
 .postDescription {
     margin:0;
     color:black;
@@ -122,6 +123,35 @@
 .postTime {
     color:gray;
     margin: 0;
+}
+
+.advertContainer {
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: 30px 40px;
+    margin: 30px 0;
+    width: 71%;
+}
+
+.advert {
+    font-size:30px;
+}
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px dotted gray;
+}
+
+.container:hover .postsDetail{
+    cursor: pointer;
+    color: orange;
+}
+
+.postsDetail {
+    margin: 0;
+    padding:10px 0;
 }
 
 @media (min-width:768px) {

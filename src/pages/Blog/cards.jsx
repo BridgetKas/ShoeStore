@@ -148,7 +148,60 @@ function BlogPage() {
               </div>
             </div>
           </div>
+          <div className={styles.advertContainer}>
+            <p className={styles.advert}>
+              300x250 PX
+              AD GOES HERE
+            </p>
+          </div>
+          <div >
+            <div className={styles.postContainer}>
+              <p className={styles.post}>Popular Posts</p>
+            </div>
+            
+            <div className={styles.container}>
+              <p className={styles.postsDetail}>Technology</p>
+              <p className={styles.postsDetail}>37</p>
+            </div>
+            <div className={styles.container}>
+              <p className={styles.postsDetail}>LifeStyle</p>
+              <p className={styles.postsDetail}>24</p>
+            </div>
+            <div className={styles.container}>
+              <p className={styles.postsDetail}>Fashion</p>
+              <p className={styles.postsDetail}>59</p>
+            </div>
+            <div className={styles.container}>
+              <p className={styles.postsDetail}>Art</p>
+              <p className={styles.postsDetail}>29</p>
+            </div>
+            <div className={styles.container}>
+              <p className={styles.postsDetail}>Food</p>
+              <p className={styles.postsDetail}>15</p>
+            </div>
+            <div className={styles.container}>
+              <p className={styles.postsDetail}>Architecture</p>
+              <p className={styles.postsDetail}>09</p>
+            </div>
+            <div className={styles.container}>
+              <p className={styles.postsDetail}>Adventure</p>
+              <p className={styles.postsDetail}>44</p>
+            </div>
+           
+          </div>
+          <div>
+            <div className={styles.postContainer}>
+              <p className={styles.post}>News Letter</p>
+            </div>
+          </div>
+          <p>
+            Here, I focus on a range of items and features that we use in life 
+            ithout giving them a second thought.
+          </p>
+          
+          
         </div>
+      
       </div>
      
     </div>
