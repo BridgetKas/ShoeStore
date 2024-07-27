@@ -14,6 +14,15 @@ import Stack from '@mui/material/Stack';
 import SearchIcon from '@mui/icons-material/Search';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
+import author from '../../assets/author.png'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import post1 from '../../assets/post1.jpg'
+import post2 from '../../assets/post2.jpg'
+import post3 from '../../assets/post3.jpg'
+import post4 from '../../assets/post4.jpg'
+
 
 
 
@@ -64,7 +73,7 @@ function BlogPage() {
           <Pagination count={5} variant="outlined" shape="rounded"  />
         </Stack>
 
-        <div className={styles.serachContainer}>
+        <div className={styles.searchContainer}>
           <TextField
             variant="outlined"
             placeholder="Search..."
@@ -76,6 +85,69 @@ function BlogPage() {
               ),
             }}
           />
+
+          <div className={styles.authorContainer}>
+            <div>
+              <img src={author}/>
+            </div>
+            <div>
+              <p className={styles.authorName}>Charlie Barber</p>
+              <p className={styles.authorName}>Senior blog writer</p>
+              <div className={styles.iconContainer}>
+                <FacebookIcon color='primary'/>
+                <TwitterIcon color='primary'/>
+                <GitHubIcon color='primary'/>
+              </div>
+            </div>
+            <div>
+              <p className={styles.bootCamps}>
+                Boot camps have its supporters andit sdetractors. 
+                Some people do not understand why you should have to spend money on boot camp when you can get. 
+                Boot camps have itssuppor ters andits detractors.
+              </p>
+            </div>
+          </div>
+          <div className={styles.mainpostContainer}>
+            <div className={styles.postContainer}>
+              <p className={styles.post}>Popular Posts</p>
+            </div>
+            <div className={styles.postsContainer}>
+              <div>
+                <img src={post1} />
+              </div>
+              <div>
+                <p className={styles.postDescription}>Space The Final Frontier</p>
+                <p className={styles.postTime}>02 Hours ago</p>
+              </div>
+            </div>
+            <div  className={styles.postsContainer}>
+              <div>
+                <img src={post2} />
+              </div>
+              <div>
+                <p className={styles.postDescription}>The Amazing Hubble</p>
+                <p className={styles.postTime}>02 Hours ago</p>
+              </div>
+            </div>
+            <div  className={styles.postsContainer}>
+              <div>
+                <img src={post3} />
+              </div>
+              <div>
+                <p className={styles.postDescription}>Astrology or Astronomy</p>
+                <p className={styles.postTime}>02 Hours ago</p>
+              </div>
+            </div>
+            <div  className={styles.postsContainer}>
+              <div>
+                <img src={post4} />
+              </div>
+              <div>
+                <p className={styles.postDescription}>Asteroids telescope</p>
+                <p className={styles.postTime}>02 Hours ago</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
      

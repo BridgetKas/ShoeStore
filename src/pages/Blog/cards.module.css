@@ -59,10 +59,70 @@
     margin: 10px 0;
 }
 
-/* .searchContainer {
-    background-color:#fdfdfd;
-    border:1px solid #ececec;
-} */
+.searchContainer {
+    border:1px solid gray;
+    padding:30px 20px;
+
+}
+
+.authorName {
+    text-align:center;
+}
+.authorContainer {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    border-top:1px solid gray;
+}
+
+.bootCamps {
+    text-align:center;
+    margin:0;
+}
+
+.postContainer {
+    background-color: orange;
+    margin-bottom:15px;
+
+}
+
+.post {
+    text-align: center;
+    color:#fff;
+    font-size:20px;
+    margin:0;
+    font-weight:400;
+}
+
+.mainpostContainer {
+    padding: 20px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+}
+
+.postsContainer {
+    display:flex;
+    align-items: center;
+    gap:20px;
+    margin-top:10px;
+}
+
+.postDescription {
+    margin:0;
+    color:black;
+    font-weight: 400;
+}
+
+.postDescription:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.postTime {
+    color:gray;
+    margin: 0;
+}
 
 @media (min-width:768px) {
     .mainBlogContainer {
