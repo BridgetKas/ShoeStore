@@ -225,4 +225,17 @@
         flex-direction: row;
         gap:20px;
     }
+
+    .searchContainer {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:992px) {
+    .mainouterContainer {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 }
