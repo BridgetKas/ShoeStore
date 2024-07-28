@@ -22,6 +22,8 @@ import post1 from '../../assets/post1.jpg'
 import post2 from '../../assets/post2.jpg'
 import post3 from '../../assets/post3.jpg'
 import post4 from '../../assets/post4.jpg'
+import EmailIcon from '@mui/icons-material/Email';
+import ButtonComp from '../../components/common/Button'
 
 
 
@@ -68,23 +70,27 @@ function BlogPage() {
         <BlogComp title='Glossary of Telescopes' image={blog3}/>
         <BlogComp title='The Night Sky' image={blog4}/>
         <BlogComp title='Telescopes 101' image={blog5}/>
-
-        <Stack   >
-          <Pagination count={5} variant="outlined" shape="rounded"  />
-        </Stack>
-
+        <div className={styles.numberContainer}>
+          <Stack   >
+            <Pagination count={5} variant="outlined" shape="rounded"  />
+          </Stack>
+        </div>
         <div className={styles.searchContainer}>
-          <TextField
-            variant="outlined"
-            placeholder="Search..."
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
+          <div className={styles.mainSearchContainer}>
+            <TextField
+              variant="outlined"
+              placeholder="Search..."
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <SearchIcon />
+                  </InputAdornment>
+                ),
+              }}
+              fullWidth
+            />
+          </div>
+        
 
           <div className={styles.authorContainer}>
             <div>
@@ -148,13 +154,15 @@ function BlogPage() {
               </div>
             </div>
           </div>
-          <div className={styles.advertContainer}>
-            <p className={styles.advert}>
-              300x250 PX
-              AD GOES HERE
-            </p>
+          <div className={styles.mainadvertContainer}>
+            <div className={styles.advertContainer}>
+              <p className={styles.advert}>
+                300x250 PX
+                AD GOES HERE
+              </p>
+            </div>
           </div>
-          <div >
+          <div className={styles.outerpostContainer}>
             <div className={styles.postContainer}>
               <p className={styles.post}>Popular Posts</p>
             </div>
@@ -189,21 +197,70 @@ function BlogPage() {
             </div>
            
           </div>
-          <div>
+          <div className={styles.newsContainer}>
+            <div>
+              <div className={styles.postContainer}>
+                <p className={styles.post}>News Letter</p>
+              </div>
+            </div>
+            <p className={styles.newsLetter}>
+              Here, I focus on a range of items and features that we use in life 
+              ithout giving them a second thought.
+            </p>
+            <div className={styles.inputBlogContainer}>
+              <div className={styles.subContainer}>
+                <InputBlog placeholder="Enter email" icon={<EmailIcon/>} fullWidth  /> 
+              </div>
+              <ButtonComp btnTitle='Subscribe' variant='outlined' style={{height:"56px"}} size='large'/> 
+            </div>
+            <p className={styles.unsubscribe}>You can  unsubscribe at any time</p>
+          </div>
+          <div className={styles.tagContainer}>
             <div className={styles.postContainer}>
-              <p className={styles.post}>News Letter</p>
+              <p className={styles.post}>Tag Clouds</p>
+            </div>
+            <div className={styles.btnContainer}>
+              <ButtonComp btnTitle="Technology" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Fashion" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Architecture" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Fashion" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Food" variant='outlined'size="small"/>
+              <ButtonComp btnTitle="Technology" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Lifestyle" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Art" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Adventure" variant='outlined'size="small"/>
+              <ButtonComp btnTitle="Food" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Lifestyle" variant='outlined' size="small"/>
+              <ButtonComp btnTitle="Adventure" variant='outlined' size="small"/>
+
+
             </div>
           </div>
-          <p>
-            Here, I focus on a range of items and features that we use in life 
-            ithout giving them a second thought.
-          </p>
-          
-          
+
         </div>
       
       </div>
      
+    </div>
+  )
+}
+
+function InputBlog({placeholder, required=false, icon, color,margin,fullWidth,multiline}) {
+  return (
+    <div>
+      <TextField  
+        variant="outlined"  
+        placeholder={placeholder} 
+        required={required}
+        color={color}
+        InputProps={{
+          startAdornment: <InputAdornment position="start">{icon}</InputAdornment>,
+        }}
+        margin={margin}
+        fullWidth={fullWidth}
+        multiline={multiline}
+      />
+
     </div>
   )
 }
