@@ -78,173 +78,9 @@ function BlogPage() {
               </Stack>
             </div>
           </div>
-          <div className={styles.searchContainer}>
-            <div className={styles.mainSearchContainer}>
-              <TextField
-                variant="outlined"
-                placeholder="Search..."
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <SearchIcon />
-                    </InputAdornment>
-                  ),
-                }}
-                fullWidth
-              />
-            </div>
-        
-
-            <div className={styles.authorContainer}>
-              <div>
-                <img src={author}/>
-              </div>
-              <div>
-                <p className={styles.authorName}>Charlie Barber</p>
-                <p className={styles.authorName}>Senior blog writer</p>
-                <div className={styles.iconContainer}>
-                  <FacebookIcon color='primary'/>
-                  <TwitterIcon color='primary'/>
-                  <GitHubIcon color='primary'/>
-                </div>
-              </div>
-              <div>
-                <p className={styles.bootCamps}>
-                  Boot camps have its supporters andit sdetractors. 
-                  Some people do not understand why you should have to spend money on boot camp when you can get. 
-                  Boot camps have itssuppor ters andits detractors.
-                </p>
-              </div>
-            </div>
-            <div className={styles.mainpostContainer}>
-              <div className={styles.postContainer}>
-                <p className={styles.post}>Popular Posts</p>
-              </div>
-              <div className={styles.postsContainer}>
-                <div>
-                  <img src={post1} />
-                </div>
-                <div>
-                  <p className={styles.postDescription}>Space The Final Frontier</p>
-                  <p className={styles.postTime}>02 Hours ago</p>
-                </div>
-              </div>
-              <div  className={styles.postsContainer}>
-                <div>
-                  <img src={post2} />
-                </div>
-                <div>
-                  <p className={styles.postDescription}>The Amazing Hubble</p>
-                  <p className={styles.postTime}>02 Hours ago</p>
-                </div>
-              </div>
-              <div  className={styles.postsContainer}>
-                <div>
-                  <img src={post3} />
-                </div>
-                <div>
-                  <p className={styles.postDescription}>Astrology or Astronomy</p>
-                  <p className={styles.postTime}>02 Hours ago</p>
-                </div>
-              </div>
-              <div  className={styles.postsContainer}>
-                <div>
-                  <img src={post4} />
-                </div>
-                <div>
-                  <p className={styles.postDescription}>Asteroids telescope</p>
-                  <p className={styles.postTime}>02 Hours ago</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.mainadvertContainer}>
-              <div className={styles.advertContainer}>
-                <p className={styles.advert}>
-                  300x250 PX
-                  AD GOES HERE
-                </p>
-              </div>
-            </div>
-            <div className={styles.outerpostContainer}>
-              <div className={styles.postContainer}>
-                <p className={styles.post}>Popular Posts</p>
-              </div>
-            
-              <div className={styles.container}>
-                <p className={styles.postsDetail}>Technology</p>
-                <p className={styles.postsDetail}>37</p>
-              </div>
-              <div className={styles.container}>
-                <p className={styles.postsDetail}>LifeStyle</p>
-                <p className={styles.postsDetail}>24</p>
-              </div>
-              <div className={styles.container}>
-                <p className={styles.postsDetail}>Fashion</p>
-                <p className={styles.postsDetail}>59</p>
-              </div>
-              <div className={styles.container}>
-                <p className={styles.postsDetail}>Art</p>
-                <p className={styles.postsDetail}>29</p>
-              </div>
-              <div className={styles.container}>
-                <p className={styles.postsDetail}>Food</p>
-                <p className={styles.postsDetail}>15</p>
-              </div>
-              <div className={styles.container}>
-                <p className={styles.postsDetail}>Architecture</p>
-                <p className={styles.postsDetail}>09</p>
-              </div>
-              <div className={styles.container}>
-                <p className={styles.postsDetail}>Adventure</p>
-                <p className={styles.postsDetail}>44</p>
-              </div>
-           
-            </div>
-            <div className={styles.newsContainer}>
-              <div>
-                <div className={styles.postContainer}>
-                  <p className={styles.post}>News Letter</p>
-                </div>
-              </div>
-              <p className={styles.newsLetter}>
-                Here, I focus on a range of items and features that we use in life 
-                ithout giving them a second thought.
-              </p>
-              <div className={styles.inputBlogContainer}>
-                <div className={styles.subContainer}>
-                  <InputBlog placeholder="Enter email" icon={<EmailIcon/>} fullWidth  /> 
-                </div>
-                <ButtonComp btnTitle='Subscribe' variant='outlined' style={{height:"56px"}} size='large'/> 
-              </div>
-              <p className={styles.unsubscribe}>You can  unsubscribe at any time</p>
-            </div>
-            <div className={styles.tagContainer}>
-              <div className={styles.postContainer}>
-                <p className={styles.post}>Tag Clouds</p>
-              </div>
-              <div className={styles.btnContainer}>
-                <ButtonComp btnTitle="Technology" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Fashion" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Architecture" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Fashion" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Food" variant='outlined'size="small"/>
-                <ButtonComp btnTitle="Technology" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Lifestyle" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Art" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Adventure" variant='outlined'size="small"/>
-                <ButtonComp btnTitle="Food" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Lifestyle" variant='outlined' size="small"/>
-                <ButtonComp btnTitle="Adventure" variant='outlined' size="small"/>
-
-
-              </div>
-            </div>
-
-          </div>
-      
+          <SideBarBlog/>
         </div>
       </div>
-     
     </div>
   )
 }
@@ -268,6 +104,177 @@ function InputBlog({placeholder, required=false, icon, color,margin,fullWidth,mu
     </div>
   )
 }
+
+
+
+export function SideBarBlog() {
+  return (
+    <div className={styles.searchContainer}>
+      <div className={styles.mainSearchContainer}>
+        <TextField
+          variant="outlined"
+          placeholder="Search..."
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon />
+              </InputAdornment>
+            ),
+          }}
+          fullWidth
+        />
+      </div>
+
+
+      <div className={styles.authorContainer}>
+        <div>
+          <img src={author}/>
+        </div>
+        <div>
+          <p className={styles.authorName}>Charlie Barber</p>
+          <p className={styles.authorName}>Senior blog writer</p>
+          <div className={styles.iconContainer}>
+            <FacebookIcon color='primary'/>
+            <TwitterIcon color='primary'/>
+            <GitHubIcon color='primary'/>
+          </div>
+        </div>
+        <div>
+          <p className={styles.bootCamps}>
+            Boot camps have its supporters andit sdetractors. 
+            Some people do not understand why you should have to spend money on boot camp when you can get. 
+            Boot camps have itssuppor ters andits detractors.
+          </p>
+        </div>
+      </div>
+      <div className={styles.mainpostContainer}>
+        <div className={styles.postContainer}>
+          <p className={styles.post}>Popular Posts</p>
+        </div>
+        <div className={styles.postsContainer}>
+          <div>
+            <img src={post1} />
+          </div>
+          <div>
+            <p className={styles.postDescription}>Space The Final Frontier</p>
+            <p className={styles.postTime}>02 Hours ago</p>
+          </div>
+        </div>
+        <div  className={styles.postsContainer}>
+          <div>
+            <img src={post2} />
+          </div>
+          <div>
+            <p className={styles.postDescription}>The Amazing Hubble</p>
+            <p className={styles.postTime}>02 Hours ago</p>
+          </div>
+        </div>
+        <div  className={styles.postsContainer}>
+          <div>
+            <img src={post3} />
+          </div>
+          <div>
+            <p className={styles.postDescription}>Astrology or Astronomy</p>
+            <p className={styles.postTime}>02 Hours ago</p>
+          </div>
+        </div>
+        <div  className={styles.postsContainer}>
+          <div>
+            <img src={post4} />
+          </div>
+          <div>
+            <p className={styles.postDescription}>Asteroids telescope</p>
+            <p className={styles.postTime}>02 Hours ago</p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.mainadvertContainer}>
+        <div className={styles.advertContainer}>
+          <p className={styles.advert}>
+            300x250 PX
+            AD GOES HERE
+          </p>
+        </div>
+      </div>
+      <div className={styles.outerpostContainer}>
+        <div className={styles.postContainer}>
+          <p className={styles.post}>Popular Posts</p>
+        </div>
+    
+        <div className={styles.container}>
+          <p className={styles.postsDetail}>Technology</p>
+          <p className={styles.postsDetail}>37</p>
+        </div>
+        <div className={styles.container}>
+          <p className={styles.postsDetail}>LifeStyle</p>
+          <p className={styles.postsDetail}>24</p>
+        </div>
+        <div className={styles.container}>
+          <p className={styles.postsDetail}>Fashion</p>
+          <p className={styles.postsDetail}>59</p>
+        </div>
+        <div className={styles.container}>
+          <p className={styles.postsDetail}>Art</p>
+          <p className={styles.postsDetail}>29</p>
+        </div>
+        <div className={styles.container}>
+          <p className={styles.postsDetail}>Food</p>
+          <p className={styles.postsDetail}>15</p>
+        </div>
+        <div className={styles.container}>
+          <p className={styles.postsDetail}>Architecture</p>
+          <p className={styles.postsDetail}>09</p>
+        </div>
+        <div className={styles.container}>
+          <p className={styles.postsDetail}>Adventure</p>
+          <p className={styles.postsDetail}>44</p>
+        </div>
+   
+      </div>
+      <div className={styles.newsContainer}>
+        <div>
+          <div className={styles.postContainer}>
+            <p className={styles.post}>News Letter</p>
+          </div>
+        </div>
+        <p className={styles.newsLetter}>
+          Here, I focus on a range of items and features that we use in life 
+          ithout giving them a second thought.
+        </p>
+        <div className={styles.inputBlogContainer}>
+          <div className={styles.subContainer}>
+            <InputBlog placeholder="Enter email" icon={<EmailIcon/>} fullWidth  /> 
+          </div>
+          <ButtonComp btnTitle='Subscribe' variant='outlined' style={{height:"56px"}} size='large'/> 
+        </div>
+        <p className={styles.unsubscribe}>You can  unsubscribe at any time</p>
+      </div>
+      <div className={styles.tagContainer}>
+        <div className={styles.postContainer}>
+          <p className={styles.post}>Tag Clouds</p>
+        </div>
+        <div className={styles.btnContainer}>
+          <ButtonComp btnTitle="Technology" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Fashion" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Architecture" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Fashion" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Food" variant='outlined'size="small"/>
+          <ButtonComp btnTitle="Technology" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Lifestyle" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Art" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Adventure" variant='outlined'size="small"/>
+          <ButtonComp btnTitle="Food" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Lifestyle" variant='outlined' size="small"/>
+          <ButtonComp btnTitle="Adventure" variant='outlined' size="small"/>
+
+
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
 
 
 export default BlogPage

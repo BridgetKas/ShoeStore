@@ -8,7 +8,7 @@ import Product from "./pages/productDetails/product";
 import CartPageComp from "./pages/Cart/cartPage";
 import CheckoutComp from "./pages/checkout/checkout";
 import ConfirmComp from "./pages/Confirm/confirmComp";
-import BlogPage from "./pages/Blog/cards";
+import BlogPage, { SideBarBlog } from "./pages/Blog/cards";
 
 
 const router = createBrowserRouter([
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
           },
           {
             path:"single-blog",
-            element:"jgjgjg"
+            element:<SideBarBlog/>
           }
         ]
       },
