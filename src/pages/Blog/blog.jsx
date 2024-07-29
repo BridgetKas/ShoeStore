@@ -13,7 +13,7 @@ function BlogComp({image,title}) {
     <div>
       <div className={styles.mainBlogContainer}>
         <div>
-          <p className={styles.blogTitle}>Food, <span className={styles.blog}>Technology,</span>Politics,Lifestyle</p>
+          <p className={styles.blogTitle}>Food,<span className={styles.blog}>Technology,</span>Politics,Lifestyle</p>
          
           <div className={styles.blogContainer}>
             <div className={styles.blogDetails}>

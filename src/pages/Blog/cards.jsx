@@ -66,7 +66,7 @@ function BlogPage() {
           ))}
         </div>
         <div className={styles.mainouterContainer}>
-          <div>
+          <div >
             <BlogComp title='Astronomy Binoculars A Great Alternative' image={blog1}/>
             <BlogComp title='The Basics of Buying A Telescope' image={blog2}/>
             <BlogComp title='Glossary of Telescopes' image={blog3}/>

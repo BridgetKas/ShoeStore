@@ -60,7 +60,7 @@
 }
 
 .searchContainer {
-    border:1px solid gray;
+    border:1px solid #eeee;
     padding:30px 20px;
 }
 
@@ -235,7 +235,20 @@
 @media (min-width:992px) {
     .mainouterContainer {
         display: flex;
-        align-items: center;
         gap: 20px;
     }
+
+
+    .blogImageContainer {
+        margin-top: 0px;
+    }
+
+    .mainBlogContainer {
+        padding: 0;
+    }
+
+    .blogDescription {
+        padding-right: 26px;
+    }
+
 }
