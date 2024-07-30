@@ -13,6 +13,15 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import RedditIcon from '@mui/icons-material/Reddit';
 import post1 from '../../assets/post-img1.jpg'
 import post2 from '../../assets/post-img2.jpg'
+import prevImage from '../../assets/prev.jpg'
+import nextImage from '../../assets/next.jpg'
+import comment1 from '../../assets/c1(1).jpg'
+import comment2 from '../../assets/c2(1).jpg'
+import comment3 from '../../assets/c3(1).jpg'
+import comment4 from '../../assets/c4(1).jpg'
+import comment5 from '../../assets/c5(1).jpg'
+
+
 
 
 
@@ -96,8 +105,62 @@ function BlogDetails() {
               <img src={post2} className={styles.detailsImage}/>
             </div>
           </div>
+          <div className={styles.featureContainer}>
+            <p className={styles.features}>
+              MCSE boot camps have its supporters and its detractors. 
+              Some people do not understand why you should have to spend money on boot camp 
+              when you can get the MCSE study materials yourself at a fraction of the camp price.
+              However, who has the willpower.
+            </p>
+            <p className={styles.bootCamp}>
+              MCSE boot camps have its supporters and its detractors. 
+              Some people do not understand why you should have to spend money on boot camp 
+              when you can get the MCSE study materials yourself at a fraction of the camp price. 
+              However, who has the willpower.
+            </p>
+          </div>
+          <div className={styles.nextPreviousContainer}>
+            <div className={styles.directionContainer}>
+              <div>
+                <img src={prevImage}/>
+              </div>
+              <div className={styles.postDescription}>
+                <p className={styles.direction}>Prev Post</p>
+                <p className={styles.post}>Space The Final Frontier</p>
+              </div>
+            </div>
+            <div className={`${styles.directionContainer} ${styles.nextContainer}`}>
+              <div className={styles.postDescription}>
+                <p className={styles.direction}>Next Post</p>
+                <p className={styles.post}>Telescopes 101</p>
+              </div>
+              <div>
+                <img src={nextImage}/>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>05 Comments</p>
+
+          </div>
           <SideBarBlog/>
         </div>
+      </div>
+    </div>
+  )
+}
+
+
+function CommentComp ({image,title}) {
+  return (
+    <div>
+      <div>
+        <div>
+          <img src={image}/>
+        </div>
+        <h3>{title}</h3>
+        <p>December 4, 2018 at 3:12 pm</p>
+        <p>Never say goodbye till the end comes!</p>
       </div>
     </div>
   )

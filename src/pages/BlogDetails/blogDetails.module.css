@@ -92,3 +92,55 @@
 .detailsImage {
     width: 100%;
 }
+
+.features {
+    margin-top: 0px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.bootCamp {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.featureContainer {
+    padding-bottom: 30px;
+}
+
+.nextPreviousContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.directionContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.directionContainer.nextContainer {
+    align-self: flex-end;
+}
+
+.post {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.postDirection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.direction {
+    margin: 0;
+}
+
+
+
+
