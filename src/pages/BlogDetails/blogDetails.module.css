@@ -78,3 +78,17 @@
     line-height: 1.7;
     font-size: 14px;
 }
+
+.blogDetailsImage {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.detailsImageContainer {
+    width: 49%;
+}
+
+.detailsImage {
+    width: 100%;
+}

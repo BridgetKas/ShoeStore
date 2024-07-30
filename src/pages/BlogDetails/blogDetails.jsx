@@ -11,6 +11,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import RedditIcon from '@mui/icons-material/Reddit';
+import post1 from '../../assets/post-img1.jpg'
+import post2 from '../../assets/post-img2.jpg'
+
 
 
 
@@ -85,6 +88,14 @@ function BlogDetails() {
             when you can get the MCSE study materials yourself at a fraction of the camp price.
             However, who has the willpower to actually sit through a self-imposed MCSE training.
           </p>
+          <div className={styles.blogDetailsImage}>
+            <div className={styles.detailsImageContainer}>
+              <img src={post1} className={styles.detailsImage} />
+            </div>
+            <div className={styles.detailsImageContainer}>
+              <img src={post2} className={styles.detailsImage}/>
+            </div>
+          </div>
           <SideBarBlog/>
         </div>
       </div>
