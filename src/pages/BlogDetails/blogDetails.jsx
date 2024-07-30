@@ -79,6 +79,12 @@ function BlogDetails() {
               </p>
             </div>
           </div>
+          <p className={styles.featureDescription}>
+            MCSE boot camps have its supporters and its detractors. 
+            Some people do not understand why you should have to spend money on boot camp
+            when you can get the MCSE study materials yourself at a fraction of the camp price.
+            However, who has the willpower to actually sit through a self-imposed MCSE training.
+          </p>
           <SideBarBlog/>
         </div>
       </div>

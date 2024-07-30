@@ -68,4 +68,13 @@
 
 .blogDescription {
     margin: 10px 0;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.featureDescription {
+    padding-top: 40px;
+    padding-left: 32px;
+    line-height: 1.7;
+    font-size: 14px;
 }
