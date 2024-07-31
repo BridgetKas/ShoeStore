@@ -141,8 +141,13 @@
     margin: 0;
 }
 
+.mainCommentContainer {
+    background-color:#fafaff;
+    border:1px solid #eee;
+    padding: 15px 20px;
+}
 .commenterContainer {
-    padding-left: 35px;
+    padding-left: 20px;
 }
 
 .commentContainer {

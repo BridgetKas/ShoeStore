@@ -21,6 +21,7 @@ import comment3 from '../../assets/c3 (1).jpg'
 import comment4 from '../../assets/c4 (1).jpg'
 import comment5 from '../../assets/c5 (1).jpg'
 import ButtonComp from '../../components/common/Button';
+import Input from '../../components/common/input';
 
 
 
@@ -142,7 +143,7 @@ function BlogDetails() {
           </div>
           <div>
             <p>05 Comments</p>
-            <div>
+            <div className={styles.mainCommentContainer}>
               <CommentComp image={comment1} title="Emily Blunt"/>
               <div className={styles.commenterContainer}>
                 <CommentComp image={comment2} title="Elsie Cunningham"/>
@@ -152,7 +153,16 @@ function BlogDetails() {
               </div>
               <CommentComp image={comment4} title="Maria Luna"/>
               <CommentComp image={comment5} title="Ina Hayes"/>
-
+            </div>
+          </div>
+          <div>
+            <p>Leave a reply </p>
+            <Input placeholder= "Enter name" fullWidth/>
+            <Input placeholder= "Enter email address" fullWidth/>
+            <Input placeholder= "Subject" fullWidth/>
+            <Input placeholder= "Message" fullWidth rows={4}/>
+            <div>
+              <ButtonComp btnTitle="POST COMMENT" variant="outlined" size="large"/>
             </div>
 
           </div>
