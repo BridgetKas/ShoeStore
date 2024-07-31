@@ -15,11 +15,12 @@ import post1 from '../../assets/post-img1.jpg'
 import post2 from '../../assets/post-img2.jpg'
 import prevImage from '../../assets/prev.jpg'
 import nextImage from '../../assets/next.jpg'
-import comment1 from '../../assets/c1(1).jpg'
-import comment2 from '../../assets/c2(1).jpg'
-import comment3 from '../../assets/c3(1).jpg'
-import comment4 from '../../assets/c4(1).jpg'
-import comment5 from '../../assets/c5(1).jpg'
+import comment1 from '../../assets/c1 (1).jpg'
+import comment2 from '../../assets/c2 (1).jpg'
+import comment3 from '../../assets/c3 (1).jpg'
+import comment4 from '../../assets/c4 (1).jpg'
+import comment5 from '../../assets/c5 (1).jpg'
+import ButtonComp from '../../components/common/Button';
 
 
 
@@ -141,6 +142,9 @@ function BlogDetails() {
           </div>
           <div>
             <p>05 Comments</p>
+            <div>
+              <CommentComp image={comment1} title="Emily Blunt"/>
+            </div>
 
           </div>
           <SideBarBlog/>
@@ -153,14 +157,21 @@ function BlogDetails() {
 
 function CommentComp ({image,title}) {
   return (
-    <div>
-      <div>
+    <div className={styles.commentContainer}>
+      <div className={styles.imageCommentContainer}>
         <div>
           <img src={image}/>
         </div>
-        <h3>{title}</h3>
-        <p>December 4, 2018 at 3:12 pm</p>
-        <p>Never say goodbye till the end comes!</p>
+        <div>
+          <h3 className={styles.commenter}>{title}</h3>
+          <div>
+            <p className={styles.date}>December 4, 2018 at 3:12 pm</p>
+            <p>Never say goodbye till the end comes!</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ButtonComp variant="outlined" size="small" btnTitle="REPLY"/>
       </div>
     </div>
   )
