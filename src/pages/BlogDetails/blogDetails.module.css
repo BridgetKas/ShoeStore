@@ -141,11 +141,15 @@
     margin: 0;
 }
 
+.commenterContainer {
+    padding-left: 35px;
+}
+
 .commentContainer {
     display:flex;
     align-items:center;
     justify-content:space-between;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .imageCommentContainer {
