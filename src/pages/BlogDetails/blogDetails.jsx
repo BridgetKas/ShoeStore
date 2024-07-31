@@ -144,6 +144,11 @@ function BlogDetails() {
             <p>05 Comments</p>
             <div>
               <CommentComp image={comment1} title="Emily Blunt"/>
+              <CommentComp image={comment2} title="Elsie Cunningham"/>
+              <CommentComp image={comment3} title="Annie Stephens"/>
+              <CommentComp image={comment4} title="Maria Luna"/>
+              <CommentComp image={comment5} title="Ina Hayes"/>
+
             </div>
 
           </div>
