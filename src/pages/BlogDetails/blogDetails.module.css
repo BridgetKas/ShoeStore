@@ -179,4 +179,21 @@
 }
 
 
+.inputContainer {
+    padding: 25px 20px;
+    background-color:#fafaff;
+    border:1px solid #eee;
+    margin-top: 40px;
+}
+
+.reply {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.replyContainer {
+    text-align: center;
+}
 

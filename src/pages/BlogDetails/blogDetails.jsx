@@ -22,6 +22,7 @@ import comment4 from '../../assets/c4 (1).jpg'
 import comment5 from '../../assets/c5 (1).jpg'
 import ButtonComp from '../../components/common/Button';
 import Input from '../../components/common/input';
+import TextField from '@mui/material/TextField';
 
 
 
@@ -155,13 +156,19 @@ function BlogDetails() {
               <CommentComp image={comment5} title="Ina Hayes"/>
             </div>
           </div>
-          <div>
-            <p>Leave a reply </p>
-            <Input placeholder= "Enter name" fullWidth/>
-            <Input placeholder= "Enter email address" fullWidth/>
-            <Input placeholder= "Subject" fullWidth/>
-            <Input placeholder= "Message" fullWidth rows={4}/>
-            <div>
+          <div className={styles.inputContainer}>
+            <p className={styles.reply}>Leave a reply </p>
+            <Input placeholder= "Enter name" fullWidth margin= "normal"/>
+            <Input placeholder= "Enter email address" fullWidth margin= "normal"/>
+            <Input placeholder= "Subject" fullWidth margin= "normal"/>
+            <TextField
+              placeholder="Message"
+              multiline
+              rows={5}
+              fullWidth
+              margin="normal"
+            />
+            <div className={styles.replyContainer}>
               <ButtonComp btnTitle="POST COMMENT" variant="outlined" size="large"/>
             </div>
 
