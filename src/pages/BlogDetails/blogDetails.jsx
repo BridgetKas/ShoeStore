@@ -40,7 +40,7 @@ function BlogDetails() {
           <div className={styles.blogImageContainer}>
             <img src={featureImage} className={styles.blogImage}/>
           </div>
-          <div>
+          <div className={styles.outerblogContainer}>
             <div className={styles.mainBlogContainer}>
               <p className={styles.blogTitle}>
                 Food,<span className={styles.blog}>Technology,</span>Politics,Lifestyle
@@ -67,7 +67,6 @@ function BlogDetails() {
                   <TwitterIcon color='primary' fontSize='small'/>
                   <GitHubIcon color='primary' fontSize='small'/>
                   <RedditIcon color='primary' fontSize='small'/>
-
                 </div>
               </div>
             </div>
