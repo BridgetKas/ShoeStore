@@ -12,24 +12,25 @@ function BlogComp({image,title}) {
   return (
     <div>
       <div className={styles.mainBlogContainer}>
-        <div>
-          <p className={styles.blogTitle}>Food,<span className={styles.blog}>Technology,</span>Politics,Lifestyle</p>
-         
+        <div className={styles.outerblogContainer}>
+          <div className={styles.test}>
+            <p className={styles.blogTitle}>Food,<span className={styles.blog}>Technology,</span> Politics,Lifestyle</p>
+          </div>
           <div className={styles.blogContainer}>
             <div className={styles.blogDetails}>
-              <p>Mark Wiens</p>
+              <p className={styles.blogDetail}>Mark Wiens</p>
               <PersonOutlineIcon color='primary'/>
             </div>
             <div className={styles.blogDetails}>
-              <p>12 Dec,2018</p>
+              <p className={styles.blogDetail}>12 Dec,2018</p>
               <CalendarMonthIcon color='primary'/>
             </div>
             <div className={styles.blogDetails}>
-              <p>1.2M Views</p>
+              <p className={styles.blogDetail}>1.2M Views</p>
               <VisibilityIcon color='primary'/>
             </div>
             <div className={styles.blogDetails}>
-              <p>06 Comments</p>
+              <p className={styles.blogDetail}>06 Comments</p>
               <ChatBubbleOutlineIcon color='primary'/>
             </div>
           </div>
