@@ -66,12 +66,12 @@ function NavBar() {
           id:7,
         },
         {
-          path:"/page",
+          path:"/page/tracking",
           label:"TRACKING",
           id:8,
         },
         {
-          path:"/page",
+          path:"/page/elements",
           label:"ELEMENTS",
           id:9,
         }

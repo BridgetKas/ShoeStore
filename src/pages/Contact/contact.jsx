@@ -10,12 +10,12 @@ import { colors } from "../../utilis/color"
 
 function Contact() {
   return (
-    <>
+    <div className={styles.outermainContainer}>
       <div className={styles.mainContainer}>
         <div>
           <div className={styles.iconContainer}>
             <div>
-              <HomeOutlinedIcon />
+              <HomeOutlinedIcon color='primary'/>
             </div>
             <div>
               <div className={styles. state}>California, United States</div>
@@ -24,7 +24,7 @@ function Contact() {
           </div>
           <div className={styles.iconContainer}>
             <div>
-              <LocalPhoneOutlinedIcon />
+              <LocalPhoneOutlinedIcon color='primary'/>
             </div>
             <div>
               <div className={styles. state}>00 (440) 9865 562</div>
@@ -33,7 +33,7 @@ function Contact() {
           </div>
           <div className={styles.iconContainer}>
             <div>
-              <MailOutlineOutlinedIcon />
+              <MailOutlineOutlinedIcon color='primary'/>
             </div>
             <div>
               <div className={styles. state}>support@colorlib.com</div>
@@ -60,7 +60,7 @@ function Contact() {
           onClick={() => alert('Clicked')}
         />
       </div>
-    </>
+    </div>
   )
 }
 

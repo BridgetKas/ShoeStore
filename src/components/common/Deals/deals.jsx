@@ -80,7 +80,7 @@ function DealsComp() {
     <Fragment>
       <div className={styles.mainContainer}>
         <h1 className={styles.deals}>Deals of the week</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        <h3 className={styles.dealsDescription}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </h3>
         <div className={styles.container}>

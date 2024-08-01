@@ -1,3 +1,10 @@
+.outermainContainer {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+
+
 .mainContainer {
     display:flex;
     gap:9px;
@@ -14,12 +21,12 @@
 }
 
 .state {
-    color:white;
+    color:black;
     font-weight:bold;
 }
 
 .address {
-    color:white;
+    color:gray;
 }
 
 .btnContainer {

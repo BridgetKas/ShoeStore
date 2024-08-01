@@ -10,6 +10,9 @@ import CheckoutComp from "./pages/checkout/checkout";
 import ConfirmComp from "./pages/Confirm/confirmComp";
 import BlogPage from "./pages/Blog/cards";
 import BlogDetails from "./pages/BlogDetails/blogDetails";
+import LogInPage from "./pages/LogInPage/LogPage";
+import TrackingPage from "./pages/trackingPage/trackingPage";
+import Contact from "./pages/Contact/contact";
 
 
 const router = createBrowserRouter([
@@ -62,12 +65,26 @@ const router = createBrowserRouter([
         ]
       },
       {
-        path:"page",
-        element:"oh yeah"
+        path:"page/",
+        children:[
+          {
+            index:true,
+            element:<LogInPage/>
+          },
+          {
+            path:"tracking",
+            element:<TrackingPage/>
+          },
+          {
+            path:"elements",
+            element:"ngngng"
+
+          }
+        ]
       },
       {
         path:"contact",
-        element:"ouuu lalala"
+        element:<Contact/>
       }
       
       

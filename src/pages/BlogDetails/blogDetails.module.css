@@ -203,3 +203,23 @@
         gap:20px;   
     }
 }
+
+@media(min-width:992px) {
+    .container {
+        display: flex;
+    }
+
+    .blogImageContainer {
+        margin-top: 0;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .mainOuterContainer {
+        width: 70%;
+        margin: 0;
+    }
+}

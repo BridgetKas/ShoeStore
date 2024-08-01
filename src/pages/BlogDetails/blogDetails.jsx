@@ -36,143 +36,147 @@ function BlogDetails() {
     <div >
       <HeaderComp title='Blog Details' firstpage='first' nextpage='next'/>
       <div className={styles.mainContainer}>
-        <div className={styles.mainOuterContainer}>
-          <div className={styles.blogImageContainer}>
-            <img src={featureImage} className={styles.blogImage}/>
-          </div>
-          <div className={styles.outerblogContainer}>
-            <div className={styles.mainBlogContainer}>
-              <p className={styles.blogTitle}>
-                Food,<span className={styles.blog}>Technology,</span>Politics,Lifestyle
+        <div className={styles.container}>
+          <div className={styles.mainOuterContainer}>
+            <div className={styles.blogImageContainer}>
+              <img src={featureImage} className={styles.blogImage}/>
+            </div>
+            <div className={styles.outerblogContainer}>
+              <div className={styles.mainBlogContainer}>
+                <p className={styles.blogTitle}>
+                  Food,<span className={styles.blog}>Technology,</span>Politics,Lifestyle
+                </p>
+                <div className={styles.blogContainer}>
+                  <div className={styles.blogDetails}>
+                    <p>Mark Wiens</p>
+                    <PersonOutlineIcon color='primary'/>
+                  </div>
+                  <div className={styles.blogDetails}>
+                    <p>12 Dec,2018</p>
+                    <CalendarMonthIcon color='primary'/>
+                  </div>
+                  <div className={styles.blogDetails}>
+                    <p>1.2M Views</p>
+                    <VisibilityIcon color='primary'/>
+                  </div>
+                  <div className={styles.blogDetails}>
+                    <p>06 Comments</p>
+                    <ChatBubbleOutlineIcon color='primary'/>
+                  </div>
+                  <div className={styles.iconContainer}>
+                    <FacebookIcon color='primary' fontSize='small'/>
+                    <TwitterIcon color='primary' fontSize='small'/>
+                    <GitHubIcon color='primary' fontSize='small'/>
+                    <RedditIcon color='primary' fontSize='small'/>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 className={styles.blogHeading}><a >Astronomy Binoculars A Great Alternative</a></h2>
+                <p className={styles.blogDescription}>
+                  MCSE boot camps have its supporters and its detractors. 
+                  Some people do not understand why you should have to 
+                  spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                </p>
+                <p className={styles.blogDescription}>
+                  Boot camps have its supporters and its detractors. 
+                  Some people do not understand why you should have to spend money on boot camp when you can get 
+                  the MCSE study materials yourself at a fraction of the camp price. 
+                  However, who has the willpower to actually sit through a self-imposed MCSE training. 
+                  who has the willpower to actually sit through a self-imposed.
+                </p>
+                <p className={styles.blogDescription}>
+                  Boot camps have its supporters and its detractors. 
+                  Some people do not understand why you should have to spend money on boot camp 
+                  when you can get the MCSE study materials yourself at a fraction of the camp price. 
+                  However, who has the willpower to actually sit through a self-imposed MCSE training. 
+                  who has the willpower to actually sit through a self-imposed
+                </p>
+              </div>
+            </div>
+            <p className={styles.featureDescription}>
+              MCSE boot camps have its supporters and its detractors. 
+              Some people do not understand why you should have to spend money on boot camp
+              when you can get the MCSE study materials yourself at a fraction of the camp price.
+              However, who has the willpower to actually sit through a self-imposed MCSE training.
+            </p>
+            <div className={styles.blogDetailsImage}>
+              <div className={styles.detailsImageContainer}>
+                <img src={post1} className={styles.detailsImage} />
+              </div>
+              <div className={styles.detailsImageContainer}>
+                <img src={post2} className={styles.detailsImage}/>
+              </div>
+            </div>
+            <div className={styles.featureContainer}>
+              <p className={styles.features}>
+                MCSE boot camps have its supporters and its detractors. 
+                Some people do not understand why you should have to spend money on boot camp 
+                when you can get the MCSE study materials yourself at a fraction of the camp price.
+                However, who has the willpower.
               </p>
-              <div className={styles.blogContainer}>
-                <div className={styles.blogDetails}>
-                  <p>Mark Wiens</p>
-                  <PersonOutlineIcon color='primary'/>
+              <p className={styles.bootCamp}>
+                MCSE boot camps have its supporters and its detractors. 
+                Some people do not understand why you should have to spend money on boot camp 
+                when you can get the MCSE study materials yourself at a fraction of the camp price. 
+                However, who has the willpower.
+              </p>
+            </div>
+            <div className={styles.nextPreviousContainer}>
+              <div className={styles.directionContainer}>
+                <div>
+                  <img src={prevImage}/>
                 </div>
-                <div className={styles.blogDetails}>
-                  <p>12 Dec,2018</p>
-                  <CalendarMonthIcon color='primary'/>
+                <div className={styles.postDescription}>
+                  <p className={styles.direction}>Prev Post</p>
+                  <p className={styles.post}>Space The Final Frontier</p>
                 </div>
-                <div className={styles.blogDetails}>
-                  <p>1.2M Views</p>
-                  <VisibilityIcon color='primary'/>
+              </div>
+              <div className={`${styles.directionContainer} ${styles.nextContainer}`}>
+                <div className={styles.postDescription}>
+                  <p className={styles.direction}>Next Post</p>
+                  <p className={styles.post}>Telescopes 101</p>
                 </div>
-                <div className={styles.blogDetails}>
-                  <p>06 Comments</p>
-                  <ChatBubbleOutlineIcon color='primary'/>
-                </div>
-                <div className={styles.iconContainer}>
-                  <FacebookIcon color='primary' fontSize='small'/>
-                  <TwitterIcon color='primary' fontSize='small'/>
-                  <GitHubIcon color='primary' fontSize='small'/>
-                  <RedditIcon color='primary' fontSize='small'/>
+                <div>
+                  <img src={nextImage}/>
                 </div>
               </div>
             </div>
             <div>
-              <h2 className={styles.blogHeading}><a >Astronomy Binoculars A Great Alternative</a></h2>
-              <p className={styles.blogDescription}>
-                MCSE boot camps have its supporters and its detractors. 
-                Some people do not understand why you should have to 
-                spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
-              </p>
-              <p className={styles.blogDescription}>
-                Boot camps have its supporters and its detractors. 
-                Some people do not understand why you should have to spend money on boot camp when you can get 
-                the MCSE study materials yourself at a fraction of the camp price. 
-                However, who has the willpower to actually sit through a self-imposed MCSE training. 
-                who has the willpower to actually sit through a self-imposed.
-              </p>
-              <p className={styles.blogDescription}>
-                Boot camps have its supporters and its detractors. 
-                Some people do not understand why you should have to spend money on boot camp 
-                when you can get the MCSE study materials yourself at a fraction of the camp price. 
-                However, who has the willpower to actually sit through a self-imposed MCSE training. 
-                who has the willpower to actually sit through a self-imposed
-              </p>
-            </div>
-          </div>
-          <p className={styles.featureDescription}>
-            MCSE boot camps have its supporters and its detractors. 
-            Some people do not understand why you should have to spend money on boot camp
-            when you can get the MCSE study materials yourself at a fraction of the camp price.
-            However, who has the willpower to actually sit through a self-imposed MCSE training.
-          </p>
-          <div className={styles.blogDetailsImage}>
-            <div className={styles.detailsImageContainer}>
-              <img src={post1} className={styles.detailsImage} />
-            </div>
-            <div className={styles.detailsImageContainer}>
-              <img src={post2} className={styles.detailsImage}/>
-            </div>
-          </div>
-          <div className={styles.featureContainer}>
-            <p className={styles.features}>
-              MCSE boot camps have its supporters and its detractors. 
-              Some people do not understand why you should have to spend money on boot camp 
-              when you can get the MCSE study materials yourself at a fraction of the camp price.
-              However, who has the willpower.
-            </p>
-            <p className={styles.bootCamp}>
-              MCSE boot camps have its supporters and its detractors. 
-              Some people do not understand why you should have to spend money on boot camp 
-              when you can get the MCSE study materials yourself at a fraction of the camp price. 
-              However, who has the willpower.
-            </p>
-          </div>
-          <div className={styles.nextPreviousContainer}>
-            <div className={styles.directionContainer}>
-              <div>
-                <img src={prevImage}/>
-              </div>
-              <div className={styles.postDescription}>
-                <p className={styles.direction}>Prev Post</p>
-                <p className={styles.post}>Space The Final Frontier</p>
+              <p>05 Comments</p>
+              <div className={styles.mainCommentContainer}>
+                <CommentComp image={comment1} title="Emily Blunt"/>
+                <div className={styles.commenterContainer}>
+                  <CommentComp image={comment2} title="Elsie Cunningham"/>
+                </div>
+                <div className={styles.commenterContainer}>
+                  <CommentComp image={comment3} title="Annie Stephens"/>
+                </div>
+                <CommentComp image={comment4} title="Maria Luna"/>
+                <CommentComp image={comment5} title="Ina Hayes"/>
               </div>
             </div>
-            <div className={`${styles.directionContainer} ${styles.nextContainer}`}>
-              <div className={styles.postDescription}>
-                <p className={styles.direction}>Next Post</p>
-                <p className={styles.post}>Telescopes 101</p>
+            <div className={styles.inputContainer}>
+              <p className={styles.reply}>Leave a reply </p>
+              <Input placeholder= "Enter name" fullWidth margin= "normal"/>
+              <Input placeholder= "Enter email address" fullWidth margin= "normal"/>
+              <Input placeholder= "Subject" fullWidth margin= "normal"/>
+              <TextField
+                placeholder="Message"
+                multiline
+                rows={5}
+                fullWidth
+                margin="normal"
+              />
+              <div className={styles.replyContainer}>
+                <ButtonComp btnTitle="POST COMMENT" variant="outlined" size="large"/>
               </div>
-              <div>
-                <img src={nextImage}/>
-              </div>
-            </div>
-          </div>
-          <div>
-            <p>05 Comments</p>
-            <div className={styles.mainCommentContainer}>
-              <CommentComp image={comment1} title="Emily Blunt"/>
-              <div className={styles.commenterContainer}>
-                <CommentComp image={comment2} title="Elsie Cunningham"/>
-              </div>
-              <div className={styles.commenterContainer}>
-                <CommentComp image={comment3} title="Annie Stephens"/>
-              </div>
-              <CommentComp image={comment4} title="Maria Luna"/>
-              <CommentComp image={comment5} title="Ina Hayes"/>
-            </div>
-          </div>
-          <div className={styles.inputContainer}>
-            <p className={styles.reply}>Leave a reply </p>
-            <Input placeholder= "Enter name" fullWidth margin= "normal"/>
-            <Input placeholder= "Enter email address" fullWidth margin= "normal"/>
-            <Input placeholder= "Subject" fullWidth margin= "normal"/>
-            <TextField
-              placeholder="Message"
-              multiline
-              rows={5}
-              fullWidth
-              margin="normal"
-            />
-            <div className={styles.replyContainer}>
-              <ButtonComp btnTitle="POST COMMENT" variant="outlined" size="large"/>
-            </div>
 
+            </div>
           </div>
-          <SideBarBlog/>
+          <div className={styles.sidebarContainer}>
+            <SideBarBlog/>
+          </div>
         </div>
       </div>
     </div>
