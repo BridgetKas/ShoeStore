@@ -1,9 +1,6 @@
 import BlogComp from './blog'
 import HeaderComp from '../../layout/Header/header'
 import styles from './cards.module.css'
-import image1 from '../../assets/cat-post-1.jpg'
-import image2 from '../../assets/cat-post-2.jpg'
-import image3 from '../../assets/cat-post-3.jpg'
 import blog1 from '../../assets/m-blog-1.jpg'
 import blog2 from '../../assets/m-blog-2.jpg'
 import blog3 from '../../assets/m-blog-3.jpg'
@@ -29,42 +26,18 @@ import ButtonComp from '../../components/common/Button'
 
 
 
-const miniBlog = [
-  {
-    title:"POLITICS",
-    tagline:"Be part of politics",
-    image:image1
-  },
-  {
-    title:"FOOD",
-    tagline:"Let the food be finished",
-    image:image2
-  },
-  {
-    title:"SOCIAL LIFE",
-    tagline:"Enjoy your social life together",
-    image:image3
-  },
-
-]
 
 function BlogPage() {
   return (
     <div >
       <HeaderComp title='Blog' firstpage='first' nextpage='next'/>
       <div className={styles.mainContainer}>
-        <div >
-          {miniBlog.map((item,index) =>(
-            <div key={index} className={styles.container}>
-              <div className={styles.blog}>
-                <h2>{item.title}</h2>
-                {/* <hr/> */}
-                <p>{ item.tagline}</p>
-                <img src={item.image}/>
-              </div>
-            </div>
-          ))}
-        </div>
+      
+
+        <BlogCard title="Social Life" description="Enjoy your social life together" image='/cat-post-1.jpg'/>
+        <BlogCard title="Social Life" description="Enjoy your social life together" image='/cat-post-2.jpg'/>
+        <BlogCard title="Social Life" description="Enjoy your social life together" image='/cat-post-3.jpg'/>
+
         <div className={styles.mainouterContainer}>
           <div >
             <BlogComp title='Astronomy Binoculars A Great Alternative' image={blog1}/>
@@ -274,6 +247,27 @@ export function SideBarBlog() {
     </div>
   )
 }
+
+
+
+function BlogCard({title,description,image}) {
+
+  const style = {
+    backgroundImage: `url(${image})`,
+    height: '220px',
+    width:'360px',
+  }
+  return (
+    <div className={styles.blogcardContainer} style={style}>
+      <div className={styles.blogcard}>
+        <h2 className={styles.blogtitle}>{title}</h2>
+        <p>{description}</p>
+      </div>
+
+    </div>
+  )
+}
+
 
 
 

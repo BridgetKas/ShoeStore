@@ -3,8 +3,24 @@
     padding:40px 30px;
 }
 
+.blogcardContainer {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
 
+.blogcard {
+    background-color: rgba(0, 0, 0 ,0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.blogtitle {
+    margin:0;
+}
 
 .mainBlogContainer {
     padding:30px 0;
